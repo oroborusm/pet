@@ -1,0 +1,6435 @@
+@import "nib"
+@import 'nib/gradients'
+
+
+//calipso = #5fa098
+calipso = #009999
+clarito = #ecedef
+colorao = #F4714A
+naranjito = #f8b302
+naranjo = #FF6B00
+oscuro = #434142
+cafoso = #211915
+rosadito = #fa524e
+naranjoCafoso = #A04B01
+naranjoClaro = #F39C02
+grisAzul = #A1A5AD
+azulAsiste = #0040a6
+rojoAsiste = #ff4c00
+otroGris = rgb(91, 91, 95)
+//verdeAsiste = #038a7a
+verdeAsiste = #038a7a
+verdeClarito = #71b238
+azulCpo = #007cc3
+grisClaro1 = #999
+grisClaro2 = #727176
+
+*
+	box-sizing border-box
+	
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proximanova-light.eot');
+    src: url('../font/proximanova-light.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-light.woff2') format('woff2'),
+         url('../font/proximanova-light.woff') format('woff'),
+         url('../font/proximanova-light.ttf') format('truetype'),
+         url('../font/proximanova-light.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/proximanova-bold.eot');
+    src: url('../font/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-bold.woff2') format('woff2'),
+         url('../font/proximanova-bold.woff') format('woff'),
+         url('../font/proximanova-bold.ttf') format('truetype'),
+         url('../font/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../font/proximanova-extrabold.eot');
+    src: url('../font/proximanova-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-extrabold.woff2') format('woff2'),
+         url('../font/proximanova-extrabold.woff') format('woff'),
+         url('../font/proximanova-extrabold.ttf') format('truetype'),
+         url('../font/proximanova-extrabold.svg#proxima_novaextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../font/proximanova-regular.eot');
+    src: url('../font/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-regular.woff2') format('woff2'),
+         url('../font/proximanova-regular.woff') format('woff'),
+         url('../font/proximanova-regular.ttf') format('truetype'),
+         url('../font/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../font/oswald-bold.eot');
+    src: url('../font/oswald-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/oswald-bold.woff2') format('woff2'),
+         url('../font/oswald-bold.woff') format('woff'),
+         url('../font/oswald-bold.ttf') format('truetype'),
+         url('../font/oswald-bold.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'icos';
+	src:url('../font/icos.eot?ldq7ra');
+	src:url('../font/icos.eot?#iefixldq7ra') format('embedded-opentype'),
+		url('../font/icos.woff?ldq7ra') format('woff'),
+		url('../font/icos.ttf?ldq7ra') format('truetype'),
+		url('../font/icos.svg?ldq7ra#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'manias';
+	src:url('../font/manias.eot?-4sz0s6');
+	src:url('../font/manias.eot?#iefix-4sz0s6') format('embedded-opentype'),
+		url('../font/manias.woff?-4sz0s6') format('woff'),
+		url('../font/manias.ttf?-4sz0s6') format('truetype'),
+		url('../font/manias.svg?-4sz0s6#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+fieldset
+	border none
+i
+	font-style normal !important
+input
+	background #fbfbfb
+	border 1px solid grisAzul
+	box-sizing border-box
+	font-family 'Open Sans', sans-serif
+	font-size 13px !important
+	height 22px
+	outline none
+	&:focus
+		background aliceblue
+/*label
+	font-weight 600*/
+select
+	border 1px solid grisAzul !important
+	font-size 13px
+	height 22px
+textarea
+	box-sizing border-box
+#category-thumbnail
+.category-thumbnail
+	display none !important
+	border-bottom none !important
+
+#htmlcontent_top
+	display none
+
+
+
+body
+	color oscuro
+	font-family 'Open Sans', sans-serif
+	font-size 18px
+	margin 0 auto
+	//width 1150px
+	footer
+		color oscuro
+		font-size 14px
+		//height 200px
+		margin 0 auto
+		padding 70px 0 0 0
+		position relative
+		max-width 950px
+		.finFooter
+			//background #aeadb3
+			display inline-block
+			vertical-align top
+			width 39%
+			.row
+				margin 0 auto
+				padding 10px 0
+				width 100%
+				figure
+					margin 0
+					padding 0
+					width 200px
+					img
+						width 80%
+				figure
+				.boletin
+					display inline-block
+					vertical-align middle
+				.boletin
+					margin 10px 0
+					width 80%
+					.contBoletin
+						//background #DDDCE0
+						//border #aeadb3
+						margin 0 auto
+						//padding 10px 25px
+						//width 600px
+						h4
+							font-family 'proxima_nova_rgbold'
+							//font-weight 100
+							font-size 15px
+							margin 0
+							padding 0
+							text-align left
+							width 29%
+						h4
+						.block_content
+							display inline-block
+							vertical-align middle
+						.block_content
+							text-align right
+							width 100%
+							form
+								width 100%
+								input
+									box-sizing border-box
+									padding 5px
+									width 75%
+								input
+								button
+									display inline-block
+									vertical-align middle
+								button
+									background rojoAsiste
+									border none
+									//margin-top 5px
+									width 23%
+									span
+										color white
+										font-family 'proxima_nova_rgbold'
+										font-size 13px
+										line-height 17px
+										text-transform uppercase
+		.row
+			display inline-block
+			margin 0 auto 2em
+			//padding 0 12.5%
+			position relative
+			vertical-align top
+			width 60%
+			//form
+			//	display none
+			.blockcategories_footer
+				display none !important
+			.blockcategories_footer
+			.footer-block
+			.informacionFooter
+			.mediosPago
+				//border-right 1px solid #aeadb3
+				display inline-block
+				min-height 200px
+				margin-bottom 15px
+				padding 0 1%
+				//position absolute
+				vertical-align top
+				width 32%
+				a
+					color oscuro
+					text-decoration none
+				h4
+					font-family 'proxima_nova_rgbold'
+					font-size 15px
+					font-weight 100
+					display block
+					margin 0 0 10px 0
+					text-transform uppercase
+				ul
+					display block !important
+					margin 0
+					padding 0
+					li
+						font-size 13px
+						list-style none
+						margin 0
+						padding 0
+						a
+							color oscuro
+							text-align left
+							text-decoration none
+						span
+							display none
+				.transbankImg
+					margin 0 auto
+					width 80%
+
+
+			.footerSocial
+				//float right
+				width 100%
+				.contFooterSocial
+					text-align right
+					h4
+						border-bottom 1px solid #aeadb3
+					img
+						margin-left -10px
+						width 60%
+					ul
+						display inline-block
+						margin 0
+						//height 30px
+						padding 0
+						vertical-align top
+						width 50%
+						li
+							display inline-block
+							line-height 70px
+							margin-right 5px
+							position relative
+							a
+								text-decoration none
+								span
+									font-size 0
+						.facebook
+							position relative
+							a
+								display block
+								height 30px
+								width 30px
+								&:after
+									color #aeadb3
+									content '\e76a'
+									font-family 'icos'
+									font-size 30px
+									left 5px
+									line-height 25px
+									position absolute
+									text-align center
+									top 0
+						.google-plus
+							position relative
+							a
+								display block
+								height 30px
+								width 30px
+								&:after
+									color #aeadb3
+									content '\e766'
+									font-family 'icos'
+									font-size 30px
+									left 5px
+									line-height 25px
+									position absolute
+									text-align center
+									top 0
+						.pinterest
+							position relative
+							a
+								display block
+								height 30px
+								width 30px
+								&:after
+									color #aeadb3
+									content '\e76c'
+									font-family 'icos'
+									font-size 30px
+									left 5px
+									line-height 25px
+									position absolute
+									text-align center
+									top 0
+						.rss
+							position relative
+							a
+								display block
+								height 30px
+								width 30px
+								&:after
+									color #aeadb3
+									content '\e771'
+									font-family 'icos'
+									font-size 30px
+									left 5px
+									line-height 25px
+									position absolute
+									text-align center
+									top 0
+						.twitter
+							position relative
+							a
+								display block
+								height 30px
+								width 30px
+								&:after
+									color #aeadb3
+									content '\e76e'
+									font-family 'icos'
+									font-size 30px
+									left 5px
+									line-height 25px
+									position absolute
+									text-align center
+									top 0
+					.tituloPagos
+						border-top 1px solid #aeadb3
+						margin 15px 0 0 0
+			.informacionFooter
+				img
+					margin-bottom 1em
+					width 60%
+				ul
+					margin 0
+					padding 0
+					li
+						color oscuro
+						list-style none
+						margin 0
+						padding 0
+						span
+							color oscuro
+							font-weight 600
+							display inline-block
+							a
+								color oscuro
+	header
+		background white
+		//background #eaeaea
+		//height 70px
+		margin 0 auto
+		//overflow hidden
+		position relative
+		.header
+			//background white
+			//background #ecedef
+			border-bottom 1px solid clarito
+			height 100px
+			margin 0 auto
+			position relative
+			figure
+				//background white
+				//border-right 1px solid clarito
+				//float left
+				height 70px
+				//margin 0 0 0 10%
+				margin 0
+				padding 0
+				position absolute
+				width 200px
+				z-index 3
+				a
+					//background blue
+					img
+						display block
+						margin 8px 0 0 0
+						width 100%
+			.headerCOnt
+				//background url('../img/montanas.png') no-repeat bottom 
+				background-size 100%
+				height 100px
+				margin 0 auto
+				position relative
+				max-width 950px
+				.buscador
+					//background naranjito
+					//float right
+					height 50px
+					left 50%
+					margin-left -150px
+					//margin 0 10% 0 0
+					position absolute
+					top 0
+					width 300px
+					.buscadorForm
+						background white
+						border-bottom 2px solid grisClaro1
+						//border-radius 2px
+						height 26px
+						//left 30px
+						margin 0
+						position absolute
+						top 10px
+						width 100%
+						form
+							box-sizing border-box
+							//height 2em
+							//position relative
+							//text-align center 
+							z-index -1
+							button
+								background grisClaro1
+								border none
+								border-radius 0 0 2px 0
+								bottom -2px
+								cursor pointer
+								height 26px
+								margin 0
+								padding 0
+								position absolute
+								right -2px
+								width 14%
+								//z-index -1
+								span
+									color white
+									line-height 30px
+									&:before
+										content '\e67f'
+										font-family 'icos'
+										font-size 1em
+										line-height 26px
+							input
+								background white
+								border none
+								border-radius .5em
+								//font-size 15px
+								//height 26px
+								//margin-top 35px
+								padding 0 0 0 5%
+								width 80%
+								//z-index -2
+							button
+							input
+								display inline-block
+								vertical-align top
+
+
+		.telefono
+			background white
+			border 3px solid naranjito
+			border-radius 50%
+			height 30px
+			left 50%
+			margin-left 270px
+			position absolute
+			top 10px
+			width 30px
+			&:after
+				color naranjito
+				content	'\e63c'
+				font-family 'icos'
+				font-size 18px
+				display block
+				line-height 30px
+				text-align center
+				width 30px
+
+		.telefonoContenedor
+			background #fff
+			border 3px solid #f8b302
+			border-radius 5px
+			display none
+			left 50%
+			margin-left 220px
+			padding 10px
+			position absolute
+			text-align center
+			top 55px
+			width 110px
+			&:after
+				border-bottom 8px solid white
+				border-left 8px solid transparent
+				border-right 8px solid transparent
+				border-top 8px solid transparent
+				bottom 43px
+				content ''
+				position absolute
+				left 50%
+				margin-left -8px
+			&:before
+				border-bottom 10px solid naranjito
+				border-left 10px solid transparent
+				border-right 10px solid transparent
+				border-top 10px solid transparent
+				bottom 45px
+				content ''
+				position absolute
+				left 50%
+				margin-left -10px
+			&:hover
+				display block
+			span
+				color naranjito
+				font-size 14px
+	ul
+		.first-in-line
+			display inline-block
+			width 24%
+			.contenedorPopular
+				background none
+				font-size 18px
+				margin 7px auto
+				//overflow hidden
+				position relative
+				width 98%
+
+	.autenticacion
+		margin 0 auto
+		width 80%
+		h1
+			color oscuro
+			text-align center
+		.contenedorLogin
+			margin 0 auto
+			text-align center
+			.accedeCuenta
+				//margin-left 8%
+				margin 0
+				padding 0
+				form
+					//width 70%
+					.form_content
+						.form-group
+							label
+								color oscuro
+								display block
+								font-size 13px
+								font-weight 600
+								text-align left
+							input
+								border-radius 0
+								//border none
+								//box-sizing border-box
+								display block
+								//outline none
+								padding 5px
+								width 100%
+								&:focus
+									background aliceblue
+						.lost_password
+							font-size 13px
+							margin 0
+							text-align right
+							a
+								color oscuro
+								font-weight 600
+								text-decoration none
+								&:hover
+									text-decoration underline
+						.submit
+							margin-top 22px !important
+							button
+								background clarito
+								border none
+								border-radius 2px
+								color oscuro
+								width 100%
+								span
+									font-family 'proxima_nova_rgbold'
+									font-size 18px
+									font-weight 100
+									line-height 40px
+							input
+								display block
+								width 100%
+							&:hover
+								background azulAsiste
+								button
+									background azulAsiste
+									span
+										color white
+			.accedeCuenta
+			.creaCuenta
+				border 1px solid clarito
+				//border-radius 4px
+				display inline-block
+				height 300px
+				//padding 1em
+				position relative
+				vertical-align top
+				width 48%
+				.formsAtenticacion
+					border none !important
+					padding 5% 15%
+					h1
+						border-bottom 1px solid clarito
+						display block
+						font-size 20px
+						font-weight 100
+						line-height 40px
+						margin 0 0 1em 0
+					.form_content
+						p
+							color oscuro
+							margin 0
+			.creaCuenta
+				form
+					.form_content
+						//aca estaba el alerta
+						p
+							color oscuro
+							font-size 11px
+						.form-group
+							//border-bottom 1px solid naranjito
+							// border-top 1px solid naranjito
+							margin 15px 0 5px
+							label
+								color oscuro
+								display block
+								font-size 13px
+								font-weight 600
+								text-align left
+							input
+								//border-radius 5px
+								//border none
+								//box-sizing border-box
+								display block
+								//outline none
+								padding 5px
+								width 100%
+								//margin-top 22px
+								&:focus
+									background aliceblue
+						.submit
+							margin-top 35px
+							button
+								background clarito
+								border none
+								border-radius 2	px
+								color rojoAsiste
+								width 100%
+								span
+									font-family 'proxima_nova_rgbold'
+									font-size 18px
+									font-weight 100
+									line-height 40px
+							input
+								display block
+								width 100%
+							&:hover
+								button
+									background rojoAsiste
+									color white
+		.formularioCrea
+			border 1px solid clarito
+			border-radius 5px
+			margin 0 auto
+			width 80%
+			.creaCuenta
+				margin 0 auto
+				width 90%
+				h3
+					font-size 18px
+					text-align center
+				.nombreApellido
+					//border-bottom 1px solid naranjito
+					// border-top 1px solid naranjito
+					margin-bottom 10px
+					.apellido
+					.nombre
+						display inline-block
+						vertical-align middle
+						width 49%
+						input
+							//border none
+							//box-sizing border-box
+							color #999
+							font-size 16px
+							//outline none
+							padding 5px
+							width 100%
+							&:focus
+								background aliceblue
+						label
+							color oscuro
+							display block
+							text-align left
+					.nombre
+						margin-right 1%
+				.correo
+				.password
+					//border-bottom 1px solid naranjito
+					// border-top 1px solid naranjito
+					margin 5px 0
+					input
+						//border none
+						//box-sizing border-box
+						color #999
+						//font-size 16px
+						//outline none
+						padding 5px
+						width 100%
+						&:focus
+							background aliceblue
+					label
+						display block
+						color oscuro
+						font-size 13px
+						text-align left
+						//width 28%
+					.condicionPass
+						color oscuro
+						display block
+						font-size 11px
+						font-style italic
+						text-align right
+				.checkbox
+					margin 0 auto
+					width 65%
+					label
+						font-size 13px
+						text-align left
+						width 69%
+					label
+					.checker
+						display inline-block
+						vertical-align top
+						span
+							input
+								height 15px
+								width 15px
+					.checker
+						text-align right
+				.checkboxArriba
+					margin-top 30px
+				.fechaNacimiento
+					h3
+						//font-family 'oswaldregular'
+						font-size 13px
+						margin 0
+						text-align left
+				.srSra
+					display none
+					text-align center
+					.tratoGenero
+						color oscuro
+						display block
+						font-weight 600
+						text-transform uppercase
+					.radioSeleccion
+						display inline-block
+						.top
+							.radio
+							.generoTexto
+								display inline-block
+								font-size 13px
+								vertical-align middle
+			.submit
+				margin 20px auto
+				text-align right
+				width 90%
+				button
+					background rojoAsiste
+					border none
+					border-radius 2px
+					width 30%
+					span
+						color white
+						font-family 'proxima_nova_rgbold'
+						font-weight 100
+						line-height 30px
+				.requerido
+					color red
+					font-size 11px
+	.box
+		margin 0 auto
+		text-align center
+		//width 80%
+		.rodeaAddress
+			margin 0 auto
+			max-width 600px
+			form
+				//border 1px solid colorao
+				//border-radius 5px
+				font-size 16px
+				margin 0 auto
+				width 80%
+				.activaEmpresa
+					background #fbfbfb
+					border 1px solid grisAzul
+					box-sizing border-box
+					//height 22px
+					padding 5px 10px
+					text-align left
+					label
+					.checker
+						display inline-block
+						height 22px
+						vertical-align middle
+					label
+						font-size 13px
+						font-weight 600
+						margin 0 5px 0 0
+						text-align left
+						//width 100%
+					.checker
+						line-height 22px
+						margin 0
+					.esEmpresa
+						display none
+						margin 0
+						padding 5px 0
+						label
+							display block
+							font-size 13px
+							font-weight 600
+							text-align left
+						input
+							background white
+							font-size 14px
+							padding 5px
+							width 100%
+				.addressNombreApellido
+					//border-bottom 1px solid naranjito
+					//border-top 1px solid naranjito
+					margin 5px 0
+					.apellidoDireccion
+					.nombreDireccion
+						display inline-block
+						padding 5px 0
+						vertical-align middle
+						width 49.5%
+						label
+							display block
+							font-size 13px
+							font-weight 600
+							text-align left
+						input
+							//font-size 14px
+							padding 5px
+							width 100%
+				.esAliasDireccion
+				.esCelular
+				.esCiudad
+				.esCorreo
+				.esDireccion
+				.esDireccionDos
+				.esPais
+				.esPassword
+				.esPostcode
+				.esRegion
+				.esRutEmpresa
+				.esTelefono
+					margin 2px 0
+					padding 2px 0
+					label
+						display block
+						font-size 13px
+						font-weight 600
+						text-align left
+					input
+						padding 5px
+						width 100%
+				.esCelular
+				.esTelefono
+					display inline-block
+					vertical-align top
+					width 49.5%
+				.esPais
+					display inline-block
+					vertical-align top
+					width 49.5%
+					.selector
+						width 100% !important
+						span
+							display none
+						select
+							background #fbfbfb
+							border none
+							box-sizing border-box
+							font-size 13px
+							margin 0 auto
+							outline none
+							width 100%
+							&:focus
+								background aliceblue
+							option
+								font-size 13px
+				.esAliasDireccion
+					//float right
+					margin 5px 0
+					//overflow hidden
+					padding 5px 0
+					//width 48%
+				.esAliasDireccion
+				.infoAdicional
+					display inline-block
+					vertical-align top
+					width 49.5%
+				.esRegion
+					display inline-block
+					vertical-align top
+					width 49.5%
+					label
+						margin-bottom 1px
+					.selector
+						height 22px
+						width 100% !important
+						select
+							background #fbfbfb
+							border none
+							box-sizing border-box
+							margin 0 auto
+							outline none
+							width 100%
+							&:focus
+								background aliceblue
+						span
+							display none
+				.esRutEmpresa
+					display none
+					margin 0
+					.Rut
+						display block !important
+				.infoAdicional
+					//border-bottom 1px solid naranjito
+					//float left
+					margin 5px 0
+					padding 5px 0
+					//width 48%
+					label
+						display block
+						font-size 13px
+						font-weight 600
+						text-align left
+						width 100%
+					textarea
+						background #fbfbfb
+						border 1px solid grisAzul
+						box-sizing border-box
+						display block
+						height 34px
+						margin 0 auto
+						outline none
+						width 100%
+						&:focus
+							background aliceblue
+				.submit2
+					display block
+					margin-top 10px
+					text-align right
+					width 100%
+					button
+						border none
+						//border-radius 5px
+						padding 8px 15px
+						//transition .3s
+						&:hover
+							background naranjo
+							span
+								color white
+						span
+							color oscuro
+							font-family 'proxima_nova_rgbold'
+							font-size 18px
+							text-transform uppercase
+
+		.correos
+		.required
+			//color red
+			font-size 13px
+	.contenedorCategoria
+		margin 0 auto
+		max-width 950px
+		h1
+			text-align center
+	.contCarrusel
+		background-color #211915
+		margin 4px auto 0
+		position relative
+		width 100%
+		.contCarruselInt
+			//background #f7f7f8
+			font-size 0
+			height 300px
+			margin 0 auto
+			overflow hidden
+			position relative
+			max-width 950px
+			.carrusel
+				margin 0 auto
+				font-size 18px
+				//margin-right 1.5%
+				overflow hidden
+				width 100%
+				ul
+					margin 0
+					padding 0
+					.homeslider-container
+						position relative
+						&:after
+							background linear-gradient(to right , transparent 50%, #211915)
+							content ''
+							height 100%
+							position absolute
+							right 0
+							top 0
+							width 150px
+						&:before
+							background linear-gradient(to left , transparent 50%, #211915)
+							content ''
+							height 100%
+							left 0
+							position absolute
+							top 0
+							width 150px
+						a
+							.sliderimage
+								background-size cover
+								background-position center center
+								height 300px
+								width 100%
+						.homeslider-description
+							//background rgba(0,0,0, .6)
+							height 300px
+							position absolute
+							top 0
+							right 0
+							width 50%
+							/*&:before
+								border-bottom 150px solid transparent
+								border-left 30px solid rgba(0,0,0, .6)
+								border-top 150px solid transparent
+								bottom 0
+								content ''
+								position absolute
+								left 100%*/
+							.intDescription
+								margin 3em auto 0
+								position relative
+								text-transform uppercase
+								width 80%
+								z-index 2
+								h2
+									//border-bottom 1px solid white
+									color white
+									font-size 1.2em
+									font-style uppercase
+									margin 0 0 5px 0
+									text-align right
+								p
+									color white
+									font-size .9em
+									text-align right
+									.btn
+										background naranjo
+										border none
+										box-sizing border-box
+										color white
+										float right
+										font-family 'proxima_nova_rgbold'
+										padding .8em
+										text-decoration none
+										transition .3s
+										&:hover
+											background rojoAsiste
+								ul
+									margin 0
+									padding 0
+									li
+										color white
+										font-size 15px
+										list-style none
+										text-align right
+										
+			.carrusel
+			.comentariosHome
+				display inline-block
+				vertical-align top
+			.comentariosHome
+				background clarito
+				font-size 18px
+				height 300px
+				//overflow-y scroll
+				text-align center
+				width 25%
+				h4
+					color oscuro
+					font-family 'oswaldregular'
+					font-size 14px
+					font-weight 400
+					margin .3em
+					text-align left
+					text-transform uppercase
+				.contcomment
+					margin 0
+					padding 0
+					position relative
+					// li
+					// 	//border-bottom 1px solid oscuro
+					// 	border-top 1px solid #999
+					// 	list-style none
+					// 	margin 0
+					// 	overflow hidden
+					// 	padding .5em 0
+					// 	width 100%
+					// 	&:hover
+					// 		background oscuro
+					// 		.contComentariosHome
+					// 			a
+					// 			span
+					// 				color white
+					// 	figure
+					// 		margin 0 0 0 4px
+					// 		float left
+					// 		width 45px
+					// 		a
+					// 			img
+					// 				//border 4px solid naranjito
+					// 				//border-radius 50%
+					// 				width 100%
+					// 	figure
+					// 	.contComentariosHome
+					// 		display inline-block
+					// 		vertical-align top
+					// 	.contComentariosHome
+					// 		float left
+					// 		margin-left 18px
+					// 		max-width 55%
+					// 		a
+					// 			color oscuro
+					// 			margin 0
+					// 			text-decoration none
+					// 			p
+					// 				font-weight 700
+					// 				margin 0
+					// 				text-align left
+					// 		a
+					// 		span
+					// 			margin 0
+					// 			font-size 11px
+					// 		span
+					// 			p
+					// 				font-weight 100
+					// 				text-align left
+					ul
+						margin 0
+						padding 0
+						li
+							//border-bottom 1px solid oscuro
+							border-top 1px solid #999
+							list-style none
+							margin 0
+							overflow hidden
+							padding .5em 0
+							width 100%
+							&:hover
+								background oscuro
+								.contComentariosHome
+									a
+									span
+										color white
+							figure
+								margin 0 0 0 4px
+								float left
+								width 45px
+								a
+									img
+										border 2px solid #aeadb3
+										//border-radius 50%
+										width 100%
+							figure
+							.contComentariosHome
+								display inline-block
+								vertical-align top
+							.contComentariosHome
+								float left
+								margin-left 18px
+								max-width 65%
+								a
+									color oscuro
+									margin 0
+									text-decoration none
+									p
+										font-family 'oswaldregular'
+										font-size 13px
+										margin 0
+										text-align left
+										text-transform uppercase
+								a
+								span
+									margin 0
+								span
+									p
+										font-family 'oswaldlight'
+										font-size 13px
+										font-weight 100
+										margin 5px 0
+										text-align left
+
+
+	.direcciones
+		margin 0 auto
+		//width 80%
+		max-width 950px
+		h1
+			font-weight 600
+			text-align center
+		.recomendacion
+			background clarito
+			border 1px solid #999
+			border-radius 3px
+			box-sizing border-box
+			font-size 16px
+			font-weight 100
+			padding 18px 3%
+			width 100%
+		.addresses
+			.listaDireccion
+				.contenedorListaDireccion
+					ul
+						li
+							.botonDireccion
+								background calipso
+								display inline-block
+								font-size 0
+								margin 0
+								position relative
+								text-decoration none
+								transition .3s
+								width 50%
+								&:hover
+									background naranjito
+								span
+									color white
+									font-size 13px
+									line-height 30px
+									.remove
+										&:before
+											color white
+											content '\e6fd'
+											font-family 'icos'
+											font-size 13px
+											position absolute
+											right 5px
+											top 0
+									.update
+										&:before
+											color white
+											content '\e666'
+											font-family 'icos'
+											font-size 15px
+											left 5px
+											position absolute
+											top 0
+						.address_update
+							margin-top 18px
+			.p-indent
+				color naranjo
+				font-size 13px
+				margin 0
+				text-align center
+			.tituloDirecciones
+				font-weight 500
+				margin 0
+				text-align center
+				text-transform uppercase
+		.agregarNueva
+			background azulAsiste
+			border-radius 2px
+			line-height 30px
+			margin 30px auto
+			text-align center
+			width 300px
+			a
+				text-decoration none
+				span
+					color white
+					font-family 'proxima_nova_rgbold'
+			&:hover
+				background grisAzul
+		.volver
+			margin 0
+			padding 0
+			text-align center
+			li
+				border-radius 5px
+				display inline-block
+				list-style none
+				text-align center
+				width 200px
+				a
+					display block
+					text-decoration none
+					span
+						color white
+				.volverCuenta
+				.volverHome
+					background oscuro
+					line-height 40px
+
+	.formCarrito
+		margin 0 auto
+		max-width 950px
+		h1
+			text-align center
+		.algoAndaMal
+		.carritoVacio
+			background naranjo
+			border 1px solid red
+			color white
+			margin 18px auto 0
+			padding 12px 0
+			text-align center
+			width 80%
+			max-width 1150px
+		.cart_last_product
+			display none
+		.detalleProducto
+			margin 25px auto 10px
+			//width 80%
+
+		.formRodea
+			margin 0 auto
+			text-align center
+			//width 80%
+		.listaCompra
+			//background #dddce0
+			font-size 0
+			margin 18px auto
+			padding 0
+			//width 80%
+			//max-width 1150px
+			li
+				display inline-block
+				font-family 'proxima_nova_rgbold'
+				font-weight 100
+				//height 30px
+				list-style none
+				text-align center
+				width 20%
+				span
+					font-size 16px
+					line-height 30px
+					text-align center
+					em
+						display none
+			.last
+				border-radius 0 2px 2px 0
+			.first
+				border-radius 2px 0 0 2px
+			.step_current
+				border-bottom 2px solid rojoAsiste
+				border-top 2px solid rojoAsiste
+				color oscuro
+				position relative
+			.step_done
+				//background white
+				border-bottom 2px solid clarito
+				border-top 2px solid clarito
+				font-size 16px
+				line-height 30px
+				text-align center
+				a
+					color clarito
+					text-decoration none
+				em
+					display none
+				&:hover
+					a
+						color #d3d3d3
+			.step_todo
+				//background #dddce0
+				border-bottom 2px solid clarito
+				border-top 2px solid clarito
+				color #ddd
+		.heading-counter
+			//background naranjo
+			//border-radius 5px
+			color otroGris
+			display block
+			font-family 'proxima_nova_rgregular'
+			font-size 13px
+			font-weight 100
+			line-height 25px
+			margin 0
+			text-align left
+			//width 400px
+
+		.listaDireccion
+			display none
+			margin 28px auto 0
+			text-align center
+			width 100%
+			.contenedorListaDireccion
+				border 1px solid #999
+				border-radius 3px
+				display inline-block
+				margin 0
+				width 49%
+				ul
+					//background clarito
+					margin 0
+					padding 0
+					width 100%
+					li
+						border-bottom .5px solid clarito
+						color oscuro
+						display block
+						list-style none
+						margin 0 auto
+						text-align center
+						//width 300px
+						width 100%
+						h3
+							background oscuro
+							border-bottom 1px solid #999
+							color clarito
+							font-family 'proxima_nova_rgbold'
+							font-size 18px
+							font-weight 100
+							line-height 50px
+							margin 0
+							//text-align center
+							text-transform uppercase
+
+						span
+							//display inline-block
+							font-family 'proxima_nova_rgregular'
+							font-size 13px
+							text-transform uppercase
+		// aca estaba el navegador
+		.orderAddress
+			.addresses
+				margin 0 auto
+				width 80%
+				.contenedorAddresses
+					margin 18px 1% 0 0
+					//width 49%
+					.selccionDireccion
+						text-align center
+						.selector1
+							text-align left
+							.agregarNueva
+								//background naranjito
+								//border-radius 5px
+								display none
+								//line-height 60px
+								margin 0
+								text-align right
+								//width 300px
+								a
+									text-decoration none
+									span
+										color otroGris
+										font-family 'proxima_nova_rgregular'
+										font-size 13px
+									&:hover
+										span
+											color rojoAsiste
+							.checkboxSelecciona
+								background clarito
+								margin 1em 0 0 0
+								text-align center
+								&:hover
+									background oscuro
+									label
+										color white
+								label
+									font-size 13px
+								label
+								.checker
+									display inline-block
+									vertical-align middle
+								.checker
+									width 13px
+									input
+										height 15px
+							.eligeDireccion
+								//background colorao
+								border-radius 5px
+								color oscuro
+								display block
+								font-family 'proxima_nova_rgregular'
+								font-size 15px
+								line-height 40px
+								//margin 0 auto 10px
+								//width 300px
+							.eligeDireccion
+							.selector
+								display inline-block
+								vertical-align middle
+							.selector
+								margin 0 auto
+								width 200px !important
+								span
+									display none
+								select
+									//border-radius 5px
+									display block
+									font-size 13px
+									margin 0 auto
+									width 100%
+							.selccionOtraDireccion
+								.select
+									text-align right
+									a
+										text-decoration none
+										span
+											color otroGris
+											font-family 'proxima_nova_rgregular'
+											font-size 13px
+										&:hover
+											span
+												color rojoAsiste
+									label
+										font-family 'proxima_nova_rgregular'
+										font-size 15px
+					.listaDireccion
+						display block
+						margin 5px 0 0 0
+						//padding-top 10px
+						width 100%
+						.contenedorListaDireccion
+							border none
+							//margin-left 10%
+							width 100%
+							ul
+								background white
+								border 1px solid #dddce0
+								//margin-top 10px
+								li
+									background white
+									display block
+									padding 0 5%
+									text-align left
+									text-transform capitalize
+									width 89%
+								.address_title
+									h3
+										background white
+										color oscuro
+										font-size 15px
+										font-weight 100
+										line-height 26px
+										text-align left
+							.alternate_item
+								li
+									display none !important
+								.address_address1
+								.address_title
+									display block !important
+				.contenedorAddresses
+				.quieresAgregaComentario
+					display inline-block
+					vertical-align top
+					width 49%
+				.quieresAgregaComentario
+					margin-top 69px
+					p
+						background clarito
+						color oscuro
+						cursor pointer
+						font-size 13px
+						font-weight 400
+						line-height 26px
+						margin 32px 0 0 0
+						padding 0 5%
+						&:hover
+							background oscuro
+							color white
+					.agregaComentario
+						display none
+						margin-top 15px
+						label
+							display block
+							font-size 12px
+							text-align left
+						textarea
+							border 1px solid #dddce0
+							box-sizing border-box
+							height 93px
+							width 100%
+			//aca estaba el navegador
+
+	.micuenta
+		margin 0 auto
+		max-width 950px
+		h1
+			text-align center
+		.info-account
+			font-family 'proxima_nova_rgregular'
+			font-size 13px
+			//font-style italic
+			font-weight 100
+			margin 0 0 25px
+			text-align left
+		.rodeaListaDirecciones
+			margin-bottom 80px
+			.listaDirecciones
+				//display inline-block
+				//vertical-align top
+				width 49%
+				ul
+					margin 0
+					padding 0
+					width 100%
+					li
+						//border 1px solid #999
+						//display inline-block
+						font-size 0
+						list-style none
+						margin 5px 0
+						//width 49%
+						a
+							//background clarito
+							border-radius 35px 2px 2px 35px
+							display block
+							//font-family 'oswaldregular'
+							//font-weight 100
+							position relative
+							text-align left
+							text-decoration none
+							// &:hover
+							// 	background oscuro
+							// 	span
+							// 		color clarito
+							&:hover
+								span
+									color azulAsiste
+									text-decoration underline
+							span
+								color oscuro
+								font-size 18px
+								line-height 40px
+								margin-left 50px
+								transition .3s
+							.icon-ban-circle
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
+								&:before
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
+									content '\e631'
+									display block
+									font-family 'icos'
+									font-size 18px
+									height 100%
+									left 0
+									line-height 34px
+									//position absolute
+									//width 35px
+							.icon-building
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
+								&:before
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
+									content '\e642'
+									display block
+									font-family 'icos'
+									font-size 18px
+									height 100%
+									left 0
+									line-height 34px
+									//position absolute
+									//dth 35px
+							.icon-list-ol
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
+								&:before
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
+									content '\e6b6'
+									display block
+									font-family 'icos'
+									font-size 18px
+									height 100%
+									left 0
+									line-height 34px
+									//position absolute
+									//width 35px
+							.icon-user
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
+								&:before
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
+									content '\e670'
+									display block
+									font-family 'icos'
+									font-size 18px
+									height 100%
+									left 0
+									line-height 34px
+									//position absolute
+									//width 35px
+			.listaregalo
+				//display inline-block
+				margin 0
+				//vertical-align top
+				width 49%
+				ul
+					margin 0
+					padding 0
+					li
+						//border 1px solid #999
+						border-radius 3px
+						//display inline-block
+						list-style none
+						margin 5px 0
+						width 100%
+						a
+							//background clarito
+							color oscuro
+							display block
+							//font-weight 100
+							line-height 40px
+							position relative
+							text-align left
+							text-decoration none
+							&:hover
+								span
+							 		color azulAsiste
+									text-decoration underline
+							// 	span
+							// 		color clarito
+							.icon-barcode
+								&:before
+									content '\e631'
+							.icon-barcode
+							.icon-heart
+								background clarito
+								border-radius 20%
+								border 2px solid azulAsiste
+								height 35px
+								position absolute
+								text-align center
+								width 35px
+								&:before
+									//border-right 1px solid #999
+									//border-radius 50%
+									color azulAsiste
+									display block
+									font-family 'icos'
+									font-size 18px
+									height 35px
+									left 0
+									line-height 40px
+									position absolute
+									width 35px
+							.icon-heart
+								&:before
+									content '\e6d1'
+							span
+								color oscuro
+								font-size 18px
+								margin-left 50px
+								transition .3s
+
+		.volverHome
+			margin 18px 0 0 0
+			padding 0
+			li
+				border 1px solid #999
+				border-radius 3px
+				list-style none
+				margin 0
+				padding 0
+				width 49%
+				a
+					background clarito
+					display block
+					position relative
+					text-align center
+					text-decoration none
+					&:hover
+						background oscuro
+						span
+							color clarito
+					span
+						color oscuro
+						font-size 18px
+						line-height 40px
+						transition .3s
+					.icon-chevron-left
+						&:before
+							border-right 1px solid #999
+							color colorao
+							content '\e726'
+							display block
+							font-family 'icos'
+							font-size 18px
+							height 100%
+							left 0
+							line-height 40px
+							position absolute
+							width 35px
+	.popularesMasVendidos
+		margin 0 auto
+		max-width 950px
+		div
+			//font-size 0
+			ul
+				margin 0 auto
+				padding 0
+				width 100%
+				li
+					display inline-block
+					list-style none
+					text-align center
+					vertical-align top
+					width 100%
+			.menuProductosHome
+				//background naranjito
+				margin 1em auto 2em
+				li
+					// background linear-gradient(45deg , naranjito 50%, naranjo) !important
+					// background naranjito
+					border-bottom 4px solid clarito
+					//border-top 2px solid naranjito
+					display block
+					height 30px
+					margin 0 auto
+					position relative
+					width 100%
+					a
+						color white
+						display block
+						font-family 'proxima_nova_rgbold'
+						font-size 22px
+						//font-weight 600
+						line-height 40px
+						text-decoration none
+						text-align center
+						width 100%
+					p
+						//background naranjito
+						//border 1px dashed white
+						color oscuro
+						display block
+						font-family 'proxima_nova_rgbold'
+						font-size 20px
+						//font-weight 600
+						//left 50%
+						//letter-spacing 2px
+						line-height 30px
+						margin 0 auto
+						position relative
+						text-align left
+						text-decoration none
+						text-transform uppercase
+						//top 25px
+						//width 50%
+					.blockbestsellers
+						text-align center
+						//color naranjito
+						// &:after
+						// 	content '\e6ff'
+						// 	display block
+						// 	font-family 'icos'
+						// 	font-size 25px
+						// 	font-weight 100
+						// 	line-height 40px
+						// 	position absolute
+						// 	right 25%
+						// 	text-align center
+						// 	top 0
+						// 	width 25px
+					.homefeatured
+						color calipso
+						&:before
+							content '\e6ce'
+							display block
+							font-family 'icos'
+							font-size 25px
+							font-weight 100
+							left 25%
+							line-height 40px
+							position absolute
+							text-align center
+							top 0
+							width 25px
+				.active
+					//display inline-block
+					vertical-align middle
+					a
+						//color white
+						display block
+						font-size 22px
+						font-weight 400
+						line-height 40px
+						text-decoration none
+						//text-transform uppercase
+						width 100%
+					.blockbestsellers
+						//background naranjito
+						text-align center
+					.homefeatured
+						background calipso
+
+			.tab-content
+				//display none
+				margin 0 auto
+				// .product-listContenedor
+				// 	width 100%
+				.listaProducto
+					display none
+
+				.active
+					display block
+				.homePopulares
+					li
+						font-size 18px
+						&:hover
+							.añadeCarrituHome
+								opacity 1
+							.contenedorPopular
+								.right-block
+									h2
+										width 100%
+									.precios
+										.descuento
+										.precioAnterior
+										.precio
+											opacity 1
+
+					.productosVacios
+						display none
+						width 100%
+	.productoPag
+		border-top 4px solid rojoAsiste
+		margin 0 auto
+		padding 10px
+		max-width 950px
+		.productoFoto
+			font-size 0
+			margin 2em auto
+			width 100%
+			.contenedorProductoFoto
+				position relative
+				.descripcion
+					//background rgba(cafoso, .6)
+					margin-left 1.001%
+					max-height 300px
+					padding 0
+					position relative
+					width 67%
+					h1
+						color oscuro
+						font-family 'proxima_nova_rgbold'
+						font-size 24px
+						font-weight 100
+						margin 10px 0
+						padding 0 5px 0 15px
+						text-align left
+					.carroDecripcion
+						//background clarito
+						//height 300px
+						padding-left 16px
+						//position absolute
+						//right 0
+						//top 0
+						width 100%
+						form
+							font-size 16px
+							position relative
+							.box-info-product
+								height 100%
+								.content_prices
+									//position absolute
+									//top 0
+									width 100%
+									.price
+										font-size 16px
+										padding 10px 0
+										position relative
+										.box-cart-bottom
+											display inline-block
+											margin-left 19%
+											/*position absolute
+											top 135px*/
+											vertical-align middle
+											width 40%
+											div
+												.agregaCarrito
+													display block
+													margin 0
+													button
+														background rojoAsiste
+														border none
+														//border-radius 5px
+														display block
+														line-height 50px
+														margin 0
+														position relative
+														text-align center
+														width 100%
+														/*&:before
+															//background naranjito
+															color white
+															content "\e636"
+															font-family 'icos'
+															font-size 1.5em
+															font-weight 100
+															left 0
+															line-height 52px
+															position absolute
+															top 0
+															width 45px*/
+														span
+															color white
+															display block
+															font-family 'proxima_nova_rgbold'
+															font-size 20px
+															//margin-left 49px
+															//text-align left
+											.buttons_bottom_block
+												height 50px
+												a
+													//background oscuro
+													border 1px solid #aeadb3
+													//border-radius 5px
+													color white
+													display block
+													font-size 15px
+													height 30px
+													margin 0 auto
+													position relative
+													text-align center
+													text-decoration none
+													width 80%
+													&:before
+														color #aeadb3
+														content "\e606"
+														font-family 'icos'
+														font-size 18px
+														font-weight 100
+														left 0
+														line-height 30px
+														position absolute
+														text-align center
+														top 0
+														width 40px
+													span
+														color #aeadb3
+														display block
+														font-family 'oswaldregular'
+														font-size 14px
+														//margin-left 55px
+														padding 5px
+														text-align right
+														width 90%
+										.precioActual
+											//background rojoAsiste
+											//border-radius 2px
+											display inline-block
+											line-height 50px
+											margin 0
+											position relative
+											text-align left
+											vertical-align middle
+											width 40%
+											span
+												color rojoAsiste
+												font-family 'proxima_nova_rgbold'
+												font-size 30px
+												font-weight 100
+												//padding-right 20px
+											.textChico
+												color oscuro
+												font-family 'proxima_nova_rgbold'
+												font-size 13px
+								.cantidad
+									border-bottom 2px solid #ddd
+									border-top 2px solid #ddd
+									font-size 15px
+									margin 0 auto
+									padding 8px 0
+									text-align center
+									width 100%
+									label
+										display block
+										margin-top 18px
+										text-align center
+									.contieneCantidad
+										display block !important
+										//height 31px
+										margin 0
+										position relative
+										text-align left
+										width 180px
+										input
+											border none
+											//border-radius 5px
+											bottom 0
+											box-sizing border-box
+											color rojoAsiste
+											font-family 'proxima_nova_rgbold'
+											font-size 20px !important
+											height 40px
+											left 0
+											padding 10px
+											//position absolute
+											text-align right
+											width 155px
+										.product_quantity_down
+										.product_quantity_up
+											background oscuro
+											//border-radius 5px
+											display block
+											height 17px
+											overflow hidden
+											position absolute
+											text-align center
+											width 17px
+										.product_quantity_down
+											bottom 0
+											right 0
+											&:before
+												bottom 2px
+												color white
+												content '\e701'
+												font-family 'icos'
+												font-size 12px
+												left 0
+												position absolute
+												//text-align center
+												width 100%
+										.product_quantity_up
+											top 0
+											right 0
+											&:before
+												color white
+												content '\e702'
+												font-family 'icos'
+												font-size 12px
+												left 0
+												position absolute
+												//text-align center
+												top 2px
+												width 100%
+								
+						.pay
+							bottom -122px
+							left 5px
+							position absolute
+					.topDescripcion
+						background clarito
+						border 2px solid #ddd
+						//padding-left 1em
+						padding-left 5px
+						position relative
+						.linksDescripcion
+							//background grisClaro1
+							//bottom 0
+							display inline-block
+							height 100%
+							line-height 20px
+							margin 0
+							padding 0
+							position absolute
+							right 0
+							text-align right
+							vertical-align top
+							//width 30%
+							li
+								background #ddd
+								//border 1px solid rgb(174, 173, 179)
+								display inline-block
+								font-size 13px
+								list-style none
+								padding .5em 3px
+								//width 100px
+								&:hover
+									background oscuro
+									a
+										color white
+								a
+									color oscuro
+									display block
+									font-family 'proxima_nova_rgbold'
+									padding 0 3px
+									text-decoration none
+							
+						.referencias
+							display inline-block
+							vertical-align top
+							width 60%
+							.commentsValorizacion
+								font-size 0
+								margin-right 5px
+								text-align right
+								span
+									font-family 'proxima_nova_rgbold'
+									font-size 13px
+								span
+								.star_content
+									display inline-block
+									line-height 18px
+									vertical-align middle
+								.star_content
+									margin-top 4px
+							.commentsValorizacion							
+							.referencia
+								display inline-block
+								vertical-align top
+								width 47%
+							.referencia
+								label
+								span
+									color oscuro
+									font-size 13px
+									line-height 28px
+									margin 0
+								label
+									font-family 'proxima_nova_rgbold'
+								span
+									font-family 'proxima_nova_rgregular'
+									
+					.linkComentario
+						bottom 40px
+						display block
+						position absolute
+						width 100%
+						.comments_note
+							span
+								color oscuro
+								font-size 11px
+						.comments_advices
+							margin 0
+							padding 0
+							li
+								font-size 15px
+								list-style none
+								a
+									color oscuro
+					
+					.referencia
+						margin-top 3px
+					.socialsharing_product
+						//bottom -35px
+						display none
+						//float right
+						left 0
+						margin 0
+						//position absolute
+						text-align right
+						width 100%
+						button
+							background transparent
+							//border 2px solid white
+							//border-radius 50%
+							height 25px
+							font-size 0
+							margin-right 2px
+							padding 0
+							width 25px
+					// .socialsharing_product
+					// .stock
+					// 	display inline-block
+					// 	position absolute
+					.stock
+						background clarito
+						border 1px solid white
+						border-radius 3px
+						color oscuro
+						//display block
+						//float left
+						font-family 'proxima_nova_rgregular'
+						font-size 10px
+						margin-left 15px
+						padding 2px
+						text-align justify
+						width 150px
+					.textoDescripcion
+						margin 0
+						padding 0 5px 0 15px
+						.rodeaTexto
+							p
+								color oscuro
+								font-family 'proxima_nova_rgregular'
+								font-size 15px
+				.contenedorImagenes
+				.descripcion
+					display inline-block
+					vertical-align top
+				.contenedorImagenes
+					width 32%
+					max-width 300px
+					.imagenGrande
+						border 1px solid clarito
+						//height 350px
+						margin-right 2%
+						//overflow hidden
+						position relative
+						width 100%
+						.contenedorImagen
+							cursor pointer
+							display block
+							overflow hidden
+							position relative
+							text-align center
+							width 100%
+							&:hover
+								.quick-view
+									opacity 1
+							img
+								width 100%
+			.muestraChica
+				overflow hidden
+				width 100%
+				.rodeaMuestraChica
+					ul
+						display block
+						margin 16px 0
+						padding 0
+						text-align left
+						width 100% !important
+						li
+							border 1px solid clarito
+							border-radius 5px
+							display inline-block
+							//float right
+							height 70px
+							margin-right 4px
+							width 70px
+							a
+								img
+									height 70px
+									width 70px
+		.fichaTecnica
+			margin-top 36px
+			h3
+				color white
+				font-weight 500
+				line-height 33px
+				margin 0
+				position relative
+				&:after
+					color white
+					content '\e74a'
+					font-family 'icos'
+					font-size 27px
+					font-weight 100
+					margin-left 13px
+					position absolute
+					top 1px
+			table
+				border-spacing 0
+				border-collapse collapse
+				margin 0 auto
+				width 80%
+				max-width 1150px
+				tbody
+					box-sizing border-box
+					border 1px solid clarito
+					tr
+						td
+							line-height 40px
+							padding-left 18px
+							&:nth-child(1)
+								width 30%
+					.even
+						td
+							&:nth-child(odd)
+								background clarito
+					.odd
+						td
+							&:nth-child(even)
+								background clarito
+		.reseñaComentario
+			margin 34px auto 0
+			.homeTab
+				.main
+					background calipso
+			h3
+				color white
+				font-weight 500
+				margin 0
+				padding 4px 0
+				text-align center
+				&:after
+					content '\e66d'
+					font-family 'icos'
+					font-size 27px
+					color white
+					margin-left 13px
+					font-weight 100
+			.contenedorComentario
+				margin 0 auto
+				width 80%
+				max-width 1150px
+				.contenedorInternoComentario
+					p
+						a
+							background naranjo
+							border-radius 5px
+							display block
+							line-height 50px
+							margin 0 auto
+							text-decoration none
+							width 300px
+							span
+								color white
+								font-size 16px
+								font-weight 100
+					.comentario
+						border 1px solid clarito
+						border-radius 5px
+						margin-bottom 18px
+						padding 4px 0
+						.detalleComentario
+							margin-left 4%
+							width 65%
+							.comentarioTitulo
+								color oscuro
+								display block
+								margin 0
+								text-align left
+								strong
+									text-transform uppercase
+						.detalleComentario
+						.usuarioInfo
+							display inline-block
+							vertical-align middle
+						.teSirvio
+							ul
+								margin 0
+								padding 0
+								li
+									display inline-block
+									font-size 13px
+									list-style none
+									button
+										border none
+										background transparent
+										margin 0
+									.like
+									.nolike
+										span
+											font-size 0
+									.like
+										&:before
+											color naranjito
+											content '\e6d4'
+											font-family 'icos'
+											font-size 18px
+									.nolike
+										&:before
+											color naranjito
+											content '\e6d5'
+											font-family 'icos'
+											font-size 18px
+									.report_btn
+										//background red
+										border-radius 5px
+										color red
+										cursor pointer
+										display block
+										margin-left 18px
+										padding 0 4px
+						.usuarioInfo
+							border 2px solid naranjito
+							border-radius 50%
+							//display block
+							height 100px
+							transition .5s
+							width 100px
+							&:hover
+								background oscuro
+								border 2px solid oscuro
+								.comment_author_infos
+									color white
+							.comment_author_infos
+								font-size 13px
+								strong
+									display block
+									margin-top 15px
+									text-transform uppercase
+								em
+									font-size 13px
+							//.star_content
+		.reseñaComentario
+		.reseñaInfo
+			text-align center
+
+		.reseñaInfo
+			margin-top 18px
+			.homeTab
+				.main
+					background rgba(251, 224, 152, 1)
+					h3
+						color oscuro
+						font-weight 500
+						margin 0 auto
+						padding 4px 0
+						text-align center
+						width 80%
+						max-width 1150px
+						&:after
+							content '\e641'
+							font-family 'icos'
+							font-size 27px
+							color oscuro
+							margin-left 13px
+							font-weight 100
+			.rte
+				margin 0 auto
+				width 80%
+				max-width 1150px
+				p
+					text-align left
+
+
+
+h1
+	color oscuro
+	text-align center
+	span
+		display block
+		
+hr
+	display none
+
+table
+	font-size 15px
+	width 100%
+	thead
+		background oscuro
+		border-bottom 1px solid rojoAsiste
+		font-family 'proxima_nova_rgbold'
+		font-size 13px
+		tr
+			border-radius 2px
+			th
+				color white
+				//border-right 1px solid clarito
+				//font-weight 100
+				//font-weight 400
+				line-height 30px
+				text-transform uppercase
+				&:last-child
+					border-right none
+	tbody
+		tr
+			//height 100px
+			td
+				border-bottom 2px solid clarito
+				//height 100px
+				padding 0
+				text-align center
+				a
+					img
+						height 100px
+						width 100px
+			.cart_avail
+				span
+					background colorao
+					color white
+					display block
+					line-height 100px
+			.cart_delete
+				width 40px
+				div
+					display block
+					height 105px
+					position relative
+					width 40px
+					a
+						display block
+						width 40px
+						&:after
+							color rojoAsiste
+							content '\e6fa'
+							display block
+							font-family 'icos'
+							font-size 18px
+							height 100%
+							line-height 105px
+							position absolute
+							right 0
+							top 0
+							width 40px
+			.cart_description
+				padding 0 10px
+				text-align left
+				&:hover
+					a
+						text-decoration underline
+				p
+					margin 2px 0
+					a
+						color oscuro
+						text-decoration none
+				small
+					display block
+					font-style italic
+					max-width 350px
+					a
+						color oscuro
+						text-decoration none
+				.product-name
+					font-family 'proxima_nova_rgbold'
+					font-size 16px
+					font-weight 100
+					max-width 350px
+			.cart_product
+				padding 0 20px
+				width 100px
+			.cart_total
+				span
+					font-family 'proxima_nova_rgbold'
+					font-weight 600
+			.cart_quantity
+				font-family 'proxima_nova_rgbold'
+				font-weight 100
+				input
+					box-sizing border-box
+					padding 3px 5px
+			.cart_unit
+				font-family 'proxima_nova_rgbold'
+				.price
+					.special-price
+						display none
+					.price-percent-reduction
+						float right
+						margin-right 15px
+	tfoot
+		tr
+			text-align right
+			td
+				background white
+				border none
+				padding 5px
+			.cart_voucher
+				form
+					//background edeef0
+					border 1px solid clarito
+					padding 5px
+					fieldset
+						padding 0
+						button
+							background rojoAsiste
+							border none
+							height 22px
+							line-height 22px
+							text-align center
+							span
+								color white
+								line-height 22px
+						h4
+							color rojoAsiste
+							margin 0 5px
+							padding 0
+							text-transform uppercase
+						button
+						h4
+						input
+							display inline-block
+							vertical-align middle
+			.cart_voucher
+			.precioTotal
+			.textoTotal
+				background white
+				border none
+				margin 0
+			.conIva
+			.delivery
+			.textTotal
+			.textoTotal
+			.transporte
+				font-family 'proxima_nova_rgregular'
+				font-size 13px
+			.precioTotal
+				border-bottom 2px solid rojoAsiste
+				span
+					color rojoAsiste
+					font-family 'proxima_nova_rgbold'
+					font-size 30px
+					font-weight 100
+					text-transform uppercase
+			.price
+				font-family 'proxima_nova_rgbold'
+				//font-weight 600
+		.cart_total_delivery
+			.text-right
+				font-family 'proxima_nova_rgregular'
+				font-size 13px	
+		.cart_total_price
+			.priceFinal
+				border-bottom 2px solid rojoAsiste
+				span
+					color rojoAsiste
+					font-family 'proxima_nova_rgbold'
+					font-size 30px
+					font-weight 100
+					text-transform uppercase
+		.cart_total_voucher
+			text-align right
+			.price-discount
+				color colorao
+				font-weight 600
+				text-transform uppercase
+			// .price-discount
+			// .text-right
+			// 	display inline-block
+
+td
+	.sale-box
+		display none
+
+.adjuntos
+	display inline-block
+	margin-left 8%
+	margin-top 25px
+	vertical-align top
+	width 24%
+	h3
+		border 1px solid transparent
+		border-bottom 2px solid clarito
+		color oscuro
+		font-family 'proxima_nova_rgbold'
+		font-size 20px
+		font-weight 100
+		line-height 40px
+		margin 0
+		padding 5px 10px 0 10px
+		text-transform uppercase
+	.col-lg-4
+		border 1px solid clarito
+		h4
+			//background naranjito
+			//border-radius 5px
+			margin 0
+			position relative
+			text-align left
+			width 100%
+			a
+				color oscuro
+				display block
+				font-family 'proxima_nova_rgregular'
+				font-size 18px
+				font-weight 400
+				line-height 50px
+				margin 0 0 0 5%
+				text-decoration none
+				width 95%
+			&:after
+				color rojoAsiste
+				content '\e65e'
+				font-family 'icos'
+				font-size 22px
+				font-weight 100
+				position absolute
+				right 20px
+				top 12px
+			&:hover
+				background rojoAsiste
+				a
+					color white
+				&:after
+					color white
+		p
+			display none
+			font-family 'oswaldlight'
+			font-size 11px
+			margin 0 0 0 5%
+			width 95%
+	
+.ac_results
+	background white
+	border 1px solid clarito
+	border-radius 0 0 5px 5px
+	margin-top 2px
+	z-index 10000000000000000000
+	ul
+		margin 0
+		padding 0
+		li
+			cursor pointer
+			list-style none
+			font-size 13px
+			//margin 0 0 0 5px
+			margin 0
+			padding 3px
+			&:hover
+				background oscuro
+				color naranjito
+
+.accedeCuentaChica
+	background white
+	border 2px solid clarito
+	display none
+	margin-left -100px
+	padding 10px
+	position relative
+	z-index 1
+	form
+		width 100%
+		.form_content
+			.form-group
+				padding 5px 0
+				label
+					display block
+					font-size 13px
+					text-align left
+					width 100%
+				input
+					border-radius 2px
+					display block
+					font-size 15px
+					width 100%
+					&:focus
+						background aliceblue
+			.emailLogin
+				// border-top 1px solid naranjito
+				font-family 'proxima_nova_rgbold'
+			.passwordLogin
+				// border-top 1px solid naranjito
+				//border-bottom 1px solid naranjito
+				font-family 'proxima_nova_rgbold'
+			.linkCreaCuenta
+				background rojoAsiste
+				border-radius 2px
+				color white
+				display block
+				font-family 'proxima_nova_rgbold'
+				font-size 15px
+				line-height 30px
+				margin 0
+				text-decoration none
+				&:hover
+					text-decoration underline
+			.lost_password
+				font-size 12px
+				margin 14px 0 0 0
+				a
+					color oscuro
+					font-weight 100
+					text-decoration none
+					&:hover
+						text-decoration underline
+			.submit
+				margin 10px 0 0 0
+				text-align right
+				button
+					background transparent
+					border 1px solid clarito
+					border-radius 2px
+					color oscuro
+					width 100%
+					&:hover
+						background azulAsiste
+						color white
+					span
+						font-family 'proxima_nova_rgbold'
+						font-size 15px
+						line-height 30px
+				input
+					display block
+					width 100%
+
+.accesorios
+	margin-top 20px
+	.relacionados
+		border-bottom 4px solid clarito
+		display block
+		h3
+			color naranjo
+			font-family 'oswaldregular'
+			font-size 20px
+			font-weight 400
+			margin 0
+			text-align left
+			text-transform uppercase
+				
+.active
+	display block
+
+.activo
+	display block !important
+
+.adresses_bloc
+	.row
+		.col-xs-12
+			display inline-block
+			vertical-align top
+			width 49%
+			ul
+				margin 0
+				padding 5px 2%
+				width 98%
+				li
+					list-style none
+					margin 0
+					padding 0
+					text-align left
+					h3
+						font-weight 100
+						margin 0
+						text-align left
+
+.alertClica
+	color #999
+	font-family 'proxima_nova_rgbold'
+	font-size 15px
+	margin 20px 0
+	text-align center
+
+.alert-warning
+	border 2px solid colorao
+	box-sizing border-box
+	color colorao
+	font-size 13px
+	margin 25px auto
+	padding 5px 15px
+	text-align center
+	width 300px
+
+.alert-danger
+	background colorao
+	border-radius 5px
+	margin 16px auto
+	padding 5px 0
+	width 80%
+	p
+		color white
+		display none
+		text-align center
+	ol
+		margin 0
+		padding 0
+		li
+			color white
+			text-align center
+	.lnk
+		background naranjito
+		border-radius 5px
+		display block
+		margin 16px auto
+		width 100px
+		a
+			color white
+.alert-success
+	background naranjito
+	border-radius 5px
+	color white
+	margin 16px auto 0
+	padding 5px 0
+	text-align center
+	width 80%
+.alerta
+	color white
+	ol
+		background naranjito
+		border-radius 5px
+		margin 0
+		padding 4px
+		li
+			font-size 15px
+			list-style none
+			
+.añadeCarrituHome
+	//background azulAsiste
+	background #ff4c00
+	//border-radius 50%
+	//bottom 0
+	bottom -44px
+	cursor pointer
+	//font-size 13px
+	//float right
+	right -46px
+	height 90px
+	//margin-left -27px
+	opacity 0
+	position absolute
+	transition .4s
+	transform rotate(45deg)
+	width 90px
+	z-index 1
+	a
+		display block
+		height 90px
+		text-decoration none
+		width 90px
+		span
+			&:before
+				bottom 35px
+				color white
+				content '\e636'
+				display block
+				font-family 'icos'
+				font-size 20px
+				left 5px
+				//line-height 66px
+				position absolute
+				text-align center
+				transform rotate(-45deg)
+				width 25px
+	.carritoVacio
+		&:before
+			color white
+			content '\e688'
+			display block
+			font-family 'icos'
+			font-size 20px
+			line-height 45px
+			text-align center
+			width 45px
+	.carritoBoton
+		color red
+		font-family 'icos'
+		font-size 11px
+		height 25px
+		position absolute
+		top 0
+		width 25px
+
+.bodyWishlist
+	font-family 'proxima_nova_rgregular'
+	font-size 100
+
+.boton
+	background clarito
+
+.bottom-footer
+	display none
+	
+.box
+	//border 1px solid clarito
+	font-size 15px
+	margin-top 18px !important
+	//padding 20px
+	text-align left !important
+	a
+		color oscuro
+		font-weight 600
+		transition .3s
+		&:hover
+			color colorao
+	p
+		display block
+		font-size 15px
+		margin 0 auto
+		text-align left
+
+.box-security
+	display none
+	
+.breadcrumb
+	//background clarito
+	border 1px solid clarito
+	color #aeadb3
+	display none
+	font-family 'oswaldregular'
+	font-size 13px
+	line-height 20px
+	margin 35px auto 15px
+	position relative
+	a
+		margin-top -3px !important
+		&:after
+			border-bottom 11px solid clarito
+			border-left 5px solid transparent
+			border-right 5px solid clarito
+			border-top 11px solid transparent
+			bottom 0
+			content ''
+			position absolute
+			right 0
+			z-index 1
+		&:before
+			border-bottom 11px solid white
+			border-left 5px solid transparent
+			border-right 5px solid white
+			border-top 11px solid transparent
+			bottom 0
+			content ''
+			position absolute
+			right -1px
+			z-index 2
+	a
+	span
+		margin 0
+	a
+	span
+	.home
+		//background white
+		//border-right 1px solid clarito
+		color #aeadb3
+		display inline-block
+		line-height 20px
+		padding 0 25px
+		position relative
+		text-decoration none
+		vertical-align middle
+	.home
+		margin 0 -2px 0 0
+		.icon-home
+			position relative
+			&:before
+				color #aeadb3
+				content '\e600'
+				font-family 'icos'
+				font-size 11px
+	.navigation_page
+		color oscuro !important
+	.navigation-pipe
+		display none
+
+.btn-facebook
+	position relative
+	&:after
+		color oscuro
+		content '\e76a'
+		font-family 'icos'
+		font-size 18px
+		
+.btn-google-plus
+	position relative
+	&:after
+		color oscuro
+		content '\e766'
+		font-family 'icos'
+		font-size 18px
+		
+.btn-pinterest
+	display none
+	
+.btn-twitter
+	position relative
+	&:after
+		color oscuro
+		//content '\e76d'
+		content '\e76e'
+		font-family 'icos'
+		font-size 18px
+
+.buton
+	ul
+		list-style-type circle !important
+	&:hover
+		ul
+			display block !important
+			transition .5s
+
+.bx-controls
+	bottom 15px
+	position absolute
+	text-align right
+	width 95%
+.bx-start.active
+.bx-pager-link.active
+	background azulAsiste
+	border 2px solid white
+.bx-pager-link
+	background white
+	border 2px solid azulAsiste
+	border-radius 50%
+	bottom 0
+	display inline-block
+	height .8rem
+	position absolute
+	text-indent -9999px
+	vertical-align middle
+	width .8rem
+.bx-pager-item
+	display inline-block
+	margin 0 1em 0 0
+	z-index 10000000000000
+	a
+		font-size 0
+
+.candadito
+	left 50%
+	margin-left -80px
+	position absolute
+	top 0
+	img
+		filter grayscale(1)
+		margin-top -3px
+		-ms-filter grayscale(1)
+		-webkit-filter grayscale(1)
+		width 22px
+	.imgCandadito:hover ~ .textCandadito
+		color otroGris
+	img
+	p
+		display inline-block
+		vertical-align middle
+	.textCandadito
+		color otroGris
+		font-size 10px
+		//font-style italic
+		margin 0
+		text-transform uppercase
+		transition .5s
+
+.capaCarrito
+	background white
+	color oscuro
+	position fixed
+	h2
+		font-size .8em
+
+.categoriasHome
+	box-sizing border-box
+	margin 1em auto
+	position relative
+	max-width 950px
+	#htmlcontent_home
+	.contenedor
+		//background red
+		//overflow hidden
+		position relative
+		width 100%
+		ul
+		.row
+			margin 0
+			padding 0
+			li
+				display inline-block
+				margin 0 0 -5px -5px
+				padding 0
+				list-style none
+				overflow hidden
+				//position absolute
+				width 33.3%
+				&:nth-child(1)
+					border-top 5px solid naranjo
+					left 0
+					top 0
+					a
+					.linkToCategory
+						figure
+							figcaption
+								h3
+									bottom 2em
+									color white
+									margin 0
+									text-align center
+									text-transform uppercase
+									width 100%
+						.item-html
+							h3
+								bottom 2em
+								color white
+								margin 0
+								text-align center
+								text-transform uppercase
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+				&:nth-child(2)
+					border-top 5px solid naranjito
+					left 33.3%
+					top 0
+					a
+					.linkToCategory
+						figure
+							figcaption
+								h3
+									bottom 2em
+									color white
+									margin 0
+									text-align center
+									text-transform uppercase
+									width 100%
+						.item-html
+							h3
+								bottom 2em
+								color white
+								margin 0
+								text-align center
+								text-transform uppercase
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+				&:nth-child(3)
+					border-top 5px solid #BA007C
+					left 66.6%
+					top 0
+					a
+					.linkToCategory
+						figure
+							figcaption
+								h3
+									color black
+									margin 0 5% 0 5%
+									text-align left
+									text-transform uppercase
+									top 2em
+									width 90%
+								p
+									color black
+									margin 0 5% 0 5%
+									text-align justify
+									top 4em
+									width 90%
+						.item-html
+							h3
+								top 2em
+								color oscuro
+								margin 0
+								text-align center
+								text-transform uppercase
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+				&:nth-child(4)
+					border-top 5px solid #191C59
+					bottom 0
+					left 0
+					a
+					.linkToCategory
+						.item-html
+							h3
+								color white
+								margin 0
+								text-align center
+								text-transform uppercase
+								top 1em
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+						figure
+							figcaption
+								h3
+									color white
+									margin 0
+									text-align center
+									text-transform uppercase
+									top 1em
+									width 100%
+				&:nth-child(5)
+					border-top 5px solid #A38051
+					left 33.3%
+					top 33.4%
+					a
+					.linkToCategory
+						figure
+							figcaption
+								h3
+									color black
+									margin 0
+									text-align center
+									text-transform uppercase
+									top 1em
+									width 100%
+						.item-html
+							h3
+								color oscuro
+								margin 0
+								text-align center
+								text-transform uppercase
+								top 1em
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+				&:nth-child(6)
+					border-top 5px solid #579532
+					bottom 0
+					left 33.3%
+					a
+					.linkToCategory
+						figure
+							figcaption
+								h3
+									bottom 2em
+									color white
+									margin 0
+									text-align center
+									text-transform uppercase
+									width 100%
+						.item-html
+							h3
+								bottom 2em
+								color white
+								margin 0
+								text-align center
+								text-transform uppercase
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+				&:nth-child(7)
+					border-top 5px solid #7B057E
+					bottom 0
+					left 66.6%
+					a
+					.linkToCategory
+						figure
+							figcaption
+								h3
+									color black
+									margin 0
+									text-align center
+									text-transform uppercase
+									top 1em
+									width 100%
+						.item-html
+							h3
+								color oscuro
+								margin 0
+								text-align center
+								text-transform uppercase
+								top 1em
+								width 100%
+							p
+								color black
+								margin 0 5% 0 5%
+								text-align justify
+								top 4em
+								width 90%
+				a
+				.linkToCategory
+					display block
+					height 100%
+					margin 0
+					overflow hidden
+					padding 0
+					position relative
+					img
+						//height 100%
+						margin 0
+						padding 0
+						width 100%
+					&:before
+						background linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.5) 75%)
+						content ''
+						height 100%
+						left 0
+						opacity 0
+						position absolute
+						top 0
+						transform translate3d(0,50%,0)
+						transition .3s
+						width 100%
+					&:hover
+						&:before
+							opacity 1
+							transform: translate3d(0,-5px,0)
+						.item-html
+							.abajo
+								margin-bottom 1em
+							.arriba
+								margin-top 1em
+					figure
+						margin 0
+						padding 0
+						transition 0.35s
+						figcaption
+							transition .3s
+							h3
+								font-family 'proxima_nova_rgbold'
+								position absolute
+								left 0
+								width 100%
+								color #484c61
+								transform translate3d(0,-50%,0)
+							h3
+							p
+								position absolute
+								transition 0.35s
+							p
+								font-family 'proxima_novalight'
+								//font-size 15px
+								left 0
+								//text-transform uppercase
+								transform translate3d(0,10px,0)
+								width 100%
+						img
+							margin 0
+							padding 0
+							width 100%
+						
+					.item-html
+						transition .3s
+						h3
+							font-family 'proxima_nova_rgbold'
+							position absolute
+							left 0
+							width 100%
+							color #484c61
+							transform translate3d(0,-50%,0)
+						h3
+						p
+							position absolute
+							transition 0.35s
+						p
+							font-family 'proxima_novalight'
+							//font-size 15px
+							left 0
+							//text-transform uppercase
+							transform translate3d(0,10px,0)
+							width 100%
+							
+.carrito
+	//background #f8b302
+	//background #003F3F
+	//background rgb(255, 76, 0)
+	background rojoAsiste
+	border-radius 2px
+	cursor pointer
+	//float right
+	height 30px
+	position absolute
+	right 0
+	text-align center
+	top 7px
+	transition .3s
+	width 90px
+	//z-index 2147483647
+	.carritoIcon
+		&:before
+			color white
+			content "\e601"
+			display block
+			font-family 'manias'
+			font-size 30px
+			font-weight 100
+			left 0
+			line-height 30px
+			position absolute
+			text-align center
+			top 0
+			width 90px
+	// &:hover
+	// 	.carritoHover
+	// 		display block
+	.carritoHover
+		background clarito
+		//border-radius 5px
+		//box-shadow 1px 1px 10px oscuro
+		border 1px solid #aeadb3
+		display none
+		padding 0 3px
+		position absolute
+		right 0
+		text-align left
+		top 30px
+		transition .3s
+		width 250px
+		z-index 10000
+		.carritoDeCompra
+			position relative
+			.topCarrito
+				background #006666
+				//display block
+				display none
+				height 40px
+				width 100%
+				h3
+					color oscuro
+					font-size 14px
+					line-height 40px
+					margin 0 0 0 50px
+					position relative
+					text-align left
+					&:before
+						content '\e636'
+						font-family 'icos'
+						font-size 20px
+						left -30px
+						font-weight 100
+						position absolute
+						top 0px
+					span
+						display inline-block
+						font-weight 100
+					.unvisible
+						display none
+			.cart_block
+				.block_content
+					position relative
+					.cart_block_list
+						.products
+							.first_item
+							.item
+							.last_item
+								margin 3px 0
+								overflow hidden
+								padding-bottom 7px
+								position relative
+								&:hover
+									background #aeadb3
+									.cart-info
+										.product-name
+											a
+												color white
+											.cantidad
+												span
+													color white
+											.nombreProducto
+												.cart_block_product_name
+													color white
+											.quantity-formated
+												color white
+												.quantity
+													color white
+										.product-atributes
+											a
+												color white
+										span
+										.price
+											color white
+									.remove_link
+										a
+											&:after
+												color clarito
+								.cart-images
+									//border-radius 5px
+									display block
+									float left
+									height 55px
+									//margin-left 5px
+									img
+										border 2px solid #ddd
+										//border 1px solid clarito
+										//border-radius 5px
+										margin 5px
+										width 50px
+								.cart-info
+									float left
+									position relative
+									width 160px
+									.product-name
+										float left
+										font-family 'proxima_nova_rgbold'
+										width 110px
+										.cantidad
+											span
+												margin-left -4px
+										.cantidad
+										.quantity-formated
+											width 25px
+											span
+												color oscuro
+												display inline-block
+												font-family 'proxima_nova_rgbold'
+												font-size 13px
+											.quantity
+												margin-right 5px
+										.cantidad
+										.nombreProducto
+											display inline-block
+											vertical-align top
+										.nombreProducto
+											width 68px
+											.cart_block_product_name
+												color oscuro
+												display block
+												font-family 'proxima_nova_rgbold'
+												font-size 13px
+												line-height initial
+												margin 0
+												padding 10.5px 0
+												text-transform uppercase
+										.cart_block_product_name
+											line-height initial
+											margin-top 8px
+											width 68px
+										.cart_block_product_name
+										.quantity-formated
+											color oscuro
+											float left
+											font-size 13px
+											text-transform uppercase
+										.quantity-formated
+											//margin-right 5px
+											width 30px
+									.product-name
+									.product-atributes
+									.price
+										// display inline-block
+										// vertical-align top
+										line-height 40px
+									.price
+										font-family 'proxima_nova_rgbold'
+										font-size 13px
+										position absolute
+										text-align right
+										top 0
+										right 0
+									.product-atributes
+										display none
+										a
+											color oscuro
+									span
+									.price
+										color oscuro
+										float right
+										font-size 13px
+										//width 30%
+								.remove_link
+									//background green
+									cursor pointer
+									//float left
+									height 40px
+									position absolute
+									right 0
+									top 0
+									width 20px
+									a
+										font-size 0
+										&:after
+											color oscuro
+											content '\e6fa'
+											display block
+											font-family 'icos'
+											font-size 12px
+											left 0
+											line-height 40px
+											position absolute
+											text-align center
+											top 0
+											transition .2s
+											width 16px
+										// &:hover
+										// 	&:after
+										// 		color rojoAsiste
+		.cart-buttons
+			background rojoAsiste
+			//border-radius 4px
+			float right
+			padding 0 1em
+			transition .3s
+			//width 150px
+			a
+				display block
+				line-height 35px
+				position relative
+				text-align center
+				text-decoration none
+				span
+					color white
+					font-family 'proxima_nova_rgbold'
+					font-size 16px
+					margin 0
+					&:after
+						content '\e722'
+						font-family 'icos'
+						font-size 10px
+						//right 0
+						font-weight 100
+						//line-height 40px
+						margin-left 7px
+						margin-top 10px
+			&:hover
+				background naranjo
+
+		.productoCarrito
+			position relative
+		
+.carrito > .ajax_cart_quantity
+.carrito > .ajax_cart_no_product
+	color white
+	font-size 11px
+	position absolute
+	right 0
+	text-align left
+	top 0
+	width 45px
+
+.carritoAlert
+	//background clarito
+	background-color white
+	//border 1px solid otroGris
+	border 2px solid otroGris
+	//border-radius 5px
+	box-sizing border-box
+	display none
+	font-size 12px
+	left 50%
+	margin-left 55px
+	margin-top 78px
+	padding 15px 10px
+	position fixed
+	text-align right
+	width 420px
+	z-index 100001
+	.crossseling
+		overflow hidden
+		.crossseling-content
+			h2
+				color otroGris
+				font-family 'oswaldregular'
+				font-size 15px
+				font-weight 100
+				margin 0 0 .8em 0
+				text-align left
+				text-transform uppercase
+		#blockcart_list
+			.bx-controls
+				text-align center
+				width 100%
+			.bx-viewport
+				ul
+					margin 0
+					padding 0
+					li
+						margin 5px
+						padding 0
+						.price_display
+							display none
+						.product-image-container
+							a
+								img
+									border 1px solid clarito
+									width 100%
+						.product-name
+							a
+								color oscuro
+								font-size 13px
+								font-weight 600
+								text-transform uppercase
+	.layer_cart_product
+		text-align left
+		h2
+			font-family 'proxima_nova_rgregular'
+			font-size 15px
+			font-style italic
+			font-weight 100
+			margin .8em 0
+			text-align left
+			text-transform uppercase
+		.cross
+			background white
+			border-radius 50%
+			bottom -10px
+			cursor pointer
+			height 30px
+			position absolute
+			right -10px
+			width 30px
+			&:after
+				color otroGris
+				content '\e6fa'
+				font-family 'icos'
+				font-size 16px
+				display block
+				line-height 30px
+				text-align center
+				width 30px
+		.layer_cart_img
+			border 1px solid clarito
+			margin 0
+			width 30%
+			img
+				//border-radius 5px
+				width 100%
+		.layer_cart_img
+		.layer_cart_product_info
+			box-sizing border-box
+			display inline-block
+			text-align left
+			vertical-align top
+		.layer_cart_product_info
+			width 65%
+			.product-name
+				display block
+				font-size 13px
+				font-weight 600
+				text-transform uppercase
+
+.carritoHover
+	.bloc_cart_voucher
+		.name
+			display none
+		.price
+			padding-left 5%
+			text-align left
+			width 50%
+		.price
+		.quantity
+			font-family 'oswaldregular'
+			font-size 15px
+			font-weight 100
+		.quantity
+			//padding-right 9%
+			text-align right
+			width 50%
+
+.checkbox
+	a
+		background clarito
+		border-radius 5px
+		color oscuro
+		display block
+		font-size 13px
+		line-height 40px
+		margin 18px auto
+		width 300px
+	label
+	.checker
+		display inline-block
+	.checker
+		span
+			width 40px
+			input
+				text-align center
+
+.checkbox
+	margin 0 auto
+	width 70%
+	label
+		font-size 13px
+		text-align left
+		width 75%
+	label
+	.checker
+		display inline-block
+		vertical-align top
+		span
+			input
+				height 15px
+				width 15px
+	.checker
+		text-align right
+		
+.checkboxIncribase
+	display inline-block
+	margin-top 15px
+	vertical-align top
+	width 48%
+	label
+		font-size 11px
+		font-weight 100
+		text-align left
+		width 91%
+	label
+	.checker
+		display inline-block
+		vertical-align top
+		span
+			input
+				height 15px
+				width 15px
+
+.cierraDespliega
+	display none
+	&:before
+		content ''
+
+.clear
+	clear both
+
+
+.clearfix:before
+.clearfix:after
+	content " "
+	display table
+
+.cienPorciento
+	width 100% !important
+
+.cierraMenu
+	//background-color naranjito
+	cursor pointer
+	height 25px
+	position absolute
+	right 0
+	top 5px
+	visibility visible
+	width 25px
+	z-index 10
+
+.col-sm-2
+	display block
+	width 20%
+
+.colorao
+	color colorao
+
+.comparison_infos
+	a
+		text-decoration none
+		span
+			color clarito
+			transition .3s
+			&:hover
+				color naranjito
+
+.condicion
+	font-family 'proxima_novaextrabold'
+	font-size 13px
+	padding 0 5px 0 15px
+	//width 50%
+	.ProdNuevo
+	.ProdReparado
+	.ProdUsado
+		//display block
+		padding-left 15px
+		position relative
+		width 45px
+		&:before
+			border-radius 50%
+			color white
+			display block
+			font-family 'Open Sans'
+			font-size 10px
+			font-weight 600
+			height 13px
+			left 0
+			line-height 13px
+			position absolute
+			text-align center
+			top -1px
+			width 13px
+	.ProdNuevo
+		font-family 'proxima_nova_rgregular'
+		&:before
+			background-color verdeClarito
+			content 'N'
+	.ProdReparado
+		font-family 'proxima_nova_rgregular'
+		&:before
+			background-color verdeAsiste
+			content 'R'
+	.ProdUsado
+		font-family 'proxima_nova_rgregular'
+		&:before
+			background-color rojoAsiste
+			content 'U'
+
+.contacto
+	margin-top 10px
+	fieldset
+		.contenedorForm
+			border 1px solid clarito
+			padding 5px 5%
+			.desc_contact
+				display block
+				font-size 10px
+				//margin 0 auto
+				//width 90%
+			.selector1
+				margin-top 10px
+				text-align left
+				label
+					font-family 'proxima_nova_rgregular'
+					font-weight 100
+					display block
+					width 100%
+				.selector
+					width 100% !important
+					span
+						display none
+					select
+						width 100%
+			.formularioUno
+				//background otroGris
+				//height 250px
+				text-align left
+				.form-group
+					margin 5px 0
+					width 90%
+					label
+						font-family 'proxima_nova_rgregular'
+						font-weight 100
+					input
+						width 100%
+					.uploader
+						span
+							display none
+				.selector1
+					label
+						display block
+						width 100%
+					.selector
+						width 100% !important
+						span
+							display none
+						select
+							width 100%
+			.formularioUno
+			.mensaje
+				display inline-block
+				vertical-align top
+				width 49%
+			.mensaje
+				.form-group
+					margin 5px auto 0
+					label
+						display block
+						font-family 'proxima_nova_rgregular'
+						font-weight 100
+						margin 2px 0
+						text-align left
+					textarea
+						height 130px
+						width 100%
+		.submit
+			margin-top 10px
+			text-align right
+			button
+				background clarito
+				border none
+				padding 5px 25px
+				text-align center
+				span
+					font-family 'proxima_nova_rgregular'
+				&:hover
+					background rojoAsiste
+					span
+						color white
+					font-weight 100
+
+.container
+	margin .6em auto
+	//max-width 950px
+
+.contenedorFormNuevoComentario
+	text-align center
+	label
+		display block
+	textarea
+		border-radius 5px
+		width 70%
+	.footerFormComentarios
+		.botonesAgregaComentario
+			text-align right
+			width 100% !important
+			// a
+			// 	background clarito
+			// 	border 1px solid oscuro
+			// 	border-radius 5px
+			// 	color oscuro
+			// 	display block
+			// 	margin 10px auto 0
+			// 	text-align center
+			// 	text-decoration none
+			// 	width 40%
+			button
+				background rojoAsiste
+				border none
+				//border-radius 5px
+				width 30%
+				span
+					color white
+					font-family 'oswaldregular'
+					font-weight 100
+
+	.new_comment_form_content
+		input
+			width 70%
+		ul
+			margin 20px 0 20px 29%
+			padding 0
+			width 69%
+			li
+				background clarito
+				list-style none
+				margin 0
+				padding 0 5px
+				label
+					font-family 'proxima_nova_rgregular'
+					font-size 15px
+					font-weight 100
+					margin 5px 0
+					text-align left
+				.star_content
+					text-align left
+		.formComentario
+			margin 20px 0 20px 29%
+			text-align left
+			width 69%
+			label
+				font-family 'proxima_nova_rgregular'
+				font-size 15px
+				font-weight 100
+				margin 5px 0
+			input
+			textarea
+				border-radius 0
+				box-sizing border-box
+				width 100%
+	.product
+		border 1px solid clarito
+		padding 10px
+		.fotoNuevoComentatio
+			border 1px solid clarito
+			//border-radius 50%
+			margin-right 3%
+			width 30%
+		.fotoNuevoComentatio
+		.product_desc
+			display inline-block
+			vertical-align top
+		.product_desc
+			//background oscuro
+			//border-radius 5px
+			margin 0 auto
+			width 65%
+			p
+				color oscuro
+				font-family 'oswaldlight'
+				font-size 15px
+				margin 0
+				text-align justify
+			.product_name
+				margin-bottom 5px
+				text-align left
+				strong
+					font-family 'oswaldregular'
+					font-size 20px
+					font-weight 100
+
+.contenedorHistoria
+	margin 0 auto
+	max-width 950px
+	h1
+		margin-top 16px
+	table
+		margin 18px auto
+		tbody
+			tr
+				.footable-first-column
+					a
+						color azulAsiste
+						text-decoration none
+						&:hover
+							text-decoration underline
+
+.contenedorMenu
+	background oscuro
+
+.contenedorPartners
+	border-top 2px solid #f5f5f5
+	margin 30px auto
+	overflow hidden
+	position relative
+	width 950px
+
+.content_only
+	h2
+		color colorao
+		font-family 'oswaldregular'
+		margin-bottom 15px !important
+		span
+			span
+				border-bottom 1px solid colorao
+	h2
+	h3
+		margin 0
+	h2
+	p
+		span
+			span
+				background transparent !important
+	h3
+		font-size 16px
+	p
+		font-size 14px
+		text-align justify
+
+.content_sortPagiBar
+	margin 0 auto
+	max-width 950px
+	.bottom-pagination-content
+		border-top 1px solid clarito
+		overflow hidden
+		padding-top 7px
+		width 100%
+		form
+			line-height 50px
+			margin-bottom 1em
+			width 150px
+			button
+				background white
+				border-bottom 2px solid calipso
+				border-left none
+				border-top none
+				border-right none
+				width 100%
+				span
+					color oscuro
+					font-family 'proxima_nova_rgbold'
+				&:hover
+					background calipso
+					span
+						color white
+		.compare-form
+			float right
+		.pagination
+			ul
+				margin 0
+				padding 0
+				text-align center
+				li
+					background-color clarito
+					border 2px solid clarito
+					border-radius 2px
+					box-sizing border-box
+					display inline-block
+					padding 5px 10px
+					a
+						color #BABBBB
+						font-weight 800
+						text-decoration none
+						&:hover
+							text-decoration underline
+				.active
+					background-color white
+					border 2px solid rojoAsiste
+					span
+						color rojoAsiste
+						font-weight 800
+				.pagination_next
+					background-color white
+					border none
+					margin-left 5px
+					padding 0
+					a
+						position relative
+						b
+							display none
+						.icon-chevron-right
+							background url('../img/cd-arrow.svg') 0 0 no-repeat
+							display inline-block
+							height 11px
+							width 20px
+					span
+						opacity .3
+						b
+							display none
+						.icon-chevron-right
+							background url('../img/cd-arrow.svg') 0 0 no-repeat
+							display inline-block
+							height 11px
+							width 20px
+				.pagination_previous
+					background-color white
+					border none
+					margin-right 5px
+					padding 0
+					a
+						position relative
+						b
+							display none
+						.icon-chevron-left
+							background url('../img/cd-arrow.svg') no-repeat
+							display inline-block
+							height 11px
+							transform rotate(180deg)
+							width 20px
+					span
+						opacity .3
+						b
+							display none
+						.icon-chevron-left
+							background url('../img/cd-arrow.svg') no-repeat
+							display inline-block
+							height 11px
+							transform rotate(180deg)
+							width 20px
+		.product-count
+			float left
+			font-size 15px
+			line-height 50px
+	.sortPagiBar
+		width 100%
+		form
+			.select
+				.selector
+					select
+						//border-radius 5px
+						text-align center
+		ul
+			margin 0
+			padding 0
+			li
+				margin 0
+				padding 0
+		.productsSortForm
+			background clarito
+			//border-radius 5px
+			position relative
+			margin 2em auto 0
+			padding 7px 20px
+			text-align left
+			//width 80%
+			span
+				display none
+			.select
+				//margin 0 auto
+				//width 50%
+				label
+					color oscuro
+					font-family 'proxima_nova_rgbold'
+					font-weight 400
+				label
+				.selector
+					display inline-block
+					vertical-align middle
+				.selector
+					margin-left 20px
+					//width 100% !important
+	.top-pagination-content
+		display none		
+
+.cruz
+	&:before
+		color naranjito
+		content '\e6fd'
+		font-family 'icos'
+		font-size 20px
+
+.cuadroComentario
+	h1
+		border-bottom 1px solid clarito
+	form
+		.table-responsive
+			table
+				tfoot
+					tr
+						td
+							padding 0 1.5%
+							text-align right
+	p
+		font-size 15px
+	.adresses_bloc
+		display none
+	.box-small
+		padding 20px 5%
+		width 90%
+		form
+			height 29px
+			text-align left
+			position relative
+			a
+				border 2px solid clarito
+				font-size 15px
+				margin-bottom 10px
+				position absolute
+				right 0
+				text-align center
+				width 20%
+				span
+					line-height 25px
+			p
+				left 0
+				position absolute
+				width 80%
+				strong
+					line-height 29px
+	.info-order
+		//height 62px
+		padding 20px 5%
+		width 90%
+	.std
+		padding 15px 10%
+		width 80%
+		h3
+			text-transform uppercase
+		.form-group
+			label
+				font-family 'proxima_nova_rgregular'
+				font-weight 100
+				text-transform capitalize
+			textarea
+				width 100%
+		.submit
+			button
+				padding 5px 15px
+	.submit
+		text-align right
+		button
+			background clarito
+			border none
+			span
+				color oscuro
+				font-family 'proxima_nova_rgregular'
+			&:hover
+				background colorao
+				span
+					color white
+
+.detail_step_by_step
+	tbody
+		tr
+			td
+				span
+					color white
+					display block
+
+.dialog
+	align-items center
+	display flex
+	justify-content center
+	pointer-events none
+	position fixed
+	z-index 99999999999
+
+.dialog,
+.dialog__overlay
+	height 100%
+	left 0
+	top 0
+	width 100%
+
+
+.dialog__overlay
+	background rgba(55, 58, 71, 0.9)
+	opacity 0
+	position absolute
+	transition opacity 0.3s
+
+.dialog--open
+	.dialog__overlay
+		opacity 1
+		pointer-events auto
+
+.dialog__content
+	background #fff
+	max-width 560px
+	min-width 290px
+	opacity 0
+	padding 4em
+	position relative
+	text-align center
+	width 50%
+	z-index 5
+
+
+.dialog--open
+	.dialog__content
+		pointer-events auto
+
+/* Content */
+.dialog
+	h2
+		font-size 2em
+		font-weight 400
+		margin 0
+		padding 0 0 2em
+		
+.dialog.dialog--open .dialog__content,
+.dialog.dialog--close .dialog__content
+	animation-duration 0.3s
+	animation-fill-mode forwards
+
+.dialog.dialog--open
+	.dialog__content
+		animation-name anim-open
+
+.dialog.dialog--close
+	.dialog__content
+		animation-name anim-close
+
+.dl-submenu
+	.category-thumbnail
+		display none
+
+.error
+	background red
+	border none
+	border-radius 5px
+
+.f-nav
+	position fixed
+	top 5px
+
+.fancybox-wrap
+	.fancybox-skin
+		padding 10px !important
+		.fancybox-outer
+			.fancybox-inner
+				//width 300px !important
+				p
+					font-family 'proxima_nova_rgbold'
+					font-size 20px
+					font-weight 100
+					vertical-align middle
+					width 90%
+				.fancybox-error
+					border-bottom 1px solid otroGris
+					border-top 1px solid otroGris
+					display inline-block
+					padding 15px 10px
+					width 100%
+					&:before
+						color rojoAsiste
+						content '\e6fd'
+						display inline-block
+						font-family 'icos'
+						font-size 35px
+						line-height 35px
+						height 30px
+						vertical-align middle
+						width 45px
+
+.fancyComent
+	form
+		text-align left
+		h2
+			font-family 'oswaldregular'
+			font-weight 100
+			margin 0
+			text-align left
+
+.fechaNacimiento
+	label
+		color oscuro
+		display block
+		font-weight 600
+		text-align center
+	.contenedorFecha
+		//border-bottom 1px solid naranjito
+		// border-top 1px solid naranjito
+		//margin 0 auto
+		width 70%
+		.selectorFecha
+			display inline-block
+			text-align center
+			width 32%
+			.selector
+				width 100% !important
+				select
+					background none
+					//border 1px solid #999
+					//border-radius 5px
+					//border none
+					box-sizing border-box
+					color #999
+					font-size 13px
+					//height 27px
+					left 0px
+					//opacity 0
+					outline 0
+					//position absolute
+					//padding 5px
+					text-align center
+					top 0px
+					width 100%
+					// &:hover
+					// 	background naranjito
+					// 	color white
+					option
+						background white
+						box-sizing border-box
+						color oscuro
+				span
+					display none
+			// 	select
+			// 		background none
+			// 		border 1px solid oscuro
+			// 		height 27px
+			// 		left 0px
+			// 		//opacity 0
+			// 		//position absolute
+			// 		top 0px
+			// 		width 100%
+			// 	span
+			// 		display none
+
+.footer-container
+	background clarito
+	border-top 1px solid #E2E2E2
+
+.formCarritoFinalCompra
+	.box
+		font-size 13px
+		width 60%
+		p
+			margin 7px 0
+			.strong
+				font-size 16px
+
+.formDirecciones
+	h1
+		margin-top 0
+	p
+		font-size 13px
+	.info-title
+		text-align center
+
+.formPassForgot
+.submitPassForgot
+	display inline-block !important
+	vertical-align middle
+
+.goCarrito
+	color oscuro
+	display block
+	margin-right 5px
+	text-align right
+	text-decoration none
+
+.hidden
+.hidden-xs
+	display none
+
+.history_state
+	span
+		color white
+		display block
+
+.homeTab
+	box-sizing border-box
+	height 80px
+	margin 0 auto
+	//max-width 1000px
+	position relative
+	width 100%
+
+	.main
+		background naranjito
+		//background #f7f7f8
+		box-sizing border-box
+		display block
+		margin 0 auto
+		padding 5px
+		position relative
+		text-align center
+		top 0
+		width 90%
+		//z-index 10
+		div
+			border 1px dashed clarito
+			border-color rgba(255, 255, 255, 0.5)
+			box-sizing border-box
+			height 40px
+			h3
+				margin 0 auto
+
+.hoverMenu
+	&:hover
+		.sub-menuDesktop
+			display block !important
+
+.infoAdicionalHeader
+	//border-bottom 1px solid clarito
+	height 25px
+	margin 0 auto
+	//position absolute
+	//top -25px
+	max-width 950px
+	.row
+		margin 0 auto
+		position relative
+		text-align right
+		width 100%
+		.shop-phone
+			font-size 13px
+			strong
+				color azulCpo
+
+.info-title
+	font-family 'proxima_nova_rgregular'
+	font-size 13px
+	font-weight 100
+	margin 0
+
+.lineas
+	&:before
+		color naranjito
+		content '\e6b8'
+		font-family 'icos'
+		font-size 20px
+
+.listaDireccion
+	margin 28px auto 0
+	//width 80%
+	.contenedorListaDireccion
+		border 1px solid #999
+		border-radius 3px
+		display inline-block
+		width 49%
+		ul
+			//background clarito
+			margin 0
+			padding 0
+			width 100%
+			li
+				border-bottom .5px solid clarito
+				color oscuro
+				display block
+				font-size 13px
+				list-style none
+				margin 0 auto
+				text-align center
+				text-transform uppercase
+				width 100%
+				h3
+					background oscuro
+					border-bottom 1px solid #999
+					color clarito
+					font-family 'proxima_nova_rgbold'
+					font-size 18px
+					font-weight 100
+					line-height 50px
+					margin 0
+					//text-align center
+					text-transform uppercase
+
+				span
+					//display inline-block
+					font-family 'proxima_nova_rgregular'
+					font-size 13px
+					text-transform uppercase
+
+.listaProducto
+	background none
+	margin 14px auto
+	padding 0
+	max-width 950px
+	.listaProductoLi
+		//border-radius 9px
+		border 1px solid transparent
+		display inline-block
+		font-size 18px
+		list-style none
+		margin 0
+		overflow hidden
+		padding-bottom 1em
+		position relative
+		vertical-align top
+		width 24.3%
+		&:hover
+			border 1px solid clarito
+			//box-shadow 0 0 10px rgba(0,0,0, .4)
+			.contenedorPopular
+				.functional-buttons
+					.compare
+						a
+							&:before
+								color naranjito
+							span
+								color naranjito
+						.checked
+							&:before
+								color naranjito
+
+				.left-block
+					position relative
+					.product-image-container
+						.quick-view
+							opacity 1
+					// .sale-box
+					// 	.sale-label
+					// 		background naranjito
+					// 		span
+					// 			color white
+				.right-block
+					.añadeCarrituHome
+						opacity 1
+					.wishlist
+						opacity 1
+		.contenedorPopular
+			background none
+			font-size 18px
+			margin 7px auto
+			//overflow hidden
+			position relative
+			width 98%
+			.functional-buttons
+				//position relative
+				.compare
+					a
+						background transparent
+						//border 1px solid #999
+						border-radius 5px
+						color oscuro
+						display block
+						font-size 11px
+						height 25px
+						margin 5px auto 0
+						text-align left
+						text-decoration none
+						transition .3s
+						width 185px
+						z-index 3
+						&:before
+							color #bbb
+							//content '\e737'
+							content '\e739'
+							font-family 'icos'
+							font-size 16px
+							line-height 25px
+							position absolute
+						span
+							color #bbb
+							//display none
+							display block
+							font-size 13px
+							line-height 25px
+							margin-left 20px
+					.checked
+						&:before
+							color #bbb
+							content '\e73a'
+							font-family 'icos'
+							font-size 16px
+							line-height 25px
+			.left-block
+				position relative
+				text-align left
+				.product-image-container
+					a
+					span
+						font-size 18px
+						img
+							border-radius 9px
+							display block
+							margin 0 auto
+							padding 5%
+							width 90%
+					.vistaRapida
+						display none
+
+			.right-block
+				display block
+				font-size 18px
+				margin 0 auto
+				position relative
+				text-align center
+				width 90%
+
+				h2
+					display inline-block
+					font-size 15px
+					//font-weight 700
+					margin 0
+					text-align center
+					transition .4s
+					transition-property width
+					-webkit-transition-property width
+					width 100%
+					a
+						color oscuro
+						font-family 'proxima_nova_rgbold'
+						font-weight initial
+						text-decoration none
+						text-transform uppercase
+						transition .4s
+
+				.comments_note
+					display none
+					font-size 11px
+					text-align center
+				.disponibilidad
+					display block
+					font-family 'proxima_nova_rgregular'
+					font-size 11px
+					text-align center
+					text-transform uppercase
+				.precios
+					font-size 18px
+					//font-weight 700
+					text-align center
+					span
+						border-radius 7px
+						color azulAsiste
+						display block
+						//line-height 30px
+						margin 4px 0
+						//text-align center
+						vertical-align top
+					.descuento
+						font-size 11px
+					.descuento
+					.precioAnterior
+
+						color oscuro
+						display inline-block
+						font-weight 600
+						margin 0
+						opacity .5
+						transition .5s
+					.ivaInclude
+						color oscuro
+						//display none
+						font-size 11px
+						font-weight 400
+						margin 0
+						text-transform capitalize
+					.precioAnterior
+						font-size 11px
+						text-decoration line-through
+					.precio
+						//background oscuro
+						//border 1px solid oscuro
+						//color white
+						font-family 'proxima_nova_rgbold'
+						font-size 15px
+						margin 0
+						position relative
+						//text-align left
+						//width 50%
+						// &:after
+						// 	color rojoAsiste
+						// 	content 'iva incl'
+						// 	font-size 10px
+						// 	font-weight 400
+						// 	margin 0
+						// 	position absolute
+						// 	text-transform capitalize
+				.wishlist
+					background rojoAsiste
+					border-radius 50%
+					height 45px
+					//margin-right -27px
+					opacity 0
+					position absolute
+					right 10%
+					text-align center
+					top -70px
+					transition .3s
+					width 45px
+					a
+						color transparent
+						cursor pointer
+						display block
+						font-size 10px
+						height 55px
+						width 55px
+						z-index 10
+						&:before
+							color white
+							content "\e606"
+							font-family 'icos'
+							font-size 20px
+							font-weight 100
+							left 0
+							line-height 45px
+							position absolute
+							top 0
+							width 45px
+							z-index 0
+	.listaProductoLi2
+		border 1px solid transparent
+		border-radius 2px
+		display inline-block
+		font-size 18px
+		list-style none
+		margin 2px 0
+		position relative
+		text-align center
+		vertical-align top
+		width 20%
+		&:hover
+			border 1px solid clarito
+			.añadeCarrituHome
+				opacity 1
+		.añadeCarrituHome
+			left 50%
+			margin-left -22.5px
+			top 50%
+		.product_desc
+			width 100%
+			a
+				img
+					border-radius 9px
+					width 100%
+			.block_description
+				display none
+				a
+					color oscuro
+					text-decoration none
+		.s_title_block
+			h5
+				margin 0
+				a
+					color oscuro
+					font-size 14px
+					text-decoration none
+			span
+				color naranjito
+				font-size 18px
+				font-weight 600
+
+.loginUsuario
+	background grisClaro2
+	border-radius 2px
+	height 30px
+	position absolute
+	right 90px
+	text-align center
+	top 7px
+	width 90px
+	.contenedorLogin
+		cursor pointer
+		display block
+		height 30px
+		//overflow hidden
+		position relative
+		width 100%
+		.despliega
+			background white
+			border 1px solid #ddd
+			border-radius 2px
+			box-sizing border-box
+			cursor initial
+			display none
+			//height 60px
+			padding 5px
+			position absolute
+			right 0
+			text-align left
+			top 30px
+			width 150px
+			.account
+				//background calipso
+				color clarito
+				display block
+				height 25px
+				text-align center
+				text-decoration none
+				text-transform uppercase
+				.texto
+					border-bottom 1px solid #ddd
+					color oscuro
+					display block
+					font-size 13px
+					line-height 25px
+					text-decoration none
+					width 100%
+			.logout
+				//background #005959
+				color clarito
+				display block
+				//font-size 11px
+				height 25px
+				margin 2px auto
+				text-align center
+				text-decoration none
+				text-transform uppercase
+				.texto
+					border-bottom 1px solid #ddd
+					color oscuro
+					display block
+					font-size 13px
+					line-height 25px
+					text-decoration none
+					width 100%
+		.login
+			background oscuro
+			border-radius 2px
+			color clarito
+			display block
+			font-size 13px
+			font-weight 800
+			line-height 30px
+			width 100%
+		.nombre
+			color clarito
+			height 30px
+			line-height normal
+			left 0
+			overflow hidden
+			position absolute
+			top 0
+			width 100%
+			span
+				color clarito
+				display block
+				font-size 11px
+				line-height 30px
+
+.maniaBackground1 >	ul
+	background #fff url('../img/asiste-01.jpg')
+	//background #fff url('../img/asiste2.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+.maniaBackground2 >	ul
+	background #fff url('../img/asiste-02.jpg')
+	//background #fff url('../img/asiste3.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+.maniaBackground3 > ul
+	background #fff url('../img/asiste-03.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+.maniaBackground4 >	ul
+	background #fff url('../img/asiste-04.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+.maniaBackground5 >	ul
+	background #fff url('../img/asiste-05.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+.maniaBackground6 >	ul
+	background #fff url('../img/asiste-06.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+.maniaBackground7 >	ul
+	background #fff url('../img/asiste-07.jpg')
+	background-position left bottom
+	background-repeat no-repeat
+	background-size 100%
+	border-left 1px solid clarito
+	border-right 1px solid clarito
+
+.menuManias
+	display block
+	height 45px
+	//position relative
+	width 100%
+	.category-thumbnail
+		display none !important
+		
+.menuTop
+	border-left 1px solid #666
+	margin 0 auto
+	padding 0
+	position relative
+	text-align left
+	//width 950px
+.menuTop > li
+	border-right 1px solid #666
+	display inline-block
+	list-style none
+	font-size 0
+	margin 0
+	padding 0
+	text-align left
+	transition .3s
+	vertical-align top
+.menuTop > li > a
+	//color naranjito
+	color white
+	display block
+	font-family 'oswaldbold'
+	font-size 18px
+	font-weight 400
+	line-height 40px
+	padding 0 20px 0 10px
+	position relative
+	text-decoration none
+	text-transform uppercase
+	transition .4s
+	&:hover
+		background rojoAsiste
+		color white
+
+.my-placeholder
+	color #ccc
+
+.mywishlist
+	form
+		fieldset
+			h3
+				font-weight 100
+				margin 0 auto 18px
+			.form-group
+				text-align center
+				label
+					font-family 'proxima_nova_rgregular'
+					font-weight 100
+				input
+				label
+				.submit
+					display inline-block
+					margin 0 5px
+					vertical-align middle
+				.submit
+					button
+						background rojoAsiste
+						border none
+						border-radius 2px
+						padding 2px 15px
+						//width 80px
+						span
+							color white
+							//line-height 40px
+							font-family 'proxima_nova_rgregular'
+							font-weight 100
+						&:hover
+							background oscuro
+	.volver
+		display none
+	.comparte
+		border-radius 2px
+		margin 0 auto
+		text-align left
+		transition .2s
+		//width 30%
+		a
+			background clarito
+			display block
+			padding 5px 15px
+			text-decoration none
+			width 103px
+			span
+				color oscuro
+				//display block
+				font-family 'proxima_nova_rgregular'
+				font-weight 100
+				line-height 40px
+				//width 100%
+			&:hover
+				background rojoAsiste
+				span
+					color white
+	input
+		border-radius 2px
+	td
+		a
+			color oscuro
+			font-weight 700
+
+.navegador
+	display block
+	margin 18px auto
+	height 40px
+	//overflow hidden
+	position relative
+	max-width 950px
+	.checkout
+		background transparent
+		float right
+		outline 0
+		padding-right 20px
+		position relative
+		text-align right
+		span
+			color oscuro
+			line-height 40px
+			transition .3s
+			.icon-chevron-right
+				background url('../img/cd-arrow.svg') 0 0 no-repeat
+				display inline-block
+				height 11px
+				margin-left 10px
+				position absolute
+				right 5px
+				top 15px
+				width 7px
+	.checkout
+	.volverCompra
+		//background naranjo
+		border 0
+		//border-radius 5px
+		color oscuro
+		display block
+		font-family 'proxima_nova_rgbold'
+		font-size 16px
+		height 40px
+		position relative
+		text-decoration none
+		width 200px
+		&:hover
+			color rojoAsiste
+			border-bottom 1px solid rojoAsiste
+			span
+				color rojoAsiste
+	.volverCompra
+		float left
+		line-height 40px
+		padding-left 20px
+		position relative
+		text-align left
+		transition .3s
+		.icon-chevron-left
+			background url('../img/cd-arrow.svg') 0 0 no-repeat
+			display inline-block
+			left 5px
+			height 11px
+			//margin-right 10px
+			position absolute
+			top 15px
+			transform rotate(180deg)
+			width 7px
+
+.nbrItemPage
+	font-size 14px
+	margin 1em 0
+	text-align right
+	label
+	span
+	.selector
+		display inline-block
+		vertical-align top
+	.selector
+		span
+			display none
+
+.one > div
+	box-sizing border-box
+	height 50px
+
+.order_carrier_content
+	margin-top 18px !important
+	.carrier_title
+		display none
+	.checkbox
+		margin-top 18px
+		//text-align left
+		width 100%
+		a
+			background white
+			border 1px solid clarito
+			font-family 'proxima_nova_rgregular'
+			font-size 16px
+			font-weight 100
+			margin 0 0 0 15%
+			text-align center
+			width 30%
+			&:hover
+				background clarito
+		a
+		label
+		.checker
+			display inline-block
+			vertical-align middle
+		label
+			width 50%
+	.delivery_options_address
+		.carrier_title
+			font-family 'proxima_nova_rgregular'
+			font-size 15px
+			text-align left
+		.delivery_options
+			text-align center
+			.delivery_option
+				display inline-block
+				margin-bottom 15px
+				vertical-align top
+				width 70%
+				.eligeTransporte
+					font-size 13px
+					width 100%
+					tbody
+						tr
+							border-right 1px solid clarito
+							text-align left
+							td
+								height 55px
+							.cuerpo
+								width 240px
+								span
+									display block
+									font-family 'proxima_nova_rgregular'
+									margin 0 5%
+									text-align left
+									width 90%
+									strong
+										font-weight 100
+										display block
+							.delivery_option_logo
+								width 100px
+								img
+									max-width 55px
+							.delivery_option_price
+								.delivery_option_price
+									color verdeAsiste
+									font-weight 600
+									//line-height 45px
+									padding 0 20px
+									text-align center
+							.delivery_option_radio
+								.radio
+									span
+										cursor pointer
+										display block
+										height 13px
+										width 13px
+										input
+											cursor pointer
+											height 13px
+
+.oscuro
+	color oscuro !important
+
+.Otroquick-view
+.quick-view
+	//background rgba(rojoAsiste, .5) !important
+	//background rojoAsiste
+	border 2px solid clarito
+	border-radius 50%
+	color naranjito
+	//display block
+	font-size 0
+	font-weight 600
+	height 44px
+	//line-height 40px
+	//margin-right -22px
+	opacity 0
+	//padding-top 22px
+	position absolute
+	right 0
+	text-align center
+	text-decoration none
+	top 0
+	transition .3s
+	width 44px
+	//z-index 1000
+	&:after
+		//background rgba(255,255,255, .7)
+		top 1px
+		color clarito
+		content '\e67f'
+		font-family 'icos'
+		font-size 20px
+		font-weight 100
+		//margin-top 5px
+		left 0
+		line-height 39px
+		position absolute
+		text-align center
+		width 100%
+	/*&:before
+		content ''
+		border-bottom 30px solid rojoAsiste
+		border-left 7px solid transparent
+		border-right 0
+		border-top 0
+		left -7px
+		position absolute*/
+
+.owl-carousel
+	.owl-stage-outer
+		.owl-stage
+			margin 0 auto
+.owl-nav
+	text-align center
+	.owl-next
+	.owl-prev
+		background calipso
+		border-radius 3px
+		color #fff
+		cursor pointer
+		display inline-block
+		font-size 14px
+		margin 5px
+		padding 4px 7px
+.owl-dots
+	text-align center
+	.active
+		background rojoAsiste !important
+	.owl-dot
+		background clarito
+		border-radius 50%
+		display inline-block
+		height 15px
+		margin 3px
+		width 15px !important
+.owl-item
+	//filter grayscale(1)
+	opacity .8
+	transition .2s
+	//-webkit-filter grayscale(1)
+	&:hover
+		//filter grayscale(0)
+		opacity 1
+		//-webkit-filter grayscale(0)
+
+.pagar
+	margin 0 auto 80px !important
+	width 60% !important
+	p
+		font-size 13px
+		line-height 25px
+		text-align justify
+	.cheque-indent
+		font-size 15px
+		margin-bottom 15px
+
+.paiement_block
+	margin 18px auto
+	//width 80%
+
+.page-heading
+	text-align left !important
+.page-heading
+.product-listing
+	font-family 'proxima_nova_rgbold'
+	font-size 15px
+	font-weight 100
+	display block
+	margin 0 auto
+	overflow hidden
+	text-align left
+	max-width 950px
+	span
+		display inline-block
+	.cat-name
+		float left
+	.heading-counter
+		float right
+
+.page-subheading
+	font-family 'proxima_nova_rgregular'
+	font-size 20px
+	text-align center
+
+.productoCesta
+	//overflow hidden
+	.totalEnvio
+	.totalFinal
+	.totalProducto
+		//margin-left 100px
+		strong
+			color #818181
+			font-family 'proxima_nova_rgbold'
+			font-size 13px
+			font-weight 100
+			text-align right
+			text-transform uppercase
+			width 50%
+		strong
+		span
+			display inline-block
+		span
+			font-family 'proxima_nova_rgregular'
+			font-size 15px
+			font-weight 100
+	.totalFinal
+		span
+			color rojoAsiste
+			font-family 'proxima_nova_rgbold'
+			font-size 20px
+			text-transform uppercase
+
+.products_block
+	table
+		margin 0 auto
+		width 80%
+		tbody
+			tr
+				background oscuro
+				&:nth-child(1)
+					background white
+					td
+						border 1px solid oscuro
+						color oscuro
+				td
+					border 1px solid clarito
+					color white
+					padding 0 3px
+					&:hover
+						.remove
+							opacity 1
+						.product-image-block
+							.Otroquick-view
+								opacity 1
+						.tituloComparacion
+							.añadeCarrituHome
+								opacity 1
+					.remove
+						text-align right
+						height 50px
+						opacity 0
+						transition .3s
+					.product-image-block
+					.tituloComparacion
+						position relative
+						h5
+							a
+								color oscuro
+								font-size 18px
+								text-decoration none
+						.añadeCarrituHome
+							span
+								font-size 0
+
+.quick-view > span
+	color azulAsiste
+	display none
+	font-size 0 !important
+	font-weight 600
+	line-height normal
+	margin-top 35px
+	text-align center
+	
+.remove
+	a
+		text-decoration none
+		.icon-trash
+			position relative
+			&:before
+				color rojoAsiste
+				content '\e6fa'
+				font-family 'icos'
+				font-size 18px
+				position absolute
+				right 0
+				top 5px
+
+.rodeaContacto
+	form
+		fieldset
+			border-radius 5px
+			margin 0 auto
+			text-align center
+			width 60%
+			h3
+				text-align center
+			.contenedor
+				width 100%
+				.formularioUno
+					.form-group
+						label
+							display block
+						.selector
+							margin 0 auto
+							width 50% !important
+							span
+								display none
+						.uploader
+							span
+								display none
+
+.sale-box
+	font-size 16px !important
+	height 80px
+	left 0
+	overflow hidden
+	position absolute
+	top 0
+	width 80px
+	z-index 1
+	.sale-label
+		background naranjo
+		//border 2px solid naranjito
+		bottom 35px
+		display block
+		height 90px
+		left -50px
+		//line-height 50px
+		margin 0
+		position absolute
+		text-align center
+		transform rotate(-45deg)
+		width 90px
+		// &:after
+		// 	content ''
+		// 	border-bottom 13px solid transparent
+		// 	border-left 13px solid transparent
+		// 	border-right 13px solid naranjito
+		// 	border-top 13px solid naranjito
+		// 	position absolute
+		// 	right 2px
+		// 	top 0
+		// &:before
+		// 	content ''
+		// 	border-bottom 13px solid transparent
+		// 	border-left 13px solid naranjito
+		// 	border-right 13px solid transparent
+		// 	border-top 13px solid naranjito
+		// 	left 4px
+		// 	position absolute
+		span
+			bottom 0
+			color white
+			display block
+			font-size 16px !important
+			position absolute
+			width 100%
+
+.sf-sub-indicator
+	display none
+
+.socialsharing_product
+	font-size 0
+	text-align center
+	button
+		//background oscuro
+		border none
+		border-radius 50%
+		height 40px
+		margin 3px
+		width 40px
+
+.star
+	cursor pointer
+	display inline-block
+	margin 1px
+	height 18px
+	position relative
+	width 18px
+	&:after
+		color rojoAsiste
+		content '\e6ce'
+		font-family 'icos'
+		font-size 12px
+		height 18px
+		left 0
+		line-height 18px
+		//padding 3px
+		position absolute
+		text-align center
+		top 0
+		width 18px
+	a
+		font-size 0
+
+.star_hover
+	height 18px
+	position relative
+	width 18px
+	&:after
+		background rojoAsiste
+		color clarito
+		content '\e6ce'
+		font-family 'icos'
+		font-size 12px
+		height 18px
+		left 0
+		line-height 18px
+		//padding 3px
+		position absolute
+		text-align center
+		top 0
+		width 18px
+.star_on
+	height 18px
+	position relative
+	width 18px
+	&:after
+		background rojoAsiste
+		color white
+		content '\e6ce'
+		font-family 'icos'
+		font-size 12px
+		height 18px
+		left 0
+		line-height 18px
+		//padding 3px
+		position absolute
+		text-align center
+		top 0
+		width 18px
+
+.std
+	border 1px solid clarito
+	margin 0 auto
+	padding 18px
+	width 70%
+
+.subcategories
+	ul
+		li
+			h5
+				a
+					font-size 15px !important
+
+.subcategory-name
+	font-size 15px !important
+	font-weight 100 !important
+
+.submitPassForgot
+	button
+		background naranjito
+		border none
+		span
+			color white
+
+.tabsInfoCms
+	width 100% !important
+	.tabs
+		.navTabs
+			ul
+				background white
+				li
+					background white !important
+					border-bottom 1px solid #aeadb3
+					border-top 1px solid #aeadb3
+					display inline-block
+					margin 0
+					padding 0
+					text-align center
+					width 180px
+					a
+						color #aeadb3
+						display block
+						font-size 15px
+						font-family 'oswaldregular'
+						line-height 40px
+						text-decoration none
+						text-transform uppercase
+						h3
+							font-weight 100
+							margin 0
+							padding 5px 5px 0 5px
+						&:hover
+							color rojoAsiste
+							text-decoration underline
+			.seccion
+				padding 20px 0 30px
+				h2
+					font-family 'oswaldregular'
+					font-size 18px
+					font-weight 100
+					text-align left
+					text-decoration underline
+				p
+					font-size 14px
+					a
+						color oscuro
+						display inline
+						font-size 15px
+						font-family 'oswaldregular'
+						line-height 40px
+						text-decoration none
+						text-transform uppercase
+						&:hover
+							color rojoAsiste
+							text-decoration underline
+				ul
+					border-bottom 1px solid clarito
+					border-top 1px solid clarito
+					margin 0
+					padding 0
+					li
+						border none
+						display block
+						font-size 15px
+						list-style-type circle
+						padding 5px 0
+						text-align left
+						width 100%
+						a
+							display inline
+							
+.tabsInfoCms
+.tabsInfo
+	display inline-block
+	margin-top 25px
+	vertical-align top
+	width 67%
+	.tabs
+		.navTabs
+			ul
+				font-size 0
+				margin 0
+				padding 0
+				li
+					background clarito
+					border-bottom 1px solid #aeadb3
+					display inline-block
+					margin 0
+					padding 0
+					text-align center
+					width 180px
+					a
+						color #aeadb3
+						display block
+						font-size 17px
+						//font-family 'oswaldregular'
+						font-family 'proxima_nova_rgbold'
+						line-height 40px
+						text-decoration none
+						text-transform uppercase
+						h3
+							font-weight 100
+							margin 0
+							padding 5px 5px 0 5px
+				.tab-current
+					background white
+					border-bottom 1px solid white
+					border-left 1px solid #aeadb3
+					border-top 1px solid #aeadb3
+					border-right 1px solid #aeadb3
+					a
+						color oscuro
+						h3
+							padding 5px 10px 0 10px
+		.content-wrap
+			table
+				width 100% !important
+			section
+			.seccionTab
+				display none
+				p
+					font-size 14px
+					font-weight 100
+					margin 0
+				.contenedorComentario
+					.contenedorInternoComentario
+						.comentario
+							border-bottom 1px solid clarito
+							padding 15px 0
+							.usuarioInfo
+								width 120px
+								.comment_author_infos
+									text-transform uppercase
+									em
+										font-size 13px
+										margin 0
+									em
+									strong
+										display block
+										padding-left 5px
+								.star_content
+									margin-top 5px
+									.star
+										height 13px
+										margin 0
+										width 13px
+										&:after
+											font-size 9px
+							.usuarioInfo
+							.detalleComentario
+								display inline-block
+								vertical-align top
+							.detalleComentario
+								p
+									strong
+										font-style normal
+										font-weight 400
+										text-transform capitalize
+							.teSirvio
+								display none
+						.align_center
+							font-family 'proxima_nova_rgbold'
+							font-size 15px
+							margin-top 15px
+							text-align right
+							a
+								color #aeadb3
+								&:hover
+									color rojoAsiste
+
+			section
+			.content-current
+				margin-top -1px
+			.content-current
+				border 1px solid #aeadb3
+				box-sizing border-box
+				display block
+				padding 25px
+				width 100%
+				table
+					font-family 'proxima_nova_rgregular'
+					font-weight 100
+					tbody
+						.even
+							td
+								border 0
+						.even
+						.odd
+							td
+								padding 5px 10px
+						.odd
+							background clarito
+							border 0
+						tr
+							td
+								text-align left
+								&:nth-child(1)
+									color #aeadb3
+
+.telefono:hover ~ .telefonoContenedor
+	display block
+
+.textoLink
+	color oscuro
+	font-size 15px
+	//padding 5px
+	text-align left
+	width 100%
+	.row
+	.payment_module
+		background #fbfbfb
+		border 2px solid #ddd
+		//border-radius 10px
+		display block
+		margin 2px auto
+		width 70%
+	.payment_module
+		margin 0 auto
+		a
+			//border-radius 10px
+			color oscuro
+			display block
+			font-family 'proxima_nova_rgbold'
+			//font-size 14px
+			line-height 79px
+			margin 0 1px
+			padding 15px
+			position relative
+			text-decoration none
+			text-transform uppercase
+			transition .3s
+			&:hover
+				background #999
+				color white
+				&:after
+				&:before
+					background white
+					/*border-bottom 2px solid oscuro
+					border-top 2px solid oscuro
+					border-right 2px solid oscuro
+					color white
+				&:before
+					border-left 2px solid oscuro*/
+			&:after
+				background #ddd
+				/*border-bottom 1px solid #E4E4E4
+				border-top 1px solid #E4E4E4
+				border-right 1px solid #E4E4E4*/
+				bottom 0
+				color colorao
+				content '\e732'
+				font-family 'icos'
+				font-size 18px
+				height 30px
+				line-height 30px
+				padding 0 5px
+				position absolute
+				right -2px
+				transition .3s
+			&:before
+				background #ddd
+				/*border-bottom 1px solid #E4E4E4
+				border-left 1px solid #E4E4E4
+				border-top 1px solid #E4E4E4*/
+				bottom 0
+				color colorao
+				content 'Ir a Pagar'
+				font-family 'proxima_nova_rgbold'
+				font-size 15px
+				font-weight 600
+				height 30px
+				line-height 30px
+				padding 0 10px
+				position absolute
+				text-transform initial
+				right 23px
+				transition .3s
+			img
+				border none
+				height 75px !important
+				margin-right 5px
+				vertical-align middle
+				width 75px !important
+			span
+				display none
+		&:hover
+			background clarito
+	.row
+		.payment_module
+			border 1px solid transparent
+			width 100%
+
+.textoSimple
+	font-size 15px
+
+.titulocentrado
+	margin 0 auto
+	max-width 950px
+
+.toggle-footer
+	span
+		a
+			color clarito
+			transition .2s
+			&:hover
+				color naranjito
+
+.trigger
+	display none
+
+.unvisible
+	display none
+
+.visible
+	visibility visible !important
+
+.volverBusqueda
+	a
+		color oscuro
+		display block
+		font-family 'oswaldregular'
+		font-weight 100
+		margin-bottom 15px
+
+.wishlisturl
+	input
+		background #eaeaea
+		cursor not-allowed
+		font-size 15px
+		font-weight 300
+	input
+	label
+		text-align left
+		width 100%
+	label
+		font-weight 700
+
+.wlp_bought
+	margin-top 26px
+	ul
+		margin 0
+		padding 0
+		li
+			display inline-block
+			margin 0 0.3%
+			padding 0
+			width 24%
+			.row
+				img
+					width 100%
+				p
+					display block
+					//text-align center
+					label
+						font-size 11px
+						display block
+						width 100%
+					input
+					select
+						display block
+						border-radius 2px
+						margin 0
+						text-align right
+						width 80%
+					select
+						option
+							text-align right
+				.col-xs-6
+					.product_infos
+						.product-name
+							font-size 14px
+							font-weight 600
+	.btn_action
+		border-bottom 1px solid clarito
+		border-radius 2px
+		//display block
+		//line-height 40px
+		margin 0 auto
+		padding-bottom 25px
+		text-align left
+		transition .3s
+		//width 30%
+		a
+			background clarito
+			margin-right 5%
+			padding 3px 15px
+			text-decoration none
+			span
+				color oscuro
+				font-family 'proxima_nova_rgregular'
+				font-weight 100
+			&:hover
+				background rojoAsiste
+				span
+					color white
+
+.wl_send
+	margin-top 24px !important
+	fieldset
+		div
+			margin 5px auto
+			input
+				width 200px
+			label
+				color oscuro
+		.required
+			color oscuro
+			font-size 13px
+			text-align right
+		.submit
+			text-align right
+			button
+				background clarito
+				border none
+				span
+					color oscuro
+					padding 5px 15px
+
+//
+// .cupon
+// 	background rgba(oscuro, .5)
+// 	//display block
+// 	height 100%
+// 	position fixed
+// 	visibility hidden
+// 	width 100%
+// 	z-index 10000
+// 	.avisoCupon
+// 		background white
+// 		margin 0 auto
+// 		width 500px
+
+@keyframes anim-open {
+	0% { opacity: 0; transform: scale3d(1.1, 1.1, 1); }
+	100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+@keyframes anim-close {
+	0% { opacity: 1; }
+	100% { opacity: 0; transform: scale3d(0.9, 0.9, 1); }
+}
+
+
+#block_various_links_footer
+	display none
+
+#sslsSiteSeal
+	display inline-block
+	vertical-align top
+	width 200px
+	.sslslock
+		padding 0 !important
+		img
+			height 40px !important
+			
+#videoholder
+	padding 0 !important
+
+// cosas sin resolver
+
+#oosHook
+	display none
