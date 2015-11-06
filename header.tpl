@@ -49,8 +49,6 @@
 		<link rel="stylesheet" href="{$css_dir}normalize.css">
 		<link rel="stylesheet" href="{$css_dir}verticalmenu.css">
 		<link rel="stylesheet" href="{$css_dir}estilos.css">
-		<link rel="stylesheet" href="{$css_dir}animate.css">
-		<link rel="stylesheet" href="{$css_dir}internos.css">
 		<link rel="stylesheet" href="{$css_dir}owl.carousel.css">
 		<link rel="stylesheet" href="{$css_dir}fancybox.css">
 		<link rel="stylesheet" href="{$css_dir}responsive.css">

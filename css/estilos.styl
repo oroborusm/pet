@@ -2605,7 +2605,24 @@ h1
 	text-align center
 	span
 		display block
-		
+
+header
+	position absolute
+	top 0
+	left 0
+	width 100%
+	background #4e6361
+	z-index 3
+	transform translateZ(0)
+	backface-visibility hidden
+	transition-property transform
+	transition-duration 0.4s
+
+header.lateral-menu-is-open
+	transform translateX(-260px)
+header.is-fixed
+	position fixed
+	
 hr
 	display none
 
@@ -3992,6 +4009,24 @@ td
 			text-align right
 			width 50%
 
+.cd-img-replace
+	display inline-block
+	overflow hidden
+	text-indent 100%
+	white-space nowrap
+
+.cd-main-content
+	backface-visibility hidden
+	background white
+	position relative
+	transform translateZ(0)
+	transition-duration 0.4s
+	transition-property transform
+	z-index 2
+
+.cd-main-content.lateral-menu-is-open
+	transform translateX(-260px)
+
 .checkbox
 	a
 		background clarito
@@ -4053,15 +4088,6 @@ td
 	&:before
 		content ''
 
-.clear
-	clear both
-
-
-.clearfix:before
-.clearfix:after
-	content " "
-	display table
-
 .cienPorciento
 	width 100% !important
 
@@ -4075,6 +4101,14 @@ td
 	visibility visible
 	width 25px
 	z-index 10
+
+.clear
+	clear both
+
+.clearfix:before
+.clearfix:after
+	content " "
+	display table
 
 .col-sm-2
 	display block
@@ -4342,6 +4376,34 @@ td
 	overflow hidden
 	position relative
 	width 950px
+
+.content_scene_cat
+	border-top 5px solid #f8b302
+	color #d7d7d7
+	line-height 19px
+	margin 0 0 26px 0
+	a 
+		color white 
+		&:hover 
+			text-decoration underline 
+	p
+		color white
+		margin-bottom 0
+	span.category-name
+		color white
+		font 600 42px/51px "oswaldregular"
+		margin-bottom 12px
+	.content_scene 
+		color #777777 
+		.cat_desc 
+			padding-top 20px 
+			a 
+				color #777777
+				&:hover 
+					color #515151
+	.content_scene_cat_bg
+		background-color #009999 !important
+		padding 18px 10px 10px 42px
 
 .content_only
 	h2
@@ -4862,6 +4924,9 @@ td
 	font-size 13px
 	font-weight 100
 	margin 0
+
+.items
+	position absolute
 
 .lineas
 	&:before
@@ -5638,6 +5703,9 @@ td
 		left -7px
 		position absolute*/
 
+.overflow-hidden
+	overflow hidden
+
 .owl-carousel
 	.owl-stage-outer
 		.owl-stage
@@ -5881,6 +5949,11 @@ td
 .sf-sub-indicator
 	display none
 
+.slider-container
+	margin 0
+	padding 0
+	position relative
+
 .socialsharing_product
 	font-size 0
 	text-align center
@@ -5964,6 +6037,49 @@ td
 			h5
 				a
 					font-size 15px !important
+
+.subcategories
+	border-top 1px solid #d6d4d4
+	overflow hidden
+	padding 15px 0 0px 0 
+	p.subcategory-heading
+		color #333333
+		font-family 'proxima_nova_rgregular'
+		font-weight bold
+		margin 0 0 15px 0 
+	ul
+		margin 0
+		padding 0
+		li
+			float left
+			height 202px 
+			list-style none
+			margin 0 10px 13px 0
+			text-align center
+			width 145px
+			h5
+				margin 0
+      
+			.subcategory-image
+				padding 0 0 8px 0 
+				a
+					border 1px solid #d6d4d4 
+					display block
+					padding 9px
+					img
+						max-width 100%
+						vertical-align top 
+			.subcategory-name
+				color #555454
+				font-family 'proxima_nova_rgregular'
+				text-transform uppercase 
+				&:hover
+					color #515151 
+			.cat_desc
+				display none 
+			&:hover .subcategory-image a
+				border 5px solid #333333
+				padding 5px 
 
 .subcategory-name
 	font-size 15px !important
@@ -6285,6 +6401,10 @@ td
 .unvisible
 	display none
 
+.view-port
+	overflow hidden
+	position relative
+
 .visible
 	visibility visible !important
 
@@ -6413,6 +6533,137 @@ td
 	0% { opacity: 1; }
 	100% { opacity: 0; transform: scale3d(0.9, 0.9, 1); }
 }
+
+.no-touch #cd-top-nav a:hover
+	color rgba(255, 255, 255, 0.7)
+
+#cd-lateral-nav
+	backface-visibility hidden
+	background-color #ECEDEF
+	height 100%
+	overflow-y auto
+	position fixed
+	right 0
+	top 0
+	transform translateX(80px)
+	transform translateZ(0)
+	transition transform .4s 0s, visibility 0s .4s
+	visibility hidden
+	width 260px
+	z-index 1
+	a
+		display block
+		.current
+			background-color #3a4a4d
+			color #FFF
+	.sub-menu
+		display none
+	&.lateral-menu-is-open
+		-webkit-overflow-scrolling touch
+		transform translateX(0)
+		transition transform .4s 0s, visibility 0s 0s
+		visibility visible
+	
+	.item-has-children > a
+		position relative
+		text-transform uppercase
+		&:after
+			background url("../img/cd-arrow.svg") no-repeat center center
+			background-size 8px 11px
+			bottom auto
+			content ''
+			display block
+			height 11px
+			position absolute
+			right 1em
+			top 50%
+			transform translateY(-50%)
+			transition-duration 0.2s
+			transition-property transform
+			width 8px
+		.submenu-open
+			&:after
+				transform translateY(-50%) rotate(90deg)
+
+#cd-logo
+	display block
+	float left
+	margin 12px 0 0 20px
+	img
+		display block
+		
+#cd-menu-trigger
+	background-color #ECEDEF
+	border 1px solid #879193
+	border-radius 5px
+	height 100%
+	position absolute
+	right 5px
+	top 0
+	width 40px
+
+	.cd-menu-text
+		color #FFF
+		display none
+		font-weight 600
+		height 100%
+		text-transform uppercase
+	.cd-menu-icon
+		background-color #434142 
+		bottom auto
+		display inline-block
+		height 2px
+		left 50%
+		position absolute
+		right auto
+		top 50%
+		transform translateX(-50%) translateY(-50%)
+		width 18px
+		&:after
+			top 5px
+		&:before,
+		&:after
+			background-color #434142
+			content ''
+			height 100%
+			left 0
+			position absolute
+			width 100%
+		&:before
+			bottom: 5px
+			
+	&.is-clicked .cd-menu-icon
+		background-color: rgba(255, 255, 255, 0)
+		&:after
+			top 0
+			transform rotate(-45deg)
+		&:before,
+		&:after
+			background-color #434142
+		&:before
+			bottom 0
+			transform rotate(45deg)
+
+#cd-top-nav 
+	display none
+	height 100%
+	position absolute
+	right 120px
+	top 0
+	ul 
+		height 100%
+		padding-top 18px
+		li 
+			display inline-block
+			margin-right 1em
+	a 
+		color #FFF
+		display inline-block
+		font-weight 600
+		padding .5em
+		text-transform uppercase
+		.current 
+			background-color #242e30
 
 
 #block_various_links_footer
