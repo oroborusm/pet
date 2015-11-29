@@ -4,10 +4,12 @@
 
 //calipso = #5fa098
 calipso = #009999
+celestePet = #009BDB
 clarito = #ecedef
 colorao = #F4714A
 naranjito = #f8b302
 naranjo = #FF6B00
+naranjoPet = #F38A00
 oscuro = #434142
 cafoso = #211915
 rosadito = #fa524e
@@ -16,77 +18,61 @@ naranjoClaro = #F39C02
 grisAzul = #A1A5AD
 azulAsiste = #0040a6
 rojoAsiste = #ff4c00
-otroGris = rgb(91, 91, 95)
+otroGris = #5B5B5F
 //verdeAsiste = #038a7a
 verdeAsiste = #038a7a
 verdeClarito = #71b238
 azulCpo = #007cc3
 grisClaro1 = #999
 grisClaro2 = #727176
+hoverBlue = #036
+verdeOscuro = #008F2F
+verdeClaroPet = #99BE11
 
 *
 	box-sizing border-box
 	
-@font-face {
-    font-family: 'proxima_novalight';
-    src: url('../font/proximanova-light.eot');
-    src: url('../font/proximanova-light.eot?#iefix') format('embedded-opentype'),
-         url('../font/proximanova-light.woff2') format('woff2'),
-         url('../font/proximanova-light.woff') format('woff'),
-         url('../font/proximanova-light.ttf') format('truetype'),
-         url('../font/proximanova-light.svg#proxima_novalight') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-	
 @font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('../font/proximanova-bold.eot');
-    src: url('../font/proximanova-bold.eot?#iefix') format('embedded-opentype'),
-         url('../font/proximanova-bold.woff2') format('woff2'),
-         url('../font/proximanova-bold.woff') format('woff'),
-         url('../font/proximanova-bold.ttf') format('truetype'),
-         url('../font/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+    font-family: 'quicksandbold';
+    src: url('../font/quicksand-bold-webfont.eot');
+    src: url('../font/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../font/quicksand-bold-webfont.woff') format('woff'),
+         url('../font/quicksand-bold-webfont.ttf') format('truetype'),
+         url('../font/quicksand-bold-webfont.svg#quicksandbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
 @font-face {
-    font-family: 'proxima_novaextrabold';
-    src: url('../font/proximanova-extrabold.eot');
-    src: url('../font/proximanova-extrabold.eot?#iefix') format('embedded-opentype'),
-         url('../font/proximanova-extrabold.woff2') format('woff2'),
-         url('../font/proximanova-extrabold.woff') format('woff'),
-         url('../font/proximanova-extrabold.ttf') format('truetype'),
-         url('../font/proximanova-extrabold.svg#proxima_novaextrabold') format('svg');
+    font-family: 'quicksanditalic';
+    src: url('../font/quicksand-italic-webfont.eot');
+    src: url('../font/quicksand-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-italic-webfont.woff2') format('woff2'),
+         url('../font/quicksand-italic-webfont.woff') format('woff'),
+         url('../font/quicksand-italic-webfont.ttf') format('truetype'),
+         url('../font/quicksand-italic-webfont.svg#quicksanditalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('../font/proximanova-regular.eot');
-    src: url('../font/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-         url('../font/proximanova-regular.woff2') format('woff2'),
-         url('../font/proximanova-regular.woff') format('woff'),
-         url('../font/proximanova-regular.ttf') format('truetype'),
-         url('../font/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
+
 
 @font-face {
-    font-family: 'oswaldbold';
-    src: url('../font/oswald-bold.eot');
-    src: url('../font/oswald-bold.eot?#iefix') format('embedded-opentype'),
-         url('../font/oswald-bold.woff2') format('woff2'),
-         url('../font/oswald-bold.woff') format('woff'),
-         url('../font/oswald-bold.ttf') format('truetype'),
-         url('../font/oswald-bold.svg#oswaldbold') format('svg');
+    font-family: 'quicksandregular';
+    src: url('../font/quicksand-regular-webfont.eot');
+    src: url('../font/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../font/quicksand-regular-webfont.woff') format('woff'),
+         url('../font/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../font/quicksand-regular-webfont.svg#quicksandregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -105,16 +91,6 @@ grisClaro2 = #727176
 }
 
 
-@font-face {
-	font-family: 'manias';
-	src:url('../font/manias.eot?-4sz0s6');
-	src:url('../font/manias.eot?#iefix-4sz0s6') format('embedded-opentype'),
-		url('../font/manias.woff?-4sz0s6') format('woff'),
-		url('../font/manias.ttf?-4sz0s6') format('truetype'),
-		url('../font/manias.svg?-4sz0s6#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 fieldset
 	border none
@@ -138,10 +114,10 @@ select
 	height 22px
 textarea
 	box-sizing border-box
-#category-thumbnail
-.category-thumbnail
-	display none !important
-	border-bottom none !important
+//#category-thumbnail
+//.category-thumbnail
+	// display none !important
+	// border-bottom none !important
 
 #htmlcontent_top
 	display none
@@ -191,7 +167,7 @@ body
 						//padding 10px 25px
 						//width 600px
 						h4
-							font-family 'proxima_nova_rgbold'
+							
 							//font-weight 100
 							font-size 15px
 							margin 0
@@ -222,7 +198,7 @@ body
 									width 23%
 									span
 										color white
-										font-family 'proxima_nova_rgbold'
+										
 										font-size 13px
 										line-height 17px
 										text-transform uppercase
@@ -253,7 +229,7 @@ body
 					color oscuro
 					text-decoration none
 				h4
-					font-family 'proxima_nova_rgbold'
+					
 					font-size 15px
 					font-weight 100
 					display block
@@ -417,66 +393,73 @@ body
 			//background white
 			//background #ecedef
 			border-bottom 1px solid clarito
-			height 100px
+			height 85px
 			margin 0 auto
 			position relative
 			figure
 				//background white
 				//border-right 1px solid clarito
 				//float left
-				height 70px
+				height 85px
 				//margin 0 0 0 10%
 				margin 0
 				padding 0
 				position absolute
-				width 200px
+				width 225px
 				z-index 3
 				a
 					//background blue
 					img
 						display block
-						margin 8px 0 0 0
+						margin 15px 0 0 0
 						width 100%
 			.headerCOnt
 				//background url('../img/montanas.png') no-repeat bottom 
 				background-size 100%
-				height 100px
+				height 85px
 				margin 0 auto
 				position relative
-				max-width 950px
+				max-width 1050px
 				.buscador
-					//background naranjito
+					background white
+					box-sizing content-box
+					border-radius 5px
+					box-shadow 0 0 10px oscuro
+					display none
 					//float right
-					height 50px
-					left 50%
+					//height 57px
+					//left 50%
 					margin-left -150px
 					//margin 0 10% 0 0
+					padding 20px
 					position absolute
-					top 0
+					top 62px
+					right 0
 					width 300px
+					z-index 2
 					.buscadorForm
 						background white
-						border-bottom 2px solid grisClaro1
+						border-bottom 2px solid hoverBlue
 						//border-radius 2px
-						height 26px
+						height 30px
 						//left 30px
 						margin 0
-						position absolute
-						top 10px
-						width 100%
+						position relative
+						//top 30px
+						//width 100%
 						form
-							box-sizing border-box
-							//height 2em
+							//box-sizing border-box
+							height 30px
 							//position relative
 							//text-align center 
 							z-index -1
 							button
-								background grisClaro1
+								background hoverBlue
 								border none
 								border-radius 0 0 2px 0
 								bottom -2px
 								cursor pointer
-								height 26px
+								height 30px
 								margin 0
 								padding 0
 								position absolute
@@ -490,13 +473,13 @@ body
 										content '\e67f'
 										font-family 'icos'
 										font-size 1em
-										line-height 26px
+										line-height 30px
 							input
 								background white
 								border none
 								border-radius .5em
 								//font-size 15px
-								//height 26px
+								height 28px
 								//margin-top 35px
 								padding 0 0 0 5%
 								width 80%
@@ -628,7 +611,7 @@ body
 								color oscuro
 								width 100%
 								span
-									font-family 'proxima_nova_rgbold'
+									
 									font-size 18px
 									font-weight 100
 									line-height 40px
@@ -702,7 +685,7 @@ body
 								color rojoAsiste
 								width 100%
 								span
-									font-family 'proxima_nova_rgbold'
+									
 									font-size 18px
 									font-weight 100
 									line-height 40px
@@ -828,7 +811,7 @@ body
 					width 30%
 					span
 						color white
-						font-family 'proxima_nova_rgbold'
+						
 						font-weight 100
 						line-height 30px
 				.requerido
@@ -1023,7 +1006,7 @@ body
 								color white
 						span
 							color oscuro
-							font-family 'proxima_nova_rgbold'
+							
 							font-size 18px
 							text-transform uppercase
 
@@ -1037,16 +1020,16 @@ body
 		h1
 			text-align center
 	.contCarrusel
-		background-color #211915
+		background-color #32A99A
 		margin 4px auto 0
 		position relative
 		width 100%
 		.contCarruselInt
 			//background #f7f7f8
 			font-size 0
-			height 300px
+			height 330px
 			margin 0 auto
-			overflow hidden
+			//overflow hidden
 			position relative
 			max-width 950px
 			.carrusel
@@ -1060,7 +1043,7 @@ body
 					padding 0
 					.homeslider-container
 						position relative
-						&:after
+						/*&:after
 							background linear-gradient(to right , transparent 50%, #211915)
 							content ''
 							height 100%
@@ -1075,20 +1058,20 @@ body
 							left 0
 							position absolute
 							top 0
-							width 150px
+							width 150px*/
 						a
 							.sliderimage
 								background-size cover
 								background-position center center
-								height 300px
+								height 330px
 								width 100%
 						.homeslider-description
 							//background rgba(0,0,0, .6)
-							height 300px
+							left 0
+							height 330px
 							position absolute
 							top 0
-							right 0
-							width 50%
+							width 40%
 							/*&:before
 								border-bottom 150px solid transparent
 								border-left 30px solid rgba(0,0,0, .6)
@@ -1098,32 +1081,43 @@ body
 								position absolute
 								left 100%*/
 							.intDescription
-								margin 3em auto 0
+								background rgba( naranjoPet, .8)
+								border-radius 0 0 10px 0
+								margin 110px auto 0
+								padding 20px 30px
 								position relative
-								text-transform uppercase
-								width 80%
+								width 100%
 								z-index 2
 								h2
 									//border-bottom 1px solid white
 									color white
 									font-size 1.2em
 									font-style uppercase
-									margin 0 0 5px 0
-									text-align right
+									margin 0
+									text-align left
+									text-transform uppercase
 								p
 									color white
 									font-size .9em
-									text-align right
+									margin 0
+									text-align left
 									.btn
-										background naranjo
-										border none
-										box-sizing border-box
+										background verdeOscuro
+										border 4px solid white
+										border-radius 50%
 										color white
-										float right
-										font-family 'proxima_nova_rgbold'
+										display block
+										//float right
+										
+										height 73px
 										padding .8em
+										position absolute
+										right -25px
+										text-align center
 										text-decoration none
+										top -20px
 										transition .3s
+										width 73px
 										&:hover
 											background rojoAsiste
 								ul
@@ -1338,7 +1332,7 @@ body
 				text-decoration none
 				span
 					color white
-					font-family 'proxima_nova_rgbold'
+					
 			&:hover
 				background grisAzul
 		.volver
@@ -1395,7 +1389,7 @@ body
 			//max-width 1150px
 			li
 				display inline-block
-				font-family 'proxima_nova_rgbold'
+				
 				font-weight 100
 				//height 30px
 				list-style none
@@ -1441,7 +1435,7 @@ body
 			//border-radius 5px
 			color otroGris
 			display block
-			font-family 'proxima_nova_rgregular'
+			
 			font-size 13px
 			font-weight 100
 			line-height 25px
@@ -1478,7 +1472,7 @@ body
 							background oscuro
 							border-bottom 1px solid #999
 							color clarito
-							font-family 'proxima_nova_rgbold'
+							
 							font-size 18px
 							font-weight 100
 							line-height 50px
@@ -1488,7 +1482,7 @@ body
 
 						span
 							//display inline-block
-							font-family 'proxima_nova_rgregular'
+							
 							font-size 13px
 							text-transform uppercase
 		// aca estaba el navegador
@@ -1515,7 +1509,7 @@ body
 									text-decoration none
 									span
 										color otroGris
-										font-family 'proxima_nova_rgregular'
+										
 										font-size 13px
 									&:hover
 										span
@@ -1543,7 +1537,7 @@ body
 								border-radius 5px
 								color oscuro
 								display block
-								font-family 'proxima_nova_rgregular'
+								
 								font-size 15px
 								line-height 40px
 								//margin 0 auto 10px
@@ -1570,13 +1564,13 @@ body
 										text-decoration none
 										span
 											color otroGris
-											font-family 'proxima_nova_rgregular'
+											
 											font-size 13px
 										&:hover
 											span
 												color rojoAsiste
 									label
-										font-family 'proxima_nova_rgregular'
+										
 										font-size 15px
 					.listaDireccion
 						display block
@@ -1651,7 +1645,7 @@ body
 		h1
 			text-align center
 		.info-account
-			font-family 'proxima_nova_rgregular'
+			
 			font-size 13px
 			//font-style italic
 			font-weight 100
@@ -1884,7 +1878,7 @@ body
 							width 35px
 	.popularesMasVendidos
 		margin 0 auto
-		max-width 950px
+		max-width 1050px
 		div
 			//font-size 0
 			ul
@@ -1913,7 +1907,7 @@ body
 					a
 						color white
 						display block
-						font-family 'proxima_nova_rgbold'
+						
 						font-size 22px
 						//font-weight 600
 						line-height 40px
@@ -1925,7 +1919,7 @@ body
 						//border 1px dashed white
 						color oscuro
 						display block
-						font-family 'proxima_nova_rgbold'
+						
 						font-size 20px
 						//font-weight 600
 						//left 50%
@@ -1983,7 +1977,7 @@ body
 						//background naranjito
 						text-align center
 					.homefeatured
-						background calipso
+						background white
 
 			.tab-content
 				//display none
@@ -2034,7 +2028,7 @@ body
 					width 67%
 					h1
 						color oscuro
-						font-family 'proxima_nova_rgbold'
+						
 						font-size 24px
 						font-weight 100
 						margin 10px 0
@@ -2097,7 +2091,7 @@ body
 														span
 															color white
 															display block
-															font-family 'proxima_nova_rgbold'
+															
 															font-size 20px
 															//margin-left 49px
 															//text-align left
@@ -2149,13 +2143,13 @@ body
 											width 40%
 											span
 												color rojoAsiste
-												font-family 'proxima_nova_rgbold'
+												
 												font-size 30px
 												font-weight 100
 												//padding-right 20px
 											.textChico
 												color oscuro
-												font-family 'proxima_nova_rgbold'
+												
 												font-size 13px
 								.cantidad
 									border-bottom 2px solid #ddd
@@ -2182,7 +2176,7 @@ body
 											bottom 0
 											box-sizing border-box
 											color rojoAsiste
-											font-family 'proxima_nova_rgbold'
+											
 											font-size 20px !important
 											height 40px
 											left 0
@@ -2265,7 +2259,7 @@ body
 								a
 									color oscuro
 									display block
-									font-family 'proxima_nova_rgbold'
+									
 									padding 0 3px
 									text-decoration none
 							
@@ -2278,7 +2272,7 @@ body
 								margin-right 5px
 								text-align right
 								span
-									font-family 'proxima_nova_rgbold'
+									
 									font-size 13px
 								span
 								.star_content
@@ -2300,9 +2294,9 @@ body
 									line-height 28px
 									margin 0
 								label
-									font-family 'proxima_nova_rgbold'
+									
 								span
-									font-family 'proxima_nova_rgregular'
+									
 									
 					.linkComentario
 						bottom 40px
@@ -2353,7 +2347,7 @@ body
 						color oscuro
 						//display block
 						//float left
-						font-family 'proxima_nova_rgregular'
+						
 						font-size 10px
 						margin-left 15px
 						padding 2px
@@ -2365,7 +2359,7 @@ body
 						.rodeaTexto
 							p
 								color oscuro
-								font-family 'proxima_nova_rgregular'
+								
 								font-size 15px
 				.contenedorImagenes
 				.descripcion
@@ -2606,22 +2600,55 @@ h1
 	span
 		display block
 
-header
-	position absolute
+.head-fixed
+	//border-bottom 2px solid white
+	position fixed !important
 	top 0
-	left 0
 	width 100%
-	background #4e6361
-	z-index 3
-	transform translateZ(0)
-	backface-visibility hidden
-	transition-property transform
-	transition-duration 0.4s
+	z-index 2
+				
+	.infoAdicionalHeader
+		display none
 
-header.lateral-menu-is-open
-	transform translateX(-260px)
-header.is-fixed
-	position fixed
+// header
+// 	//position absolute
+// 	top 0
+// 	left 0
+// 	width 100%
+// 	background #4e6361
+// 	z-index 3
+// 	transform translateZ(0)
+// 	backface-visibility hidden
+// 	transition-property transform
+// 	transition-duration 0.4s
+
+// header.lateral-menu-is-open
+// 	transform translateX(-260px)
+	
+// header.is-fixed
+// 	position fixed
+	
+// .menu-fixed
+// 	background-color white !important
+// 	border-bottom 2px solid verdeClaroPet
+// 	border-top none !important
+// 	position fixed !important
+// 	top 55px
+// 	width 100%
+// 	z-index 1
+// 	.menuManias
+// 		background-color white !important
+// 		height 25px !important
+// 		.menuTop
+// 			border-left 1px solid #ddd
+// 		.menuTop > li
+// 			border-right 1px solid #ddd
+// 			height 25px !important
+// 		.menuTop > li > a
+// 				color oscuro
+// 				font-size 16px
+// 				line-height 25px !important
+// 				text-transform capitalize !important
 	
 hr
 	display none
@@ -2632,7 +2659,7 @@ table
 	thead
 		background oscuro
 		border-bottom 1px solid rojoAsiste
-		font-family 'proxima_nova_rgbold'
+		
 		font-size 13px
 		tr
 			border-radius 2px
@@ -2704,7 +2731,7 @@ table
 						color oscuro
 						text-decoration none
 				.product-name
-					font-family 'proxima_nova_rgbold'
+					
 					font-size 16px
 					font-weight 100
 					max-width 350px
@@ -2713,16 +2740,16 @@ table
 				width 100px
 			.cart_total
 				span
-					font-family 'proxima_nova_rgbold'
+					
 					font-weight 600
 			.cart_quantity
-				font-family 'proxima_nova_rgbold'
+				
 				font-weight 100
 				input
 					box-sizing border-box
 					padding 3px 5px
 			.cart_unit
-				font-family 'proxima_nova_rgbold'
+				
 				.price
 					.special-price
 						display none
@@ -2773,29 +2800,29 @@ table
 			.textTotal
 			.textoTotal
 			.transporte
-				font-family 'proxima_nova_rgregular'
+				
 				font-size 13px
 			.precioTotal
 				border-bottom 2px solid rojoAsiste
 				span
 					color rojoAsiste
-					font-family 'proxima_nova_rgbold'
+					
 					font-size 30px
 					font-weight 100
 					text-transform uppercase
 			.price
-				font-family 'proxima_nova_rgbold'
+				
 				//font-weight 600
 		.cart_total_delivery
 			.text-right
-				font-family 'proxima_nova_rgregular'
+				
 				font-size 13px	
 		.cart_total_price
 			.priceFinal
 				border-bottom 2px solid rojoAsiste
 				span
 					color rojoAsiste
-					font-family 'proxima_nova_rgbold'
+					
 					font-size 30px
 					font-weight 100
 					text-transform uppercase
@@ -2823,7 +2850,7 @@ td
 		border 1px solid transparent
 		border-bottom 2px solid clarito
 		color oscuro
-		font-family 'proxima_nova_rgbold'
+		
 		font-size 20px
 		font-weight 100
 		line-height 40px
@@ -2842,7 +2869,7 @@ td
 			a
 				color oscuro
 				display block
-				font-family 'proxima_nova_rgregular'
+				
 				font-size 18px
 				font-weight 400
 				line-height 50px
@@ -2918,17 +2945,17 @@ td
 						background aliceblue
 			.emailLogin
 				// border-top 1px solid naranjito
-				font-family 'proxima_nova_rgbold'
+				
 			.passwordLogin
 				// border-top 1px solid naranjito
 				//border-bottom 1px solid naranjito
-				font-family 'proxima_nova_rgbold'
+				
 			.linkCreaCuenta
 				background rojoAsiste
 				border-radius 2px
 				color white
 				display block
-				font-family 'proxima_nova_rgbold'
+				
 				font-size 15px
 				line-height 30px
 				margin 0
@@ -2957,7 +2984,7 @@ td
 						background azulAsiste
 						color white
 					span
-						font-family 'proxima_nova_rgbold'
+						
 						font-size 15px
 						line-height 30px
 				input
@@ -3006,7 +3033,7 @@ td
 
 .alertClica
 	color #999
-	font-family 'proxima_nova_rgbold'
+	
 	font-size 15px
 	margin 20px 0
 	text-align center
@@ -3065,30 +3092,31 @@ td
 			list-style none
 			
 .añadeCarrituHome
-	//background azulAsiste
-	background #ff4c00
-	//border-radius 50%
+	background #B53646
+	//background linear-gradient(to bottom right, white 50%, naranjoPet 50%)
+	border-radius 50%
+	box-shadow 0 0 10px oscuro
 	//bottom 0
-	bottom -44px
+	bottom -40px
 	cursor pointer
 	//font-size 13px
 	//float right
-	right -46px
-	height 90px
+	right -40px
+	height 80px
 	//margin-left -27px
 	opacity 0
 	position absolute
 	transition .4s
-	transform rotate(45deg)
-	width 90px
+	//transform rotate(45deg)
+	width 80px
 	z-index 1
 	a
 		display block
-		height 90px
+		height 50px
 		text-decoration none
-		width 90px
+		width 50px
 		span
-			&:before
+			/*&:before
 				bottom 35px
 				color white
 				content '\e636'
@@ -3100,7 +3128,17 @@ td
 				position absolute
 				text-align center
 				transform rotate(-45deg)
-				width 25px
+				width 25px*/
+			&:before
+				bottom 0
+				color white
+				content '\ea3e'
+				font-family 'iconos'
+				font-size 30px
+				left 10px
+				position absolute
+				top 12px
+				
 	.carritoVacio
 		&:before
 			color white
@@ -3121,7 +3159,7 @@ td
 		width 25px
 
 .bodyWishlist
-	font-family 'proxima_nova_rgregular'
+	
 	font-size 100
 
 .boton
@@ -3129,7 +3167,32 @@ td
 
 .bottom-footer
 	display none
-	
+
+.boton-search
+	background #003366
+	border-radius 3px
+	cursor pointer
+	height 37px
+	display block
+	position absolute
+	right 0
+	top 23px
+	width 37px
+	.icon-search
+		color white
+		display block
+		font-size 25px
+		line-height 37px
+		text-align center
+		width 37px
+	.icon-cross
+		color white
+		display block
+		font-size 18px
+		line-height 37px
+		text-align center
+		width 37px
+
 .box
 	//border 1px solid clarito
 	font-size 15px
@@ -3249,34 +3312,56 @@ td
 			transition .5s
 
 .bx-controls
-	bottom 15px
+	bottom -15px
 	position absolute
-	text-align right
-	width 95%
+	text-align center
+	width 100%
+.bx-controls-direction
+	position absolute
+	top 55px
+	width 100%
 .bx-start.active
 .bx-pager-link.active
-	background azulAsiste
-	border 2px solid white
+	//background azulAsiste
+	//border 2px solid white
+	&:before
+		color naranjoPet
+		content '\ea34'
+		font-family 'iconos'
+		font-size 30px
+		line-height 30px
 .bx-pager-link
 	background white
-	border 2px solid azulAsiste
+	//border 2px solid azulAsiste
 	border-radius 50%
 	bottom 0
 	display inline-block
-	height .8rem
+	left 0
+	height 30px
 	position absolute
-	text-indent -9999px
+	text-decoration none
+	//text-indent -9999px
 	vertical-align middle
-	width .8rem
+	width 30px
+	&:before
+		color clarito
+		content '\ea34'
+		font-family 'iconos'
+		font-size 25px
+		line-height 30px
 .bx-pager-item
 	display inline-block
-	margin 0 1em 0 0
+	height 30px
+	margin 0 4px 0 0
+	position relative
+	width 30px
 	z-index 10000000000000
 	a
 		font-size 0
 
 .candadito
 	left 50%
+	line-height 40px
 	margin-left -80px
 	position absolute
 	top 0
@@ -3311,7 +3396,7 @@ td
 	box-sizing border-box
 	margin 1em auto
 	position relative
-	max-width 950px
+	max-width 1050px
 	#htmlcontent_home
 	.contenedor
 		//background red
@@ -3321,22 +3406,25 @@ td
 		ul
 		.row
 			font-size 0
+			list-style-type none
 			margin 0
 			padding 0
 			li
 				display inline-block
-				margin 0 0 -5px -5px
+				margin 0 0 -5px 0
 				padding 0
-				list-style none
 				overflow hidden
+				padding 5px
 				//position absolute
-				width 33.3%
+				width 25%
 				&:nth-child(1)
-					border-top 5px solid naranjo
+					//border-top 5px solid naranjo
 					left 0
 					top 0
 					a
 					.linkToCategory
+						background verdeOscuro
+						//border-radius 10px
 						figure
 							figcaption
 								h3
@@ -3346,26 +3434,14 @@ td
 									text-align center
 									text-transform uppercase
 									width 100%
-						.item-html
-							h3
-								bottom 2em
-								color white
-								margin 0
-								text-align center
-								text-transform uppercase
-								width 100%
-							p
-								color black
-								margin 0 5% 0 5%
-								text-align justify
-								top 4em
-								width 90%
 				&:nth-child(2)
-					border-top 5px solid naranjito
+					//border-top 5px solid naranjito
 					left 33.3%
 					top 0
 					a
 					.linkToCategory
+						background naranjoPet
+						//border-radius 10px
 						figure
 							figcaption
 								h3
@@ -3374,27 +3450,15 @@ td
 									margin 0
 									text-align center
 									text-transform uppercase
-									width 100%
-						.item-html
-							h3
-								bottom 2em
-								color white
-								margin 0
-								text-align center
-								text-transform uppercase
-								width 100%
-							p
-								color black
-								margin 0 5% 0 5%
-								text-align justify
-								top 4em
-								width 90%
+									width 100%				
 				&:nth-child(3)
-					border-top 5px solid #BA007C
+					//border-top 5px solid #BA007C
 					left 66.6%
 					top 0
 					a
 					.linkToCategory
+						background celestePet
+						//border-radius 10px
 						figure
 							figcaption
 								h3
@@ -3410,53 +3474,35 @@ td
 									text-align justify
 									top 4em
 									width 90%
-						.item-html
-							h3
-								top 2em
-								color oscuro
-								margin 0
-								text-align center
-								text-transform uppercase
-								width 100%
-							p
-								color black
-								margin 0 5% 0 5%
-								text-align justify
-								top 4em
-								width 90%
 				&:nth-child(4)
-					border-top 5px solid #191C59
-					bottom 0
-					left 0
+					//border-top 5px solid #BA007C
+					left 66.6%
+					top 0
 					a
 					.linkToCategory
-						.item-html
-							h3
-								color white
-								margin 0
-								text-align center
-								text-transform uppercase
-								top 1em
-								width 100%
-							p
-								color black
-								margin 0 5% 0 5%
-								text-align justify
-								top 4em
-								width 90%
+						background celestePet
+						//border-radius 10px
 						figure
 							figcaption
 								h3
-									color white
-									margin 0
-									text-align center
+									color black
+									margin 0 5% 0 5%
+									text-align left
 									text-transform uppercase
-									top 1em
-									width 100%
+									top 2em
+									width 90%
+								p
+									color black
+									margin 0 5% 0 5%
+									text-align justify
+									top 4em
+									width 90%
 				&:nth-child(5)
-					border-top 5px solid #A38051
-					left 33.3%
-					top 33.4%
+					//border-top 5px solid #A38051
+					//left 33.3%
+					margin-top 10px
+					//top 33.4%
+					width 50%
 					a
 					.linkToCategory
 						figure
@@ -3468,22 +3514,8 @@ td
 									text-transform uppercase
 									top 1em
 									width 100%
-						.item-html
-							h3
-								color oscuro
-								margin 0
-								text-align center
-								text-transform uppercase
-								top 1em
-								width 100%
-							p
-								color black
-								margin 0 5% 0 5%
-								text-align justify
-								top 4em
-								width 90%
 				&:nth-child(6)
-					border-top 5px solid #579532
+					//border-top 5px solid #579532
 					bottom 0
 					left 33.3%
 					a
@@ -3497,22 +3529,8 @@ td
 									text-align center
 									text-transform uppercase
 									width 100%
-						.item-html
-							h3
-								bottom 2em
-								color white
-								margin 0
-								text-align center
-								text-transform uppercase
-								width 100%
-							p
-								color black
-								margin 0 5% 0 5%
-								text-align justify
-								top 4em
-								width 90%
 				&:nth-child(7)
-					border-top 5px solid #7B057E
+					//border-top 5px solid #7B057E
 					bottom 0
 					left 66.6%
 					a
@@ -3580,7 +3598,7 @@ td
 						figcaption
 							transition .3s
 							h3
-								font-family 'proxima_nova_rgbold'
+								
 								position absolute
 								left 0
 								width 100%
@@ -3603,44 +3621,76 @@ td
 							width 100%
 						
 					.item-html
+						bottom 0
+						padding 5px 15px
+						position absolute
 						transition .3s
 						h3
-							font-family 'proxima_nova_rgbold'
-							position absolute
-							left 0
-							width 100%
-							color #484c61
-							transform translate3d(0,-50%,0)
-						h3
 						p
-							position absolute
 							transition 0.35s
-						p
-							font-family 'proxima_novalight'
-							//font-size 15px
-							left 0
-							//text-transform uppercase
-							transform translate3d(0,10px,0)
 							width 100%
+						h3
+							//bottom 2em
+							color white
 							
+							font-size 20px
+							margin 0
+							text-align left
+							text-transform uppercase
+							width 100%
+						p
+							color white
+							display block
+							font-family 'open sans'
+							font-size 16px
+							margin 0
+							//margin 0 5% 0 5%
+							text-align left
+							//top 4em
+							width 100%
+							//width 90%
+						ul
+							list-style-type disc
+							margin 0
+							padding 0
+							li
+								color white
+								display list-item
+								font-family 'open sans'
+								font-size 18px
+								margin 0 0 0 16px
+								overflow visible
+								padding 0
+								text-align left
+								width 100%
+
+.category-thumbnail
+	position absolute !important
+	right 20px
+	top 20px
+	div
+		img
+			width 200px
+					
 .carrito
 	//background #f8b302
 	//background #003F3F
 	//background rgb(255, 76, 0)
-	background rojoAsiste
+	//background rojoAsiste
 	border-radius 2px
 	cursor pointer
 	//float right
-	height 30px
+	height 37px
 	position absolute
-	right 0
+	right 43px
 	text-align center
-	top 7px
+	top 23px
 	transition .3s
-	width 90px
+	width 37px
 	//z-index 2147483647
 	.carritoIcon
-		&:before
+		color red
+		/*&:before
 			color white
 			content "\e601"
 			display block
@@ -3652,7 +3702,7 @@ td
 			position absolute
 			text-align center
 			top 0
-			width 90px
+			width 90px*/
 	// &:hover
 	// 	.carritoHover
 	// 		display block
@@ -3680,6 +3730,7 @@ td
 				width 100%
 				h3
 					color oscuro
+					font-family 'quicksandregular'
 					font-size 14px
 					line-height 40px
 					margin 0 0 0 50px
@@ -3706,6 +3757,7 @@ td
 							.first_item
 							.item
 							.last_item
+								font-family 'quicksandregular'
 								margin 3px 0
 								overflow hidden
 								padding-bottom 7px
@@ -3754,7 +3806,7 @@ td
 									width 160px
 									.product-name
 										float left
-										font-family 'proxima_nova_rgbold'
+										
 										width 110px
 										.cantidad
 											span
@@ -3765,7 +3817,7 @@ td
 											span
 												color oscuro
 												display inline-block
-												font-family 'proxima_nova_rgbold'
+												
 												font-size 13px
 											.quantity
 												margin-right 5px
@@ -3778,7 +3830,7 @@ td
 											.cart_block_product_name
 												color oscuro
 												display block
-												font-family 'proxima_nova_rgbold'
+												
 												font-size 13px
 												line-height initial
 												margin 0
@@ -3804,7 +3856,7 @@ td
 										// vertical-align top
 										line-height 40px
 									.price
-										font-family 'proxima_nova_rgbold'
+										
 										font-size 13px
 										position absolute
 										text-align right
@@ -3862,7 +3914,7 @@ td
 				text-decoration none
 				span
 					color white
-					font-family 'proxima_nova_rgbold'
+					font-family 'quicksandbold'
 					font-size 16px
 					margin 0
 					&:after
@@ -3882,13 +3934,18 @@ td
 		
 .carrito > .ajax_cart_quantity
 .carrito > .ajax_cart_no_product
+	background verdeOscuro
+	border 3px solid white
+	border-radius 50%
 	color white
 	font-size 11px
+	left -12px
+	line-height 19px
+	height 25px
 	position absolute
-	right 0
-	text-align left
-	top 0
-	width 45px
+	text-align center
+	top -12px
+	width 25px
 
 .carritoAlert
 	//background clarito
@@ -3900,11 +3957,12 @@ td
 	display none
 	font-size 12px
 	left 50%
-	margin-left 55px
-	margin-top 78px
+	margin-left -210px
+	//margin-top 78px
 	padding 15px 10px
 	position fixed
 	text-align right
+	top 125px !important
 	width 420px
 	z-index 100001
 	.crossseling
@@ -3945,7 +4003,7 @@ td
 	.layer_cart_product
 		text-align left
 		h2
-			font-family 'proxima_nova_rgregular'
+			
 			font-size 15px
 			font-style italic
 			font-weight 100
@@ -4153,17 +4211,17 @@ td
 			top -1px
 			width 13px
 	.ProdNuevo
-		font-family 'proxima_nova_rgregular'
+		
 		&:before
 			background-color verdeClarito
 			content 'N'
 	.ProdReparado
-		font-family 'proxima_nova_rgregular'
+		
 		&:before
 			background-color verdeAsiste
 			content 'R'
 	.ProdUsado
-		font-family 'proxima_nova_rgregular'
+		
 		&:before
 			background-color rojoAsiste
 			content 'U'
@@ -4183,7 +4241,7 @@ td
 				margin-top 10px
 				text-align left
 				label
-					font-family 'proxima_nova_rgregular'
+					
 					font-weight 100
 					display block
 					width 100%
@@ -4201,7 +4259,7 @@ td
 					margin 5px 0
 					width 90%
 					label
-						font-family 'proxima_nova_rgregular'
+						
 						font-weight 100
 					input
 						width 100%
@@ -4228,7 +4286,7 @@ td
 					margin 5px auto 0
 					label
 						display block
-						font-family 'proxima_nova_rgregular'
+						
 						font-weight 100
 						margin 2px 0
 						text-align left
@@ -4244,7 +4302,7 @@ td
 				padding 5px 25px
 				text-align center
 				span
-					font-family 'proxima_nova_rgregular'
+					
 				&:hover
 					background rojoAsiste
 					span
@@ -4299,7 +4357,7 @@ td
 				margin 0
 				padding 0 5px
 				label
-					font-family 'proxima_nova_rgregular'
+					
 					font-size 15px
 					font-weight 100
 					margin 5px 0
@@ -4311,7 +4369,7 @@ td
 			text-align left
 			width 69%
 			label
-				font-family 'proxima_nova_rgregular'
+				
 				font-size 15px
 				font-weight 100
 				margin 5px 0
@@ -4368,8 +4426,12 @@ td
 							text-decoration underline
 
 .contenedorMenu
-	background oscuro
-
+	//background verdeOscuro
+	position absolute
+	left 0
+	top 0
+	width 100%
+	
 .contenedorPartners
 	border-top 2px solid #f5f5f5
 	margin 30px auto
@@ -4448,7 +4510,7 @@ td
 				width 100%
 				span
 					color oscuro
-					font-family 'proxima_nova_rgbold'
+					
 				&:hover
 					background calipso
 					span
@@ -4560,7 +4622,7 @@ td
 				//width 50%
 				label
 					color oscuro
-					font-family 'proxima_nova_rgbold'
+					
 					font-weight 400
 				label
 				.selector
@@ -4628,7 +4690,7 @@ td
 			text-transform uppercase
 		.form-group
 			label
-				font-family 'proxima_nova_rgregular'
+				
 				font-weight 100
 				text-transform capitalize
 			textarea
@@ -4643,7 +4705,7 @@ td
 			border none
 			span
 				color oscuro
-				font-family 'proxima_nova_rgregular'
+				
 			&:hover
 				background colorao
 				span
@@ -4741,7 +4803,7 @@ td
 			.fancybox-inner
 				//width 300px !important
 				p
-					font-family 'proxima_nova_rgbold'
+					
 					font-size 20px
 					font-weight 100
 					vertical-align middle
@@ -4827,6 +4889,57 @@ td
 			// 	span
 			// 		display none
 
+.filtro
+	background clarito
+	//border 1px solid grisClaro1
+	padding 15px 5px
+	width 25%
+	.block
+		.block_content
+			ul
+				list-style-type none
+				padding 0
+				li
+					position relative
+					a
+						color oscuro
+						//font-family 'quicksandregular'
+						font-size 15px
+						font-weight 100
+						text-decoration none
+						transition .3s
+						&:hover
+							text-decoration underline
+					label
+						position relative
+						padding 0 0 0 20px
+					label
+					.checker
+						display inline-block
+						vertical-align middle
+					.checker
+						height 15px
+						left 0
+						margin-top -7px
+						position absolute
+						top 50%
+						width 15px
+						span
+							display block
+							height 100%
+							width 100%
+							input
+								display block
+								height 100%
+								width 100%
+					
+
+		.title_block
+			
+			font-size 18px
+			margin 0
+			
+
 .footer-container
 	background clarito
 	border-top 1px solid #E2E2E2
@@ -4902,25 +5015,34 @@ td
 		.sub-menuDesktop
 			display block !important
 
+.icon-petcart
+	&:before
+		color naranjoPet
+		font-size 37px
+
 .infoAdicionalHeader
-	//border-bottom 1px solid clarito
-	height 25px
+	background #f8f8f8
+	//border-bottom 2px solid clarito
+	height 40px
 	margin 0 auto
 	//position absolute
 	//top -25px
-	max-width 950px
+	//width 100%
 	.row
 		margin 0 auto
 		position relative
-		text-align right
-		width 100%
+		text-align center
+		max-width 950px
 		.shop-phone
 			font-size 13px
+			line-height 40px
 			strong
-				color azulCpo
+				background naranjoPet
+				color white
+				padding 2px 10px
 
 .info-title
-	font-family 'proxima_nova_rgregular'
+	
 	font-size 13px
 	font-weight 100
 	margin 0
@@ -4962,7 +5084,7 @@ td
 					background oscuro
 					border-bottom 1px solid #999
 					color clarito
-					font-family 'proxima_nova_rgbold'
+					
 					font-size 18px
 					font-weight 100
 					line-height 50px
@@ -4972,15 +5094,21 @@ td
 
 				span
 					//display inline-block
-					font-family 'proxima_nova_rgregular'
+					
 					font-size 13px
 					text-transform uppercase
 
+#homefeatured
+	font-size 0
+	max-width 1050px
+	.listaProductoLi
+		width 25%
+		
 .listaProducto
+.listaProductoFiltro
 	background none
 	margin 14px auto
 	padding 0
-	max-width 950px
 	.listaProductoLi
 		//border-radius 9px
 		border 1px solid transparent
@@ -4992,7 +5120,6 @@ td
 		padding-bottom 1em
 		position relative
 		vertical-align top
-		width 24.3%
 		&:hover
 			border 1px solid clarito
 			//box-shadow 0 0 10px rgba(0,0,0, .4)
@@ -5105,7 +5232,7 @@ td
 					width 100%
 					a
 						color oscuro
-						font-family 'proxima_nova_rgbold'
+						
 						font-weight initial
 						text-decoration none
 						text-transform uppercase
@@ -5117,7 +5244,7 @@ td
 					text-align center
 				.disponibilidad
 					display block
-					font-family 'proxima_nova_rgregular'
+					
 					font-size 11px
 					text-align center
 					text-transform uppercase
@@ -5158,7 +5285,7 @@ td
 						//background oscuro
 						//border 1px solid oscuro
 						//color white
-						font-family 'proxima_nova_rgbold'
+						
 						font-size 15px
 						margin 0
 						position relative
@@ -5246,22 +5373,32 @@ td
 				font-size 18px
 				font-weight 600
 
+.listaProductoFiltro
+	margin 0
+	width 74%
+	.listaProductoLi
+		width 32%
+.listaProductoFiltro
+.filtro
+	display inline-block
+	vertical-align top
+
 .loginUsuario
-	background grisClaro2
+	//background grisClaro2
 	border-radius 2px
 	height 30px
 	position absolute
 	right 90px
 	text-align center
-	top 7px
-	width 90px
+	top 25px
+	//width 90px
 	.contenedorLogin
 		cursor pointer
 		display block
 		height 30px
 		//overflow hidden
 		position relative
-		width 100%
+		//width 100%
 		.despliega
 			background white
 			border 1px solid #ddd
@@ -5272,7 +5409,7 @@ td
 			//height 60px
 			padding 5px
 			position absolute
-			right 0
+			right calc(50% - 75px)
 			text-align left
 			top 30px
 			width 150px
@@ -5311,122 +5448,172 @@ td
 					text-decoration none
 					width 100%
 		.login
-			background oscuro
+			//background oscuro
 			border-radius 2px
-			color clarito
+			color oscuro
 			display block
 			font-size 13px
 			font-weight 800
 			line-height 30px
-			width 100%
+			padding 0 30px
+			//width 100%
 		.nombre
 			color clarito
 			height 30px
 			line-height normal
-			left 0
-			overflow hidden
-			position absolute
-			top 0
-			width 100%
+			//left 0
+			//overflow hidden
+			padding 0 30px
+			//position absolute
+			//top 0
+			//width 100%
 			span
-				color clarito
+				color oscuro
 				display block
 				font-size 11px
 				line-height 30px
 
-.maniaBackground1 >	ul
-	background #fff url('../img/asiste-01.jpg')
-	//background #fff url('../img/asiste2.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
-.maniaBackground2 >	ul
-	background #fff url('../img/asiste-02.jpg')
-	//background #fff url('../img/asiste3.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
-.maniaBackground3 > ul
-	background #fff url('../img/asiste-03.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
-.maniaBackground4 >	ul
-	background #fff url('../img/asiste-04.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
-.maniaBackground5 >	ul
-	background #fff url('../img/asiste-05.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
-.maniaBackground6 >	ul
-	background #fff url('../img/asiste-06.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
-.maniaBackground7 >	ul
-	background #fff url('../img/asiste-07.jpg')
-	background-position left bottom
-	background-repeat no-repeat
-	background-size 100%
-	border-left 1px solid clarito
-	border-right 1px solid clarito
+// .maniaBackground1 >	ul
+// 	background #fff url('../img/asiste-01.jpg')
+// 	//background #fff url('../img/asiste2.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+// .maniaBackground2 >	ul
+// 	background #fff url('../img/asiste-02.jpg')
+// 	//background #fff url('../img/asiste3.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+// .maniaBackground3 > ul
+// 	background #fff url('../img/asiste-03.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+// .maniaBackground4 >	ul
+// 	background #fff url('../img/asiste-04.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+// .maniaBackground5 >	ul
+// 	background #fff url('../img/asiste-05.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+// .maniaBackground6 >	ul
+// 	background #fff url('../img/asiste-06.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+// .maniaBackground7 >	ul
+// 	background #fff url('../img/asiste-07.jpg')
+// 	background-position left bottom
+// 	background-repeat no-repeat
+// 	background-size 100%
+// 	border-left 1px solid clarito
+// 	border-right 1px solid clarito
+	
+.margin-top
+	margin-top 90px
 
 .menuManias
 	display block
-	height 45px
-	//position relative
+	//height 45px
+	position relative
 	width 100%
-	.category-thumbnail
-		display none !important
+	// .category-thumbnail
+	// 	display none !important
 		
 .menuTop
-	border-left 1px solid #666
+	//border-left 1px solid grisClaro1
 	margin 0 auto
 	padding 0
-	position relative
+	//position relative
 	text-align left
-	//width 950px
+	width 50%
 .menuTop > li
-	border-right 1px solid #666
+	//border-right 1px solid grisClaro1
 	display inline-block
 	list-style none
 	font-size 0
 	margin 0
 	padding 0
-	text-align left
+	text-align center
 	transition .3s
 	vertical-align top
+	&:hover
+		a
+			color naranjoPet
+		ul
+			display block
+			li
+				a
+					color #5b5b5b
+.menuTop > li > a:hover
+	background #f8f8f8
+.menuTop > li > ul
+	background white
+	display none
+	height 200px
+	left 0
+	margin 0
+	//opacity 0
+	padding 20px 200px 20px 10px
+	position absolute
+	text-align left
+	top 85px
+	transition .3s
+	//visibility hidden
+	width 100%
+	z-index 2
+	li
+		display inline-block
+		position relative
+		vertical-align top
+		a
+			font-family 'quicksandregular'
+			font-size 16px
+			padding 0 20px
+			text-align left
+		ul
+			margin 10px 0 0 0
+			padding 0
+		ul > li
+			display block
+			margin 0
+			padding 0
+			a
+				font-size 13px
+				font-style italic
+				text-decoration none
+		
 .menuTop > li > a
 	//color naranjito
-	color white
+	color #5b5b5b
 	display block
-	font-family 'oswaldbold'
-	font-size 18px
+	font-family 'quicksandbold'
+	font-size 16px
 	font-weight 400
-	line-height 40px
-	padding 0 20px 0 10px
+	letter-spacing -1px
+	line-height 85px
+	padding 0 20px
 	position relative
 	text-decoration none
-	text-transform uppercase
+	text-transform capitalize
 	transition .4s
-	&:hover
-		background rojoAsiste
-		color white
+			
 
 .my-placeholder
 	color #ccc
@@ -5440,7 +5627,7 @@ td
 			.form-group
 				text-align center
 				label
-					font-family 'proxima_nova_rgregular'
+					
 					font-weight 100
 				input
 				label
@@ -5458,7 +5645,7 @@ td
 						span
 							color white
 							//line-height 40px
-							font-family 'proxima_nova_rgregular'
+							
 							font-weight 100
 						&:hover
 							background oscuro
@@ -5479,7 +5666,7 @@ td
 			span
 				color oscuro
 				//display block
-				font-family 'proxima_nova_rgregular'
+				
 				font-weight 100
 				line-height 40px
 				//width 100%
@@ -5528,7 +5715,7 @@ td
 		//border-radius 5px
 		color oscuro
 		display block
-		font-family 'proxima_nova_rgbold'
+		
 		font-size 16px
 		height 40px
 		position relative
@@ -5585,7 +5772,7 @@ td
 		a
 			background white
 			border 1px solid clarito
-			font-family 'proxima_nova_rgregular'
+			
 			font-size 16px
 			font-weight 100
 			margin 0 0 0 15%
@@ -5602,7 +5789,7 @@ td
 			width 50%
 	.delivery_options_address
 		.carrier_title
-			font-family 'proxima_nova_rgregular'
+			
 			font-size 15px
 			text-align left
 		.delivery_options
@@ -5625,7 +5812,7 @@ td
 								width 240px
 								span
 									display block
-									font-family 'proxima_nova_rgregular'
+									
 									margin 0 5%
 									text-align left
 									width 90%
@@ -5762,7 +5949,7 @@ td
 	text-align left !important
 .page-heading
 .product-listing
-	font-family 'proxima_nova_rgbold'
+	
 	font-size 15px
 	font-weight 100
 	display block
@@ -5778,7 +5965,7 @@ td
 		float right
 
 .page-subheading
-	font-family 'proxima_nova_rgregular'
+	
 	font-size 20px
 	text-align center
 
@@ -5790,7 +5977,7 @@ td
 		//margin-left 100px
 		strong
 			color #818181
-			font-family 'proxima_nova_rgbold'
+			font-family 'quicksandregular'
 			font-size 13px
 			font-weight 100
 			text-align right
@@ -5800,13 +5987,12 @@ td
 		span
 			display inline-block
 		span
-			font-family 'proxima_nova_rgregular'
+			font-family 'quicksandbold'
 			font-size 15px
-			font-weight 100
 	.totalFinal
 		span
 			color rojoAsiste
-			font-family 'proxima_nova_rgbold'
+			
 			font-size 20px
 			text-transform uppercase
 
@@ -5909,7 +6095,7 @@ td
 	width 80px
 	z-index 1
 	.sale-label
-		background naranjo
+		background #70A83B
 		//border 2px solid naranjito
 		bottom 35px
 		display block
@@ -6044,7 +6230,7 @@ td
 	padding 15px 0 0px 0 
 	p.subcategory-heading
 		color #333333
-		font-family 'proxima_nova_rgregular'
+		
 		font-weight bold
 		margin 0 0 15px 0 
 	ul
@@ -6061,17 +6247,21 @@ td
 				margin 0
       
 			.subcategory-image
-				padding 0 0 8px 0 
+				padding 0
 				a
-					border 1px solid #d6d4d4 
+					border 5px solid verdeClaroPet 
+					border-radius 50%
 					display block
-					padding 9px
+					height 145px
+					overflow hidden
+					//padding 9px
+					width 145px
 					img
-						max-width 100%
 						vertical-align top 
+						width 100%
 			.subcategory-name
 				color #555454
-				font-family 'proxima_nova_rgregular'
+				
 				text-transform uppercase 
 				&:hover
 					color #515151 
@@ -6079,7 +6269,7 @@ td
 				display none 
 			&:hover .subcategory-image a
 				border 5px solid #333333
-				padding 5px 
+				//padding 5px 
 
 .subcategory-name
 	font-size 15px !important
@@ -6184,7 +6374,7 @@ td
 						display block
 						font-size 17px
 						//font-family 'oswaldregular'
-						font-family 'proxima_nova_rgbold'
+						
 						line-height 40px
 						text-decoration none
 						text-transform uppercase
@@ -6249,7 +6439,7 @@ td
 							.teSirvio
 								display none
 						.align_center
-							font-family 'proxima_nova_rgbold'
+							
 							font-size 15px
 							margin-top 15px
 							text-align right
@@ -6268,7 +6458,7 @@ td
 				padding 25px
 				width 100%
 				table
-					font-family 'proxima_nova_rgregular'
+					
 					font-weight 100
 					tbody
 						.even
@@ -6310,7 +6500,7 @@ td
 			//border-radius 10px
 			color oscuro
 			display block
-			font-family 'proxima_nova_rgbold'
+			
 			//font-size 14px
 			line-height 79px
 			margin 0 1px
@@ -6355,7 +6545,7 @@ td
 				bottom 0
 				color colorao
 				content 'Ir a Pagar'
-				font-family 'proxima_nova_rgbold'
+				
 				font-size 15px
 				font-weight 600
 				height 30px
@@ -6481,7 +6671,7 @@ td
 			text-decoration none
 			span
 				color oscuro
-				font-family 'proxima_nova_rgregular'
+				
 				font-weight 100
 			&:hover
 				background rojoAsiste
@@ -6524,150 +6714,154 @@ td
 // 		margin 0 auto
 // 		width 500px
 
-@keyframes anim-open {
-	0% { opacity: 0; transform: scale3d(1.1, 1.1, 1); }
-	100% { opacity: 1; transform: scale3d(1, 1, 1); }
-}
+// @keyframes anim-open {
+// 	0% { opacity: 0; transform: scale3d(1.1, 1.1, 1); }
+// 	100% { opacity: 1; transform: scale3d(1, 1, 1); }
+// }
 
-@keyframes anim-close {
-	0% { opacity: 1; }
-	100% { opacity: 0; transform: scale3d(0.9, 0.9, 1); }
-}
+// @keyframes anim-close {
+// 	0% { opacity: 1; }
+// 	100% { opacity: 0; transform: scale3d(0.9, 0.9, 1); }
+// }
 
-.no-touch #cd-top-nav a:hover
-	color rgba(255, 255, 255, 0.7)
+// .no-touch #cd-top-nav a:hover
+// 	color rgba(255, 255, 255, 0.7)
 
-#cd-lateral-nav
-	backface-visibility hidden
-	background-color #ECEDEF
-	height 100%
-	overflow-y auto
-	position fixed
-	right 0
-	top 0
-	transform translateX(80px)
-	transform translateZ(0)
-	transition transform .4s 0s, visibility 0s .4s
-	visibility hidden
-	width 260px
-	z-index 1
-	a
-		display block
-		.current
-			background-color #3a4a4d
-			color #FFF
-	.sub-menu
-		display none
-	&.lateral-menu-is-open
-		-webkit-overflow-scrolling touch
-		transform translateX(0)
-		transition transform .4s 0s, visibility 0s 0s
-		visibility visible
+// #cd-lateral-nav
+// 	backface-visibility hidden
+// 	background-color #ECEDEF
+// 	height 100%
+// 	overflow-y auto
+// 	position fixed
+// 	right 0
+// 	top 0
+// 	transform translateX(80px)
+// 	transform translateZ(0)
+// 	transition transform .4s 0s, visibility 0s .4s
+// 	visibility hidden
+// 	width 260px
+// 	z-index 1
+// 	a
+// 		display block
+// 		.current
+// 			background-color #3a4a4d
+// 			color #FFF
+// 	.sub-menu
+// 		display none
+// 	&.lateral-menu-is-open
+// 		-webkit-overflow-scrolling touch
+// 		transform translateX(0)
+// 		transition transform .4s 0s, visibility 0s 0s
+// 		visibility visible
 	
-	.item-has-children > a
-		position relative
-		text-transform uppercase
-		&:after
-			background url("../img/cd-arrow.svg") no-repeat center center
-			background-size 8px 11px
-			bottom auto
-			content ''
-			display block
-			height 11px
-			position absolute
-			right 1em
-			top 50%
-			transform translateY(-50%)
-			transition-duration 0.2s
-			transition-property transform
-			width 8px
-		.submenu-open
-			&:after
-				transform translateY(-50%) rotate(90deg)
+// 	.item-has-children > a
+// 		position relative
+// 		text-transform uppercase
+// 		&:after
+// 			background url("../img/cd-arrow.svg") no-repeat center center
+// 			background-size 8px 11px
+// 			bottom auto
+// 			content ''
+// 			display block
+// 			height 11px
+// 			position absolute
+// 			right 1em
+// 			top 50%
+// 			transform translateY(-50%)
+// 			transition-duration 0.2s
+// 			transition-property transform
+// 			width 8px
+// 		.submenu-open
+// 			&:after
+// 				transform translateY(-50%) rotate(90deg)
 
-#cd-logo
-	display block
-	float left
-	margin 12px 0 0 20px
-	img
-		display block
+// #cd-logo
+// 	display block
+// 	float left
+// 	margin 12px 0 0 20px
+// 	img
+// 		display block
 		
-#cd-menu-trigger
-	background-color #ECEDEF
-	border 1px solid #879193
-	border-radius 5px
-	height 100%
-	position absolute
-	right 5px
-	top 0
-	width 40px
+// #cd-menu-trigger
+// 	background-color #ECEDEF
+// 	border 1px solid #879193
+// 	border-radius 5px
+// 	height 100%
+// 	position absolute
+// 	right 5px
+// 	top 0
+// 	width 40px
 
-	.cd-menu-text
-		color #FFF
-		display none
-		font-weight 600
-		height 100%
-		text-transform uppercase
-	.cd-menu-icon
-		background-color #434142 
-		bottom auto
-		display inline-block
-		height 2px
-		left 50%
-		position absolute
-		right auto
-		top 50%
-		transform translateX(-50%) translateY(-50%)
-		width 18px
-		&:after
-			top 5px
-		&:before,
-		&:after
-			background-color #434142
-			content ''
-			height 100%
-			left 0
-			position absolute
-			width 100%
-		&:before
-			bottom: 5px
+// 	.cd-menu-text
+// 		color #FFF
+// 		display none
+// 		font-weight 600
+// 		height 100%
+// 		text-transform uppercase
+// 	.cd-menu-icon
+// 		background-color #434142 
+// 		bottom auto
+// 		display inline-block
+// 		height 2px
+// 		left 50%
+// 		position absolute
+// 		right auto
+// 		top 50%
+// 		transform translateX(-50%) translateY(-50%)
+// 		width 18px
+// 		&:after
+// 			top 5px
+// 		&:before,
+// 		&:after
+// 			background-color #434142
+// 			content ''
+// 			height 100%
+// 			left 0
+// 			position absolute
+// 			width 100%
+// 		&:before
+// 			bottom: 5px
 			
-	&.is-clicked .cd-menu-icon
-		background-color: rgba(255, 255, 255, 0)
-		&:after
-			top 0
-			transform rotate(-45deg)
-		&:before,
-		&:after
-			background-color #434142
-		&:before
-			bottom 0
-			transform rotate(45deg)
+// 	&.is-clicked .cd-menu-icon
+// 		background-color: rgba(255, 255, 255, 0)
+// 		&:after
+// 			top 0
+// 			transform rotate(-45deg)
+// 		&:before,
+// 		&:after
+// 			background-color #434142
+// 		&:before
+// 			bottom 0
+// 			transform rotate(45deg)
 
-#cd-top-nav 
-	display none
-	height 100%
-	position absolute
-	right 120px
-	top 0
-	ul 
-		height 100%
-		padding-top 18px
-		li 
-			display inline-block
-			margin-right 1em
-	a 
-		color #FFF
-		display inline-block
-		font-weight 600
-		padding .5em
-		text-transform uppercase
-		.current 
-			background-color #242e30
+// #cd-top-nav 
+// 	display none
+// 	height 100%
+// 	position absolute
+// 	right 120px
+// 	top 0
+// 	ul 
+// 		height 100%
+// 		padding-top 18px
+// 		li 
+// 			display inline-block
+// 			margin-right 1em
+// 	a 
+// 		color #FFF
+// 		display inline-block
+// 		font-weight 600
+// 		padding .5em
+// 		text-transform uppercase
+// 		.current 
+// 			background-color #242e30
 
 
 #block_various_links_footer
 	display none
+	
+#productosHome
+	#left_column
+		display none
 
 #sslsSiteSeal
 	display inline-block
@@ -6685,3 +6879,467 @@ td
 
 #oosHook
 	display none
+	
+// import de styl externos
+
+@import "normalize"
+@import "responsive"
+@import "owl.carousel"
+@import "verticalmenu"
+@import "fancybox"
+@import "iconos"
+
+
+
+
+/*
+* ui slider css
+ */
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+
+
+/*!
+ * jQuery UI CSS Framework 1.10.3
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
+	font-size: 1.1em/*{fsDefault}*/;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #aaaaaa/*{borderColorContent}*/;
+	background: #ffffff;
+	color: #222222/*{fcContent}*/;
+}
+.ui-widget-content a {
+	color: #222222/*{fcContent}*/;
+}
+.ui-widget-header {
+	border: 1px solid #aaaaaa/*{borderColorHeader}*/;
+	background: #cccccc;
+	color: #222222/*{fcHeader}*/;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #222222/*{fcHeader}*/;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3/*{borderColorDefault}*/;
+	background: #e6e6e6;
+	font-weight: normal/*{fwDefault}*/;
+	color: #555555/*{fcDefault}*/;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #555555/*{fcDefault}*/;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #999999/*{borderColorHover}*/;
+	background: #dadada;
+	font-weight: normal/*{fwDefault}*/;
+	color: #212121/*{fcHover}*/;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+	color: #212121/*{fcHover}*/;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #aaaaaa/*{borderColorActive}*/;
+	background: #ffffff;
+	font-weight: normal/*{fwDefault}*/;
+	color: #212121/*{fcActive}*/;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #212121/*{fcActive}*/;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #fcefa1/*{borderColorHighlight}*/;
+	background: #fbf9ee;
+	color: #363636/*{fcHighlight}*/;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #363636/*{fcHighlight}*/;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a/*{borderColorError}*/;
+	background: #fef1ec;
+	color: #cd0a0a/*{fcError}*/;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #cd0a0a/*{fcError}*/;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #cd0a0a/*{fcError}*/;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px/*{cornerRadius}*/;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #aaaaaa;
+	opacity: .3/*{opacityOverlay}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/;
+}
+.ui-widget-shadow {
+	margin: -8px/*{offsetTopShadow}*/ 0 0 -8px/*{offsetLeftShadow}*/;
+	padding: 8px/*{thicknessShadow}*/;
+	background: #aaaaaa;
+	opacity: .3/*{opacityShadow}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterShadow}*/;
+	border-radius: 8px/*{cornerRadiusShadow}*/;
+}

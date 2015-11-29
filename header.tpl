@@ -46,13 +46,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
 
 
-		<link rel="stylesheet" href="{$css_dir}normalize.css">
-		<link rel="stylesheet" href="{$css_dir}verticalmenu.css">
-		<link rel="stylesheet" href="{$css_dir}estilos.css">
-		<link rel="stylesheet" href="{$css_dir}owl.carousel.css">
-		<link rel="stylesheet" href="{$css_dir}fancybox.css">
-		<link rel="stylesheet" href="{$css_dir}responsive.css">
-
+		<link rel="stylesheet" href="{$css_dir}app.css">
 
 
 {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}
@@ -61,17 +55,9 @@
 		<script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>
 	{/foreach}
 {/if}
-	<script type="text/javascript" src="{$js_dir}modernizr.custom.js"></script>
-	<script type="text/javascript" src="{$js_dir}miscript.js"></script>
+	
+	<script type="text/javascript" src="{$js_dir}app.js"></script>
 
-	<script type="text/javascript" src="{$js_dir}carrusel.js"></script>
-	<script type="text/javascript" src="{$js_dir}slimscroll.min.js"></script>
-	<script type="text/javascript" src="{$js_dir}owl.carousel.min.js"></script>
-	<script type="text/javascript" src="{$js_dir}classie.js"></script>
-	<script type="text/javascript" src="{$js_dir}modal.js"></script>
-	<script type="text/javascript" src="{$js_dir}placeholder.js"></script>
-	<script type="text/javascript" src="{$js_dir}tabs.js"></script>
-	<script type="text/javascript" src="{$js_dir}menumanias.js"></script>
 
 
 
@@ -97,84 +83,28 @@
 		{/if}
 		<header>
 			{hook h="displayNav"}
-			<div class="header">
+			<div class="header" id="head">
 				<div class="headerCOnt">
 					<figure>
 						<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
 							<img src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"/>
 						</a>
 					</figure>
-					<!-- Block user information module NAV  -->
-					<div class="loginUsuario">
-						<div class="contenedorLogin">
-							{if $is_logged}
-								<div class="nombre">
-									<span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span>
-								</div>
-								<div class="despliega">
-									<button id="cierraDespliega" class="cierraDespliega">a</button>
-									<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account" rel="nofollow">
-										<span class="texto">Perfil</span>
-									</a>
-					
-									<a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">
-										<span class="texto">{l s='Salir' mod='blockuserinfo'}</span>
-									</a>
-									
-								</div>
-							{else}
-					
-								<div class="login">
-									{l s='Login' mod='blockuserinfo'}
-								</div>
-								<div class="accedeCuentaChica">
-									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" autocomplete="off">
-										<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
-										<div class="form_content">
-											<div class="form-group emailLogin">
-												<label for="email">{l s='Email address'}</label>
-												<input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="email" name="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes}{/if}"/>
-											</div>
-											<div class="form-group passwordLogin">
-												<label for="passwd">{l s='Password'}</label>
-												<span><input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="{if isset($smarty.post.passwd)}{$smarty.post.passwd|stripslashes}{/if}"/></span>
-											</div>
-					
-											<p class="submit">
-												{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
-												<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
-													<span>
-														<i class="icon-lock left"></i>
-														{l s='Sign in'}
-													</span>
-												</button>
-											</p>
-					
-											<p class="lost_password form-group"><a href="{$link->getPageLink('password')|escape:'html':'UTF-8'}" title="{l s='Recover your forgotten password'}" rel="nofollow">{l s='Forgot your password?'}</a></p>
-					
-											
-											<a class="linkCreaCuenta" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
-												<!-- {l s='Login' mod='blockuserinfo'} -->
-												Crear cuenta
-											</a>
-										</div>
-									</form>
-								</div>
-							{/if}
-						</div>
-					
+					<div class="contenedorMenu">
+						{$HOOK_MENU}
 					</div>
+					<!-- Block user information module NAV  -->
+					{include file="$tpl_dir./modules/blockuserinfo/nav.tpl"}
+
 					<!-- /Block usmodule NAV -->
 					{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 				</div>
-				<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 			</div>
+			
 		</header>
 		<!-- aca deberia ir el nav -->
-		<div class="contenedorMenu">
-			{$HOOK_MENU}
-		</div>
 		<div id="page" class="cd-main-content">
+
 			<div class="columns-container">
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}

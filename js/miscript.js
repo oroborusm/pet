@@ -2,7 +2,8 @@ $(function(){
 
 	$('#homeslider').bxSlider({
 		controls: false,
-		auto: true
+		auto: false,
+		infiniteLoop: false,
 	});
 
 	var i = 0;
@@ -10,11 +11,11 @@ $(function(){
 		height: '275px'
 	});
 
-	$('.añadeCarrituHome').on('click', function(){
+/*	$('.añadeCarrituHome').on('click', function(){
 		setTimeout(function() {
 			$('.cross').trigger('click');
 		}, 5000);
-	});
+	});*/
 
 	$('.sumaComentario').on('click', function(){
 		$('.agregaComentario').toggleClass('activo')
@@ -32,6 +33,11 @@ $(function(){
 	$('.carrito').on('click', function(){
 		$('.carritoHover').toggleClass('activo')
 		removeClass = false
+	})
+	$('.boton-search').on('click', function(){
+		$('#search_block_top').toggleClass('activo')
+		$('.boton-search i').toggleClass('icon-cross')
+		$('.boton-search i').toggleClass('icon-search')
 	})
 
 	$('.login').on('click', function(){
@@ -59,12 +65,22 @@ $(function(){
 	});
     
     var nav = $('.nav-container');
+    var head = $('header');
+    var menu = $('.contenedorMenu')
+    var contenido = $('.cd-main-content')
     $(window).scroll(function () {
         if ($(this).scrollTop() > 136) {
             nav.addClass("f-nav");
         } else {
             nav.removeClass("f-nav");
         }
+        if ($(this).scrollTop() > 100) {
+			head.addClass('head-fixed');
+			contenido.addClass('margin-top');
+		} else {
+			head.removeClass('head-fixed');
+			contenido.removeClass('margin-top')
+		}
     });
 
 	/*defineSizes();
@@ -75,14 +91,14 @@ $(function(){
 				"height": ($(".contenedor, #htmlcontent_home").width() * 0.75)+"px"
 			});
 		});
-	}*/
+	}
 
 	$('.menuTop > li:has(> ul)').addClass('item-has-children')
 
 	$('.item-has-children > ul').addClass('sub-menu')
 	$('.item-has-children > ul').addClass('sub-menuDesktop')
 
-	$('#subcategories').addClass('subcategories')
+	$('#subcategories').addClass('subcategories')*/
 
 	if($(window).width() < 800){
 
@@ -107,7 +123,7 @@ $(function(){
 	}
 
 	$('.owl-carousel').owlCarousel({
-		autoplay:true,
+		autoplay:false,
 		autoplayHoverPause:true,
 		autoplayTimeout:3000,
 		loop:true,
@@ -138,4 +154,5 @@ $(function(){
 		belowOrigin: false // Displays dropdown below the button
 		}
 	);
+
 });

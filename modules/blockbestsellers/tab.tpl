@@ -24,6 +24,5 @@
 *}
 
 
-<!-- <li><a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">{l s='Best Sellers' mod='blockbestsellers'}</a></li> -->
-<li><p>productos destacados</p></li>
+<li><a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">{l s='Best Sellers' mod='blockbestsellers'}</a></li>
 

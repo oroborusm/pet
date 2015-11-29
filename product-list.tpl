@@ -22,8 +22,9 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 	
+	<div id="left_column" class="filtro">{$HOOK_LEFT_COLUMN}</div>
+
 	{if isset($products) && $products}
 		{*define numbers of product per line in other page for desktop*}
 		{if $page_name !='index' && $page_name !='product'}
@@ -40,7 +41,7 @@
 		{math equation="nbLi/nbItemsPerLine" nbLi=$nbLi nbItemsPerLine=$nbItemsPerLine assign=nbLines}
 		{math equation="nbLi/nbItemsPerLineTablet" nbLi=$nbLi nbItemsPerLineTablet=$nbItemsPerLineTablet assign=nbLinesTablet}
 		<!-- Products list -->
-		<ul{if isset($id) && $id} id="{$id}"{/if} class="{if isset($class) && $class} {$class}{/if} listaProducto">
+		<ul{if isset($id) && $id} id="{$id}"{/if} class="{if isset($class) && $class} {$class}{/if} listaProductoFiltro">
 		{foreach from=$products item=product name=products}
 			{math equation="(total%perLine)" total=$smarty.foreach.products.total perLine=$nbItemsPerLine assign=totModulo}
 			{math equation="(total%perLineT)" total=$smarty.foreach.products.total perLineT=$nbItemsPerLineTablet assign=totModuloTablet}

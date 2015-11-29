@@ -25,7 +25,7 @@
 {if isset($products) && $products}
 	{include file="$tpl_dir./product-list.tpl" class='homePopulares' id='homefeatured'}
 {else}
-<!-- <ul id="homefeatured" class="homePopulares">
+<ul id="homefeatured" class="homePopulares">
 	<li class="alert alert-info">{l s='No featured products at this time.' mod='homefeatured'}</li>
-</ul> -->
+</ul>
 {/if}

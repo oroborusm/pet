@@ -2,8 +2,8 @@
 {if $MENU != ''}
 	<!-- Menu -->
 	
-	<nav class="menuManias" id="cd-lateral-nav">
-		<ul class="cd-navigation menuTop">
+	<nav class="menuManias">
+		<ul class=" menuTop">
 			{$MENU}
 		</ul>
 	</nav>

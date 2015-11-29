@@ -28,13 +28,16 @@
 		<!-- <div id="contact-link">
 			<a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact Us' mod='blockcontact'}">{l s='Contact us' mod='blockcontact'}</a>
 		</div> -->
-		<div class="candadito">
+		<!-- <div class="candadito">
 			<img src="https://www.asistecar.cl/public_img/secure.gif" alt="" class="imgCandadito">
 			<p class="textCandadito">Compra segura</p>
-		</div>
+		</div> -->
 		{if $telnumber}
-			<span class="shop-phone">
+			<!-- <span class="shop-phone">
 				<i class="icon-phone"></i>{l s='Call us now:' mod='blockcontact'} <strong>{$telnumber}</strong>
+			</span> -->
+			<span class="shop-phone">
+				¿Necesitas ayuda?, llamanos al: <strong>{$telnumber}</strong>
 			</span>
 		{/if}
 	</div>

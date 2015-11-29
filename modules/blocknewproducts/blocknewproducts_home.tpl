@@ -27,8 +27,8 @@
 *	{include file="$tpl_dir./product-list.tpl" products=$new_products class='homePopulares' id='blocknewproducts'}
 *{else} 
 *}
-<!--  <ul id="blocknewproducts" class="homePopulares">
+<ul id="blocknewproducts" class="homePopulares">
 	<li class="productosVacios">{l s='No new products at this time.' mod='blocknewproducts'}</li>
-</ul> -->
+</ul>
 {*{/if}
 *} 
