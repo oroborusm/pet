@@ -27,6 +27,7 @@
 						{if isset($right_column_size) && !empty($right_column_size)}
 
 						{/if}
+						
 					</div><!-- popularesMasVendidos -->
 				</div>
 			</div>

@@ -335,10 +335,10 @@
 					{if !$opc}
 						<p class="navegador">
 							<a href="{$link->getPageLink('order', true, NULL, "step=2")|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="volverCompra">
-								<span class="icon-chevron-right">
-									{l s='Continue shopping'}
+								<span class="icon-chevron-right"></span>
+								{l s='Continue shopping'}
 									
-								</span>
+								
 								<i class="icon-chevron-left"></i>
 							</a>
 						</p>

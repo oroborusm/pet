@@ -103,7 +103,7 @@
 			
 		</header>
 		<!-- aca deberia ir el nav -->
-		<div id="page" class="cd-main-content">
+		<div id="page">
 
 			<div class="columns-container">
 				<div id="columns" class="container">

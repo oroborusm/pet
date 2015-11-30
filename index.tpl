@@ -49,3 +49,20 @@
 									{$HOOK_HOME_TAB_CONTENT}
 								</div>
 							</div>
+							<div class="explicacion">
+								<div class="row">
+									<h2>CONTEXTO DE INFORMACIÓN </h2>
+									<ul>
+										<li><i class="icon-search"></i>Elige Una Suscripción</li>
+										<li><i class="icon-petcart2"></i>Lo Agregas Al Carrito</li>
+										<li><i class="icon-credit-card"></i>Pagas Seguro <span>(Tenemos Conexión Segura Ssl)</span></li>
+										<li><i class="icon-location"></i>El Pedido Llega A Tu Casa <span>(Valido Solo Para Santiago)</span></li>
+									</ul>
+									<ul>
+										<li><i class="icon-search"></i>Elige Una Suscripción</li>
+										<li><i class="icon-petcart2"></i>Lo Agregas Al Carrito</li>
+										<li><i class="icon-credit-card"></i>Pagas Seguro <span>(Tenemos Conexión Segura Ssl)</span></li>
+										<li><i class="icon-location"></i>El Pedido Llega A Tu Casa <span>(Valido Solo Para Santiago)</span></li>
+									</ul>
+								</div>
+							</div>

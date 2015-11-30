@@ -616,19 +616,19 @@
 				<nav class="navTabs">
 					<ul>
 						<li>
-							<a href="#section-bar-1" class="icon icon-box">
+							<a href="#section-bar-1">
 								<h3 class="page-product-heading">{l s='More info'}</h3>
 							</a>
 						</li>
 						{if isset($features) && $features}
 							<li>
-								<a href="#section-bar-2" class="icon icon-home">
+								<a href="#section-bar-2">
 									{if isset($features) && $features}<h3 class="page-product-heading">{l s='Data sheet'}</h3>{/if}
 								</a>
 							</li>
 						{/if}
 						<li>
-							<a href="#section-bar-3" class="icon icon-display">
+							<a href="#section-bar-3">
 								{$HOOK_PRODUCT_TAB}
 							</a>
 						</li>

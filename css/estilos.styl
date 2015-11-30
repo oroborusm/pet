@@ -1025,13 +1025,14 @@ body
 		position relative
 		width 100%
 		.contCarruselInt
-			//background #f7f7f8
+			background url('../img/cuadritos.png') no-repeat right bottom
+			background-size 40%
 			font-size 0
 			height 330px
 			margin 0 auto
 			//overflow hidden
 			position relative
-			max-width 950px
+			max-width 1050px
 			.carrusel
 				margin 0 auto
 				font-size 18px
@@ -1357,7 +1358,7 @@ body
 
 	.formCarrito
 		margin 0 auto
-		max-width 950px
+		max-width 1050px
 		h1
 			text-align center
 		.algoAndaMal
@@ -1878,7 +1879,7 @@ body
 							width 35px
 	.popularesMasVendidos
 		margin 0 auto
-		max-width 1050px
+		//max-width 1050px
 		div
 			//font-size 0
 			ul
@@ -1894,6 +1895,7 @@ body
 			.menuProductosHome
 				//background naranjito
 				margin 1em auto 2em
+				max-width 1050px
 				li
 					// background linear-gradient(45deg , naranjito 50%, naranjo) !important
 					// background naranjito
@@ -2012,7 +2014,7 @@ body
 		border-top 4px solid rojoAsiste
 		margin 0 auto
 		padding 10px
-		max-width 950px
+		max-width 1050px
 		.productoFoto
 			font-size 0
 			margin 2em auto
@@ -2143,9 +2145,10 @@ body
 											width 40%
 											span
 												color rojoAsiste
-												
+												font-family 'quicksandbold'
 												font-size 30px
 												font-weight 100
+												letter-spacing -1px
 												//padding-right 20px
 											.textChico
 												color oscuro
@@ -2193,6 +2196,7 @@ body
 											overflow hidden
 											position absolute
 											text-align center
+											text-decoration none
 											width 17px
 										.product_quantity_down
 											bottom 0
@@ -2250,7 +2254,7 @@ body
 								display inline-block
 								font-size 13px
 								list-style none
-								padding .5em 3px
+								padding .4em 3px
 								//width 100px
 								&:hover
 									background oscuro
@@ -2259,7 +2263,8 @@ body
 								a
 									color oscuro
 									display block
-									
+									font-family 'quicksandregular'
+									letter-spacing -1px
 									padding 0 3px
 									text-decoration none
 							
@@ -2605,7 +2610,7 @@ h1
 	position fixed !important
 	top 0
 	width 100%
-	z-index 2
+	z-index 4
 				
 	.infoAdicionalHeader
 		display none
@@ -2822,9 +2827,10 @@ table
 				border-bottom 2px solid rojoAsiste
 				span
 					color rojoAsiste
-					
+					font-family 'quicksandbold'
 					font-size 30px
 					font-weight 100
+					letter-spacing -1px
 					text-transform uppercase
 		.cart_total_voucher
 			text-align right
@@ -3313,23 +3319,55 @@ td
 
 .bx-controls
 	bottom -15px
+	height 150px
 	position absolute
 	text-align center
 	width 100%
 .bx-controls-direction
-	position absolute
-	top 55px
+	position relative
 	width 100%
+	.bx-next
+	.bx-prev
+		//background red
+		font-size 0
+		height 50px
+		opacity .6
+		position absolute
+		text-decoration none
+		width 50px
+		&:hover
+			opacity 1
+	.bx-next
+		right 0
+		text-align right
+		&:before
+			color white
+			content "\ea65"
+			display block
+			font-family 'iconos' 
+			font-size 50px
+			width 100%
+			
+	.bx-prev
+		left 0
+		text-align left
+		&:before
+			color white
+			content "\e9f4"
+			display block
+			font-family 'iconos' 
+			font-size 50px
+			width 100%
 .bx-start.active
 .bx-pager-link.active
 	//background azulAsiste
 	//border 2px solid white
 	&:before
-		color naranjoPet
+		color otroGris
 		content '\ea34'
 		font-family 'iconos'
-		font-size 30px
-		line-height 30px
+		font-size 35px
+		line-height 35px
 .bx-pager-link
 	background white
 	//border 2px solid azulAsiste
@@ -3337,25 +3375,29 @@ td
 	bottom 0
 	display inline-block
 	left 0
-	height 30px
+	height 35px
 	position absolute
 	text-decoration none
 	//text-indent -9999px
 	vertical-align middle
-	width 30px
+	width 35px
 	&:before
 		color clarito
 		content '\ea34'
 		font-family 'iconos'
 		font-size 25px
-		line-height 30px
+		line-height 35px
+.bx-pager
+	bottom 0
+	position absolute
+	width 100%
 .bx-pager-item
 	display inline-block
-	height 30px
+	height 35px
 	margin 0 4px 0 0
 	position relative
-	width 30px
-	z-index 10000000000000
+	width 35px
+	z-index 3
 	a
 		font-size 0
 
@@ -3391,6 +3433,8 @@ td
 	position fixed
 	h2
 		font-size .8em
+.cart_quantity_button
+	display none
 
 .categoriasHome
 	box-sizing border-box
@@ -3423,7 +3467,7 @@ td
 					top 0
 					a
 					.linkToCategory
-						background verdeOscuro
+						background #32a99a
 						//border-radius 10px
 						figure
 							figcaption
@@ -3440,7 +3484,7 @@ td
 					top 0
 					a
 					.linkToCategory
-						background naranjoPet
+						background #32a99a
 						//border-radius 10px
 						figure
 							figcaption
@@ -3457,7 +3501,7 @@ td
 					top 0
 					a
 					.linkToCategory
-						background celestePet
+						background #32a99a
 						//border-radius 10px
 						figure
 							figcaption
@@ -3480,7 +3524,7 @@ td
 					top 0
 					a
 					.linkToCategory
-						background celestePet
+						background #32a99a
 						//border-radius 10px
 						figure
 							figcaption
@@ -3632,8 +3676,9 @@ td
 						h3
 							//bottom 2em
 							color white
-							
-							font-size 20px
+							font-family 'quicksandregular'
+							font-size 16px
+							letter-spacing -1px
 							margin 0
 							text-align left
 							text-transform uppercase
@@ -3642,8 +3687,8 @@ td
 							color white
 							display block
 							font-family 'open sans'
-							font-size 16px
-							margin 0
+							font-size 13px
+							margin 16px 0 0 0
 							//margin 0 5% 0 5%
 							text-align left
 							//top 4em
@@ -3651,13 +3696,13 @@ td
 							//width 90%
 						ul
 							list-style-type disc
-							margin 0
+							margin 16px 0 0 0
 							padding 0
 							li
 								color white
 								display list-item
 								font-family 'open sans'
-								font-size 18px
+								font-size 13px
 								margin 0 0 0 16px
 								overflow visible
 								padding 0
@@ -4792,6 +4837,55 @@ td
 	border none
 	border-radius 5px
 
+.explicacion
+	background naranjoPet
+	margin-top 46px
+	width 100%
+	.row
+		background url('../img/patota.png') no-repeat center
+		background-size 100%
+		margin 0 auto
+		max-width 1055px
+		padding 13px 0
+		h2
+			color white
+			font-family 'quicksandbold'
+			font-size 32px
+			letter-spacing -1px
+			margin 0
+			text-align center
+			text-decoration underline
+		ul
+			display inline-block
+			font-size 0
+			margin 16px 0 0 0
+			padding 0
+			vertical-align top
+			width 49%
+			li
+				color white
+				font-family 'quicksandregular'
+				font-size 20px
+				letter-spacing -1px
+				line-height 37px
+				margin-bottom 16px
+				text-align left
+				i
+					background-color #B53646
+					display inline-block
+					height 37px
+					margin-right 5px
+					width 37px
+					&:before
+						display block
+						font-size 28px
+						line-height 37px
+						text-align center
+						width 37px
+				span
+					font-size 13px
+					font-style italic
+
 .f-nav
 	position fixed
 	top 5px
@@ -5232,8 +5326,9 @@ td
 					width 100%
 					a
 						color oscuro
-						
+						font-family 'quicksandbold'
 						font-weight initial
+						letter-spacing -1px
 						text-decoration none
 						text-transform uppercase
 						transition .4s
@@ -5687,7 +5782,7 @@ td
 	height 40px
 	//overflow hidden
 	position relative
-	max-width 950px
+	max-width 1050px
 	.checkout
 		background transparent
 		float right
@@ -5715,8 +5810,9 @@ td
 		//border-radius 5px
 		color oscuro
 		display block
-		
+		font-family 'quicksandbold'
 		font-size 16px
+		letter-spacing -1px
 		height 40px
 		position relative
 		text-decoration none
@@ -6374,7 +6470,8 @@ td
 						display block
 						font-size 17px
 						//font-family 'oswaldregular'
-						
+						font-family 'quicksandbold'
+						letter-spacing -1px
 						line-height 40px
 						text-decoration none
 						text-transform uppercase

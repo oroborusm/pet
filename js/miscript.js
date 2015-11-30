@@ -1,7 +1,7 @@
 $(function(){
 
 	$('#homeslider').bxSlider({
-		controls: false,
+		controls: true,
 		auto: false,
 		infiniteLoop: false,
 	});
