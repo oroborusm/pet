@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- Block search module TOP -->
-<div class="boton-search"><i class="icon-search"></i></div>
+<!-- <div class="boton-search"><i class="icon-search"></i></div> -->
 <div id="search_block_top" class="buscador">
 	<div class="buscadorForm">
 		<form id="searchbox" method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" >

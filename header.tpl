@@ -93,8 +93,9 @@
 					<div class="contenedorMenu">
 						{$HOOK_MENU}
 					</div>
+					<div class="menudespliega"><i class="icon-menu"></i></div>
 					<!-- Block user information module NAV  -->
-					{include file="$tpl_dir./modules/blockuserinfo/nav.tpl"}
+					
 
 					<!-- /Block usmodule NAV -->
 					{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
@@ -109,6 +110,9 @@
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}
 						{include file="$tpl_dir./breadcrumb.tpl"}
+					{/if}
+					{if isset($left_column_size) && !empty($left_column_size)}
+						<div id="left_column" class="filtro">{$HOOK_LEFT_COLUMN}</div>
 					{/if}
 
 

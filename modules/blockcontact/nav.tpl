@@ -40,5 +40,7 @@
 				¿Necesitas ayuda?, llamanos al: <strong>{$telnumber}</strong>
 			</span>
 		{/if}
+
+		{include file="$tpl_dir./modules/blockuserinfo/nav.tpl"}
 	</div>
 </div>

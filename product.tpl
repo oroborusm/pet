@@ -188,7 +188,7 @@
 							{if ($too_early == false AND ($is_logged OR $allow_guests))}
 								<li>
 									<a class="open-comment-form" href="#new_comment_form">
-										{l s='Write a review' mod='productcomments'}
+										Comenta este producto
 									</a>
 								</li>
 							{/if}

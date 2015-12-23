@@ -21,8 +21,11 @@
 				{l s='Login' mod='blockuserinfo'}
 			</div>
 			<div class="accedeCuentaChica">
+				<div class="close">
+					<i class="icon-cross"></i>
+				</div>
 				<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" autocomplete="off">
-					<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
+					<!-- <h3 class="page-subheading">{l s='AlreadloginUsuarioy registered?'}</h3> -->
 					<div class="form_content">
 						<div class="form-group emailLogin">
 							<label for="email">{l s='Email address'}</label>
@@ -38,7 +41,7 @@
 							<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
 								<span>
 									<i class="icon-lock left"></i>
-									{l s='Sign in'}
+									Entra
 								</span>
 							</button>
 						</p>

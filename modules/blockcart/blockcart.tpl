@@ -29,6 +29,9 @@
 			<div class="clearfix">
 				<div class="layer_cart_product col-xs-12 col-md-6">
 					<span class="cross" title="{l s='Close window' mod='blockcart'}"></span>
+					<h2>
+						<i class="icon-checkmark"> </i>El producto se agrego correctamente al carrito.
+					</h2>
 					<div class="product-image-container layer_cart_img">
 					</div>
 					<div class="layer_cart_product_info">
@@ -43,9 +46,6 @@
 							<span id="layer_cart_product_price"></span>
 						</div>
 					</div>
-					<h2>
-						<i class="icon-ok"></i>{l s='Product successfully added to your shopping cart' mod='blockcart'}
-					</h2>
 				</div>
 
 			</div>

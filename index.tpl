@@ -31,6 +31,115 @@
 
 					</div>
 
+					<div class="selectCategory">
+						<ul class="caty">
+							<li>
+								<a href="#">
+									<div class="plan">
+										<span class="girado">plan</span>
+										<h2 class="numero">1</h2>
+									</div>
+									<div class="ifoPlan">
+										<h2>LOREM IPSUM</h2>
+										<p>Ajuste perfecto 
+										Soluciones inteligentes 
+										Materiales de calidad</p>
+									</div>
+									<figure>
+										<img src="{$img_dir}/categorias/cat11.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="plan">
+										<span class="girado">plan</span>
+										<h2 class="numero">2</h2>
+									</div>
+									<div class="ifoPlan">
+										<h2>LOREM IPSUM</h2>
+										<p>Ajuste perfecto 
+										Soluciones inteligentes 
+										Materiales de calidad</p>
+									</div>
+									<figure>
+										<img src="{$img_dir}/categorias/cat22.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="plan">
+										<span class="girado">plan</span>
+										<h2 class="numero">3</h2>
+									</div>
+									<div class="ifoPlan">
+										<h2>LOREM IPSUM</h2>
+										<p>Ajuste perfecto 
+										Soluciones inteligentes 
+										Materiales de calidad</p>
+									</div>
+									<figure>
+										<img src="{$img_dir}/categorias/cat33.png" alt="">
+									</figure>
+								</a>
+							</li>
+						</ul>
+						<ul class="doggy">
+							<li>
+								<a href="#">
+									<div class="plan">
+										<span class="girado">plan</span>
+										<h2 class="numero">1</h2>
+									</div>
+									<div class="ifoPlan">
+										<h2>LOREM IPSUM</h2>
+										<p>Ajuste perfecto 
+										Soluciones inteligentes 
+										Materiales de calidad</p>
+									</div>
+									<figure>
+										<img src="{$img_dir}/categorias/doggy11.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="plan">
+										<span class="girado">plan</span>
+										<h2 class="numero">2</h2>
+									</div>
+									<div class="ifoPlan">
+										<h2>LOREM IPSUM</h2>
+										<p>Ajuste perfecto 
+										Soluciones inteligentes 
+										Materiales de calidad</p>
+									</div>
+									<figure>
+										<img src="{$img_dir}/categorias/doggy22.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="plan">
+										<span class="girado">plan</span>
+										<h2 class="numero">3</h2>
+									</div>
+									<div class="ifoPlan">
+										<h2>LOREM IPSUM</h2>
+										<p>Ajuste perfecto 
+										Soluciones inteligentes 
+										Materiales de calidad</p>
+									</div>
+									<figure>
+										<img src="{$img_dir}/categorias/doggy33.png" alt="">
+									</figure>
+								</a>
+							</li>
+						</ul>
+					</div>
+
 					{if isset($HOOK_HOME) && $HOOK_HOME|trim}
 						<div class="categoriasHome">{$HOOK_HOME}</div>
 					{/if}
@@ -53,16 +162,30 @@
 								<div class="row">
 									<h2>CONTEXTO DE INFORMACIÓN </h2>
 									<ul>
-										<li><i class="icon-search"></i>Elige Una Suscripción</li>
-										<li><i class="icon-petcart2"></i>Lo Agregas Al Carrito</li>
-										<li><i class="icon-credit-card"></i>Pagas Seguro <span>(Tenemos Conexión Segura Ssl)</span></li>
-										<li><i class="icon-location"></i>El Pedido Llega A Tu Casa <span>(Valido Solo Para Santiago)</span></li>
-									</ul>
-									<ul>
-										<li><i class="icon-search"></i>Elige Una Suscripción</li>
-										<li><i class="icon-petcart2"></i>Lo Agregas Al Carrito</li>
-										<li><i class="icon-credit-card"></i>Pagas Seguro <span>(Tenemos Conexión Segura Ssl)</span></li>
-										<li><i class="icon-location"></i>El Pedido Llega A Tu Casa <span>(Valido Solo Para Santiago)</span></li>
+										<li>
+											<div class="img">
+												<img src="{$img_dir}icon/ssl.png" alt="">
+											</div>
+											<span>
+												Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's
+											</span>
+										</li>
+										<li>
+											<div class="img">
+												<img src="{$img_dir}icon/ssl.png" alt="">
+											</div>
+											<span>
+												Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's
+											</span>
+										</li>
+										<li>
+											<div class="img">
+												<img src="{$img_dir}icon/deliver.png" alt="">
+											</div>
+											<span>
+												Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's
+											</span>
+										</li>
 									</ul>
 								</div>
 							</div>

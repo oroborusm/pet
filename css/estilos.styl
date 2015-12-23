@@ -2,6 +2,7 @@
 @import 'nib/gradients'
 
 
+burdeo = #c41925
 //calipso = #5fa098
 calipso = #009999
 celestePet = #009BDB
@@ -142,7 +143,7 @@ body
 			//background #aeadb3
 			display inline-block
 			vertical-align top
-			width 39%
+			width 35%
 			.row
 				margin 0 auto
 				padding 10px 0
@@ -167,9 +168,10 @@ body
 						//padding 10px 25px
 						//width 600px
 						h4
-							
+							font-family 'quicksandbold'
 							//font-weight 100
 							font-size 15px
+							letter-spacing -1px
 							margin 0
 							padding 0
 							text-align left
@@ -198,8 +200,9 @@ body
 									width 23%
 									span
 										color white
-										
+										font-family 'quicksandbold'
 										font-size 13px
+										letter-spacing -1px
 										line-height 17px
 										text-transform uppercase
 		.row
@@ -208,7 +211,7 @@ body
 			//padding 0 12.5%
 			position relative
 			vertical-align top
-			width 60%
+			width 64%
 			//form
 			//	display none
 			.blockcategories_footer
@@ -229,10 +232,11 @@ body
 					color oscuro
 					text-decoration none
 				h4
-					
+					font-family 'quicksandbold'
 					font-size 15px
 					font-weight 100
 					display block
+					letter-spacing -1px
 					margin 0 0 10px 0
 					text-transform uppercase
 				ul
@@ -378,21 +382,33 @@ body
 						padding 0
 						span
 							color oscuro
-							font-weight 600
 							display inline-block
+							//font-family 'quicksandbold'
+							font-weight 600
+							letter-spacing -1px
 							a
 								color oscuro
+								//text-transform uppercase
+								&:hover
+									text-decoration underline
+				.icon-phone
+					display none
 	header
 		background white
 		//background #eaeaea
+		border-bottom 4px solid #c41925
 		//height 70px
 		margin 0 auto
 		//overflow hidden
-		position relative
+		position fixed
+		top 0
+		transition .3s
+		width 100%
+		z-index 4
 		.header
 			//background white
 			//background #ecedef
-			border-bottom 1px solid clarito
+			//border-bottom 1px solid clarito
 			height 85px
 			margin 0 auto
 			position relative
@@ -421,25 +437,26 @@ body
 				position relative
 				max-width 1050px
 				.buscador
-					background white
+					//background white
 					box-sizing content-box
-					border-radius 5px
-					box-shadow 0 0 10px oscuro
-					display none
+					border 2px solid naranjoPet
+					border-radius 25px
+					//box-shadow 0 0 10px oscuro
+					//display none
 					//float right
 					//height 57px
 					//left 50%
 					margin-left -150px
 					//margin 0 10% 0 0
-					padding 20px
+					overflow hidden
+					//padding 20px
 					position absolute
-					top 62px
-					right 0
-					width 300px
+					top 28px
+					right 65px
+					width 200px
 					z-index 2
 					.buscadorForm
 						background white
-						border-bottom 2px solid hoverBlue
 						//border-radius 2px
 						height 30px
 						//left 30px
@@ -454,36 +471,45 @@ body
 							//text-align center 
 							z-index -1
 							button
-								background hoverBlue
+								//background #ddd
+								background-color white
 								border none
-								border-radius 0 0 2px 0
-								bottom -2px
+								border-radius 50%
+								bottom 0
 								cursor pointer
 								height 30px
 								margin 0
 								padding 0
 								position absolute
 								right -2px
-								width 14%
+								width 30px
 								//z-index -1
 								span
-									color white
 									line-height 30px
 									&:before
+										color naranjoPet
+										//color white
 										content '\e67f'
 										font-family 'icos'
 										font-size 1em
 										line-height 30px
-							input
+							input[type=text]
 								background white
 								border none
-								border-radius .5em
+								//border-bottom 2px solid #ddd
+								//border-radius .5em
 								//font-size 15px
-								height 28px
+								height 32px
 								//margin-top 35px
-								padding 0 0 0 5%
+								padding 0 0 0 8%
+								position absolute
+								//right 15px
+								top -1px
+								transition .3s
 								width 80%
 								//z-index -2
+								/*&:focus
+									width 200px*/
 							button
 							input
 								display inline-block
@@ -1016,29 +1042,38 @@ body
 			font-size 13px
 	.contenedorCategoria
 		margin 0 auto
-		max-width 950px
+		max-width 1050px
 		h1
 			text-align center
 	.contCarrusel
-		background-color #32A99A
-		margin 4px auto 0
+		//background-color #32A99A
+		//border-top 4px solid #C41925
+		height 300px
+		margin 0 auto
 		position relative
 		width 100%
 		.contCarruselInt
-			background url('../img/cuadritos.png') no-repeat right bottom
-			background-size 40%
+			background-image url('../img/fondoSlide.jpg')
+			background-position center
+			background-size cover
 			font-size 0
-			height 330px
+			//height 200px
 			margin 0 auto
 			//overflow hidden
 			position relative
-			max-width 1050px
+			width 100%
 			.carrusel
-				margin 0 auto
-				font-size 18px
 				//margin-right 1.5%
+				//background rebeccapurple
+				background-image url('../img/cuadritos.png') no-repeat right bottom 40%
+				display block
+				font-size 18px
+				height 300px
+				margin 0 auto
+				max-width 1050px
 				overflow hidden
-				width 100%
+				position relative
+					
 				ul
 					margin 0
 					padding 0
@@ -1062,8 +1097,9 @@ body
 							width 150px*/
 						a
 							.sliderimage
-								background-size cover
-								background-position center center
+								background-position center 5%
+								background-repeat no-repeat
+								background-size 95%
 								height 330px
 								width 100%
 						.homeslider-description
@@ -1130,10 +1166,10 @@ body
 										list-style none
 										text-align right
 										
-			.carrusel
-			.comentariosHome
-				display inline-block
-				vertical-align top
+			// .carrusel
+			// .comentariosHome
+			// 	display inline-block
+			// 	vertical-align top
 			.comentariosHome
 				background clarito
 				font-size 18px
@@ -2011,7 +2047,7 @@ body
 						display none
 						width 100%
 	.productoPag
-		border-top 4px solid rojoAsiste
+		border-top 4px solid #C41925
 		margin 0 auto
 		padding 10px
 		max-width 1050px
@@ -2030,9 +2066,10 @@ body
 					width 67%
 					h1
 						color oscuro
-						
+						font-family 'quicksandbold'
 						font-size 24px
 						font-weight 100
+						letter-spacing -2px
 						margin 10px 0
 						padding 0 5px 0 15px
 						text-align left
@@ -2077,6 +2114,7 @@ body
 														margin 0
 														position relative
 														text-align center
+														transition .3s
 														width 100%
 														/*&:before
 															//background naranjito
@@ -2097,6 +2135,9 @@ body
 															font-size 20px
 															//margin-left 49px
 															//text-align left
+														&:hover
+															background #c41925
+															box-shadow 2px 2px 5px oscuro
 											.buttons_bottom_block
 												height 50px
 												a
@@ -2198,10 +2239,14 @@ body
 											text-align center
 											text-decoration none
 											width 17px
+											span
+												display block
+												line-height 17px
+												height 17px
 										.product_quantity_down
 											bottom 0
 											right 0
-											&:before
+											/*&:before
 												bottom 2px
 												color white
 												content '\e701'
@@ -2210,11 +2255,11 @@ body
 												left 0
 												position absolute
 												//text-align center
-												width 100%
+												width 100%*/
 										.product_quantity_up
 											top 0
 											right 0
-											&:before
+											/*&:before
 												color white
 												content '\e702'
 												font-family 'icos'
@@ -2223,7 +2268,7 @@ body
 												position absolute
 												//text-align center
 												top 2px
-												width 100%
+												width 100%*/
 								
 						.pay
 							bottom -122px
@@ -2231,9 +2276,11 @@ body
 							position absolute
 					.topDescripcion
 						background clarito
-						border 2px solid #ddd
+						//border 2px solid #ddd
+						border-radius 4px
+						box-shadow 1px 1px 5px #adadad
 						//padding-left 1em
-						padding-left 5px
+						padding-left 15px
 						position relative
 						.linksDescripcion
 							//background grisClaro1
@@ -2249,21 +2296,22 @@ body
 							vertical-align top
 							//width 30%
 							li
-								background #ddd
+								//background #ddd
 								//border 1px solid rgb(174, 173, 179)
+								border-radius 15px
 								display inline-block
 								font-size 13px
 								list-style none
 								padding .4em 3px
 								//width 100px
 								&:hover
-									background oscuro
+									background #b53646
 									a
 										color white
 								a
-									color oscuro
+									color otroGris
 									display block
-									font-family 'quicksandregular'
+									font-family 'quicksandbold'
 									letter-spacing -1px
 									padding 0 3px
 									text-decoration none
@@ -2294,14 +2342,12 @@ body
 							.referencia
 								label
 								span
-									color oscuro
+									color otroGris
+									font-family 'quicksandregular'
 									font-size 13px
+									letter-spacing -1px
 									line-height 28px
 									margin 0
-								label
-									
-								span
-									
 									
 					.linkComentario
 						bottom 40px
@@ -2607,13 +2653,39 @@ h1
 
 .head-fixed
 	//border-bottom 2px solid white
+	height 50px
 	position fixed !important
 	top 0
 	width 100%
 	z-index 4
-				
+	.header
+		height 50px
+		.headerCOnt 
+			height 50px
+			.buscador
+				//margin-right 25px
+				padding 0
+				top 7px
+			.contenedorMenu
+				.menuManias
+					.menuTop
+						li
+							ul
+								top 45px
+			.carrito 
+				top 7px
+				& > .ajax_cart_quantity
+				& > .ajax_cart_no_product
+					left -20px
+					top -8px
+			a
+				img
+					margin 4px 0 0 0
+					width 80%
 	.infoAdicionalHeader
 		display none
+	.menuTop > li > a
+		line-height 50px
 
 // header
 // 	//position absolute
@@ -2856,9 +2928,10 @@ td
 		border 1px solid transparent
 		border-bottom 2px solid clarito
 		color oscuro
-		
+		font-family 'quicksandbold'
 		font-size 20px
 		font-weight 100
+		letter-spacing -1px
 		line-height 40px
 		margin 0
 		padding 5px 10px 0 10px
@@ -2875,9 +2948,10 @@ td
 			a
 				color oscuro
 				display block
-				
+				font-family 'quicksandregular'
 				font-size 18px
 				font-weight 400
+				letter-spacing -1px
 				line-height 50px
 				margin 0 0 0 5%
 				text-decoration none
@@ -2926,12 +3000,20 @@ td
 
 .accedeCuentaChica
 	background white
-	border 2px solid clarito
+	//border 2px solid clarito
+	box-shadow 0 2px 18px rgba(0,0,0,0.2)
 	display none
 	margin-left -100px
 	padding 10px
 	position relative
-	z-index 1
+	z-index 4
+	.close
+		position absolute
+		text-align right
+		top 0
+		width 90%
+		.icon-cross 
+			font-size 10px
 	form
 		width 100%
 		.form_content
@@ -2950,12 +3032,11 @@ td
 					&:focus
 						background aliceblue
 			.emailLogin
-				// border-top 1px solid naranjito
-				
 			.passwordLogin
 				// border-top 1px solid naranjito
-				//border-bottom 1px solid naranjito
-				
+				font-family 'quicksandregular'
+				letter-spacing -1px
+				text-transform uppercase
 			.linkCreaCuenta
 				background rojoAsiste
 				border-radius 2px
@@ -3181,7 +3262,7 @@ td
 	height 37px
 	display block
 	position absolute
-	right 0
+	right 43px
 	top 23px
 	width 37px
 	.icon-search
@@ -3318,8 +3399,8 @@ td
 			transition .5s
 
 .bx-controls
-	bottom -15px
-	height 150px
+	bottom 0
+	height 175px
 	position absolute
 	text-align center
 	width 100%
@@ -3340,6 +3421,7 @@ td
 	.bx-next
 		right 0
 		text-align right
+		transition .4s
 		&:before
 			color white
 			content "\ea65"
@@ -3351,6 +3433,7 @@ td
 	.bx-prev
 		left 0
 		text-align left
+		transition .4s
 		&:before
 			color white
 			content "\e9f4"
@@ -3363,13 +3446,13 @@ td
 	//background azulAsiste
 	//border 2px solid white
 	&:before
-		color otroGris
+		color naranjoPet
 		content '\ea34'
 		font-family 'iconos'
 		font-size 35px
 		line-height 35px
 .bx-pager-link
-	background white
+	background clarito
 	//border 2px solid azulAsiste
 	border-radius 50%
 	bottom 0
@@ -3382,7 +3465,7 @@ td
 	vertical-align middle
 	width 35px
 	&:before
-		color clarito
+		color otroGris
 		content '\ea34'
 		font-family 'iconos'
 		font-size 25px
@@ -3455,16 +3538,20 @@ td
 			padding 0
 			li
 				display inline-block
+				height 200px
 				margin 0 0 -5px 0
 				padding 0
 				overflow hidden
 				padding 5px
 				//position absolute
-				width 25%
+				width 33%
+				&:hover
+					.categoriaIcon
+						bottom 5px
 				&:nth-child(1)
 					//border-top 5px solid naranjo
-					left 0
-					top 0
+					/*left 0
+					top 0*/
 					a
 					.linkToCategory
 						background #32a99a
@@ -3480,8 +3567,8 @@ td
 									width 100%
 				&:nth-child(2)
 					//border-top 5px solid naranjito
-					left 33.3%
-					top 0
+					/*left 33.3%
+					top 0*/
 					a
 					.linkToCategory
 						background #32a99a
@@ -3497,8 +3584,8 @@ td
 									width 100%				
 				&:nth-child(3)
 					//border-top 5px solid #BA007C
-					left 66.6%
-					top 0
+					/*left 66.6%
+					top 0*/
 					a
 					.linkToCategory
 						background #32a99a
@@ -3520,8 +3607,8 @@ td
 									width 90%
 				&:nth-child(4)
 					//border-top 5px solid #BA007C
-					left 66.6%
-					top 0
+					/*left 66.6%
+					top 0*/
 					a
 					.linkToCategory
 						background #32a99a
@@ -3544,11 +3631,12 @@ td
 				&:nth-child(5)
 					//border-top 5px solid #A38051
 					//left 33.3%
-					margin-top 10px
+					//margin-top 10px
 					//top 33.4%
-					width 50%
+					//width 50%
 					a
 					.linkToCategory
+						background #32a99a
 						figure
 							figcaption
 								h3
@@ -3560,10 +3648,11 @@ td
 									width 100%
 				&:nth-child(6)
 					//border-top 5px solid #579532
-					bottom 0
-					left 33.3%
+					/*bottom 0
+					left 33.3%*/
 					a
 					.linkToCategory
+						background #32a99a
 						figure
 							figcaption
 								h3
@@ -3579,6 +3668,7 @@ td
 					left 66.6%
 					a
 					.linkToCategory
+						background #32a99a
 						figure
 							figcaption
 								h3
@@ -3614,7 +3704,7 @@ td
 						//height 100%
 						margin 0
 						padding 0
-						width 100%
+						//width 100%
 					&:before
 						background linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.5) 75%)
 						content ''
@@ -3669,6 +3759,7 @@ td
 						padding 5px 15px
 						position absolute
 						transition .3s
+						width 100%
 						h3
 						p
 							transition 0.35s
@@ -3703,6 +3794,7 @@ td
 								display list-item
 								font-family 'open sans'
 								font-size 13px
+								height initial
 								margin 0 0 0 16px
 								overflow visible
 								padding 0
@@ -3710,9 +3802,9 @@ td
 								width 100%
 
 .category-thumbnail
-	position absolute !important
+	/*position absolute !important
 	right 20px
-	top 20px
+	top 20px*/
 	div
 		img
 			width 200px
@@ -3725,13 +3817,13 @@ td
 	border-radius 2px
 	cursor pointer
 	//float right
-	height 37px
+	height 35px
 	position absolute
-	right 43px
+	right 0
 	text-align center
-	top 23px
+	top 28px
 	transition .3s
-	width 37px
+	width 35px
 	//z-index 2147483647
 	.carritoIcon
 		color red
@@ -3752,10 +3844,10 @@ td
 	// 	.carritoHover
 	// 		display block
 	.carritoHover
-		background clarito
+		background white
 		//border-radius 5px
-		//box-shadow 1px 1px 10px oscuro
-		border 1px solid #aeadb3
+		box-shadow 1px 1px 10px oscuro
+		//border 1px solid #aeadb3
 		display none
 		padding 0 3px
 		position absolute
@@ -3763,7 +3855,7 @@ td
 		text-align left
 		top 30px
 		transition .3s
-		width 250px
+		width 300px
 		z-index 10000
 		.carritoDeCompra
 			position relative
@@ -3946,7 +4038,7 @@ td
 										// 		color rojoAsiste
 		.cart-buttons
 			background rojoAsiste
-			//border-radius 4px
+			border-radius 20px
 			float right
 			padding 0 1em
 			transition .3s
@@ -3996,19 +4088,20 @@ td
 	//background clarito
 	background-color white
 	//border 1px solid otroGris
-	border 2px solid otroGris
-	//border-radius 5px
+	//border 2px solid otroGris
+	//border-radius 40px
+	box-shadow 1px 1px 10px oscuro
 	box-sizing border-box
 	display none
 	font-size 12px
 	left 50%
 	margin-left -210px
 	//margin-top 78px
-	padding 15px 10px
+	//padding 15px 10px
 	position fixed
 	text-align right
 	top 125px !important
-	width 420px
+	min-width 200px
 	z-index 100001
 	.crossseling
 		overflow hidden
@@ -4048,51 +4141,74 @@ td
 	.layer_cart_product
 		text-align left
 		h2
-			
+			background-color #f3825f
+			box-shadow 1px 1px 10px rgba(67,65,66,0.4)
+			//border-radius 10px
+			color white
 			font-size 15px
-			font-style italic
+			//font-style italic
 			font-weight 100
-			margin .8em 0
+			margin 0
+			padding 15px 10px
 			text-align left
 			text-transform uppercase
 		.cross
 			background white
+			border 1px solid naranjoPet
 			border-radius 50%
-			bottom -10px
 			cursor pointer
 			height 30px
 			position absolute
 			right -10px
+			top -10px
 			width 30px
 			&:after
-				color otroGris
+				color naranjoPet
 				content '\e6fa'
 				font-family 'icos'
 				font-size 16px
 				display block
-				line-height 30px
+				line-height 28px
 				text-align center
-				width 30px
+				width 28px
 		.layer_cart_img
-			border 1px solid clarito
-			margin 0
-			width 30%
+			//border 1px solid clarito
+			background-color white
+			//border-radius 50%
+			box-shadow 1px 1px 10px rgba(67,65,66,0.4)
+			//height 200px
+			margin 0 auto
+			padding 0
+			width 100%
 			img
-				//border-radius 5px
-				width 100%
-		.layer_cart_img
+				//border-radius 50%
+				box-shadow none
+				display block
+				margin 0 auto
+				padding 0
+				width 200px
+		/*.layer_cart_img
 		.layer_cart_product_info
 			box-sizing border-box
 			display inline-block
 			text-align left
-			vertical-align top
+			vertical-align top*/
 		.layer_cart_product_info
-			width 65%
+			background-color #f3825f
+			box-shadow 1px 1px 10px rgba(67,65,66, 1)
+			//border-radius 15px
+			color white
+			padding 10px 0
+			position relative
+			text-align center
+			width 100%
 			.product-name
 				display block
-				font-size 13px
+				font-size 15px
 				font-weight 600
 				text-transform uppercase
+			span
+				text-shadow 1px 1px 3px rgba(67,65,66,0.4)
 
 .carritoHover
 	.bloc_cart_voucher
@@ -4112,6 +4228,22 @@ td
 			text-align right
 			width 50%
 
+.categoriaIcon
+	background naranjoPet
+	border-radius 50%
+	bottom -20px
+	height 100px
+	margin-right -50px
+	position absolute
+	right 50%
+	text-align center
+	transition .3s
+	width 100px
+	.icon-meter
+		color white
+		font-size 50px
+		line-height 100px
+		
 .cd-img-replace
 	display inline-block
 	overflow hidden
@@ -4217,6 +4349,12 @@ td
 	display block
 	width 20%
 
+.color-option
+	border-radius 50%
+	height 20px
+	width 20px
+	vertical-align middle
+
 .colorao
 	color colorao
 
@@ -4230,8 +4368,9 @@ td
 				color naranjito
 
 .condicion
-	font-family 'proxima_novaextrabold'
+	font-family 'quicksandregular'
 	font-size 13px
+	letter-spacing -1px
 	padding 0 5px 0 15px
 	//width 50%
 	.ProdNuevo
@@ -4355,7 +4494,7 @@ td
 					font-weight 100
 
 .container
-	margin .6em auto
+	margin 128px auto .6em
 	//max-width 950px
 
 .contenedorFormNuevoComentario
@@ -4386,7 +4525,7 @@ td
 				width 30%
 				span
 					color white
-					font-family 'oswaldregular'
+					font-family 'quicksandregular'
 					font-weight 100
 
 	.new_comment_form_content
@@ -4414,7 +4553,7 @@ td
 			text-align left
 			width 69%
 			label
-				
+			textarea	
 				font-size 15px
 				font-weight 100
 				margin 5px 0
@@ -4442,15 +4581,15 @@ td
 			width 65%
 			p
 				color oscuro
-				font-family 'oswaldlight'
-				font-size 15px
+				//font-family 'quicksandregular'
+				font-size 15px !important
 				margin 0
 				text-align justify
 			.product_name
 				margin-bottom 5px
 				text-align left
 				strong
-					font-family 'oswaldregular'
+					font-family 'quicksandbold'
 					font-size 20px
 					font-weight 100
 
@@ -4472,7 +4611,7 @@ td
 
 .contenedorMenu
 	//background verdeOscuro
-	position absolute
+	position relative
 	left 0
 	top 0
 	width 100%
@@ -4536,7 +4675,7 @@ td
 
 .content_sortPagiBar
 	margin 0 auto
-	max-width 950px
+	max-width 1050px
 	.bottom-pagination-content
 		border-top 1px solid clarito
 		overflow hidden
@@ -4656,7 +4795,7 @@ td
 			background clarito
 			//border-radius 5px
 			position relative
-			margin 2em auto 0
+			margin 0 auto
 			padding 7px 20px
 			text-align left
 			//width 80%
@@ -4832,6 +4971,9 @@ td
 	.category-thumbnail
 		display none
 
+#enabled_filters
+	display none
+
 .error
 	background red
 	border none
@@ -4856,32 +4998,33 @@ td
 			text-align center
 			text-decoration underline
 		ul
-			display inline-block
+			display block
 			font-size 0
 			margin 16px 0 0 0
 			padding 0
-			vertical-align top
-			width 49%
+			width 100%
 			li
 				color white
+				display inline-block
 				font-family 'quicksandregular'
 				font-size 20px
 				letter-spacing -1px
-				line-height 37px
 				margin-bottom 16px
-				text-align left
-				i
-					background-color #B53646
-					display inline-block
-					height 37px
-					margin-right 5px
-					width 37px
-					&:before
-						display block
-						font-size 28px
-						line-height 37px
-						text-align center
-						width 37px
+				padding 10px
+				text-align center
+				vertical-align top
+				width 32%
+				.img
+					background-color clarito
+					border 9px solid #c2c3c9
+					border-radius 50%
+					display block
+					height 140px
+					margin 0 auto
+					width 140px
+					img
+						margin 0 auto
+						width 100%
 				span
 					font-size 13px
 					font-style italic
@@ -4923,7 +5066,7 @@ td
 	form
 		text-align left
 		h2
-			font-family 'oswaldregular'
+			font-family 'quicksandregular'
 			font-weight 100
 			margin 0
 			text-align left
@@ -4985,9 +5128,13 @@ td
 
 .filtro
 	background clarito
+	box-shadow 3px 3px 10px #ddd
 	//border 1px solid grisClaro1
-	padding 15px 5px
-	width 25%
+	//font-family 'quicksandregular'
+	font-size 14px
+	margin 1em auto
+	padding 15px
+	max-width 1050px
 	.block
 		.block_content
 			ul
@@ -4998,41 +5145,73 @@ td
 					a
 						color oscuro
 						//font-family 'quicksandregular'
-						font-size 15px
+						font-size 13px
 						font-weight 100
 						text-decoration none
+						text-transform uppercase
 						transition .3s
-						&:hover
-							text-decoration underline
 					label
 						position relative
-						padding 0 0 0 20px
+						padding 0 0 0 23px
 					label
 					.checker
 						display inline-block
 						vertical-align middle
 					.checker
-						height 15px
+						height 18px
 						left 0
-						margin-top -7px
+						margin-top -9px
 						position absolute
 						top 50%
-						width 15px
+						width 18px
+						//z-index 1
 						span
+							//background-color rgba(75,170,43, .5)
+							background-color white
+							border 2px solid #4BAA2B
+							border-radius 3px
 							display block
 							height 100%
+							transition .3s
 							width 100%
-							input
-								display block
+							input[type=checkbox]
+								display none
 								height 100%
 								width 100%
-					
-
+						span.checked
+							background-color white
+							&:before
+								color #4BAA2B
+								//content: "\e93e"
+								content: "\e940"
+								display block
+								font-family 'iconos'
+								font-size 19px
+								position absolute
+								top -3px
+								right -3px
+			.dynamized	
+				li
+					display inline-block
+					margin 0 5px 0 0 
+					vertical-align top
+					a
+						background-color #ddd
+						border-radius 15px
+						padding 5px 10px
+						&:hover
+							background-color naranjoPet
+							color white
+							//text-decoration underline
+		.block_content
 		.title_block
-			
+			display inline-block
+			vertical-align middle
+		.title_block
+			display none
 			font-size 18px
+			font-weight normal
 			margin 0
-			
 
 .footer-container
 	background clarito
@@ -5108,11 +5287,27 @@ td
 	&:hover
 		.sub-menuDesktop
 			display block !important
+			
+.hoverMenuUl:hover ~ .hoverMenu
+		background red
+
+#homefeatured
+	font-size 0
+	max-width 1050px
+	.listaProductoLi
+		width 25%
+
+.icon-phone
+	color #4BAA2B
 
 .icon-petcart
 	&:before
 		color naranjoPet
-		font-size 37px
+		font-size 33px
+.icon-plus
+.icon-minus
+	color white
+	font-size 13px
 
 .infoAdicionalHeader
 	background #f8f8f8
@@ -5126,12 +5321,13 @@ td
 		margin 0 auto
 		position relative
 		text-align center
-		max-width 950px
+		max-width 1050px
 		.shop-phone
 			font-size 13px
 			line-height 40px
 			strong
 				background naranjoPet
+				border-radius 10px
 				color white
 				padding 2px 10px
 
@@ -5141,8 +5337,82 @@ td
 	font-weight 100
 	margin 0
 
+.informations_block_left
+#stores_block_left
+#viewed-products_block_left
+	display none
+
 .items
 	position absolute
+	
+.layered_color
+	padding 0 0 0 10px !important
+	vertical-align middle
+	
+.layered_filter
+.layered_price
+	display inline-block
+	padding 0 5px
+	vertical-align top
+	width 24%
+	ul
+		li
+			display block
+			label
+				a
+					background-color transparent
+	.layered_subtitle_heading
+		text-decoration none
+		.layered_subtitle
+			color #4BAA2B
+			font-weight 600
+			text-transform uppercase
+.layered_filter
+	ul
+		li
+			.layered_color
+				display none !important
+	.color-group
+		li
+			display inline-block
+			height 20px
+			vertical-align top
+			width 20px
+			.color-option
+				border 1px solid #babbbb
+				margin 5px
+				//padding 2.5px
+				//	position absolute
+				transition .3s
+				&:hover
+					box-shadow 0 0 7px #aaa
+			.on
+				border 2px solid #4baa2b
+				box-shadow 0 0 5px #4baa2b
+
+.layered_filter_ul
+	//text-align center
+	label
+	span
+		color #434142
+		font-size 13px
+		font-weight 100
+		text-transform uppercase
+		
+
+.layered_slider_container
+	margin 1em auto
+	padding 0 3px
+	//width 90%
+
+.layered_slider
+	a
+		border-radius 50%
+
+.layered_subtitle_heading
+	font-size 15px
+	font-weight 100
+	text-decoration underline
 
 .lineas
 	&:before
@@ -5191,32 +5461,27 @@ td
 					
 					font-size 13px
 					text-transform uppercase
-
-#homefeatured
-	font-size 0
-	max-width 1050px
-	.listaProductoLi
-		width 25%
 		
 .listaProducto
-.listaProductoFiltro
 	background none
+	font-size 0
 	margin 14px auto
 	padding 0
+	max-width 1050px
 	.listaProductoLi
 		//border-radius 9px
-		border 1px solid transparent
+		//border 1px solid transparent
 		display inline-block
-		font-size 18px
 		list-style none
 		margin 0
 		overflow hidden
 		padding-bottom 1em
 		position relative
 		vertical-align top
+		width 25%
 		&:hover
-			border 1px solid clarito
-			//box-shadow 0 0 10px rgba(0,0,0, .4)
+			//border 1px solid clarito
+			box-shadow 1px 1px 10px rgba(oscuro, .4)
 			.contenedorPopular
 				.functional-buttons
 					.compare
@@ -5380,8 +5645,11 @@ td
 						//background oscuro
 						//border 1px solid oscuro
 						//color white
-						
-						font-size 15px
+						color rojoAsiste
+						//font-family 'quicksandbold'
+						font-size 18px
+						font-weight 600
+						letter-spacing -1px
 						margin 0
 						position relative
 						//text-align left
@@ -5468,46 +5736,52 @@ td
 				font-size 18px
 				font-weight 600
 
-.listaProductoFiltro
-	margin 0
-	width 74%
-	.listaProductoLi
-		width 32%
-.listaProductoFiltro
-.filtro
-	display inline-block
-	vertical-align top
-
 .loginUsuario
 	//background grisClaro2
 	border-radius 2px
-	height 30px
+	height 40px
 	position absolute
-	right 90px
+	right 0
 	text-align center
-	top 25px
+	top 0
 	//width 90px
 	.contenedorLogin
 		cursor pointer
 		display block
-		height 30px
+		height 40px
 		//overflow hidden
 		position relative
 		//width 100%
+		&:before
+			color #aebdc1
+			content '\e967'
+			font-family 'iconos'
+			font-size 16px
+			position absolute
+			right 0
+			top 10px
+			transform rotate(-180deg)
+		&:hover
+			&:before
+				color oscuro
+			.login
+				color oscuro
 		.despliega
 			background white
-			border 1px solid #ddd
+			//border 1px solid #ddd
 			border-radius 2px
+			box-shadow 0 2px 18px rgba(0,0,0,0.2)
 			box-sizing border-box
 			cursor initial
 			display none
 			//height 60px
-			padding 5px
+			padding 5px 5px 0 5px
 			position absolute
 			right calc(50% - 75px)
 			text-align left
-			top 30px
+			top 40px
 			width 150px
+			z-index 3
 			.account
 				//background calipso
 				color clarito
@@ -5530,7 +5804,7 @@ td
 				display block
 				//font-size 11px
 				height 25px
-				margin 2px auto
+				//margin 2px auto
 				text-align center
 				text-decoration none
 				text-transform uppercase
@@ -5545,20 +5819,23 @@ td
 		.login
 			//background oscuro
 			border-radius 2px
-			color oscuro
+			color #aebdc1
 			display block
+			font-family 'quicksandregular'
 			font-size 13px
 			font-weight 800
-			line-height 30px
-			padding 0 30px
+			letter-spacing -1px
+			line-height 40px
+			padding 0 20px
 			//width 100%
 		.nombre
 			color clarito
-			height 30px
-			line-height normal
+			font-family 'quicksandregular'
+			height 40px
+			line-height 40px
 			//left 0
 			//overflow hidden
-			padding 0 30px
+			padding 0 20px
 			//position absolute
 			//top 0
 			//width 100%
@@ -5566,7 +5843,7 @@ td
 				color oscuro
 				display block
 				font-size 11px
-				line-height 30px
+				line-height 40px
 
 // .maniaBackground1 >	ul
 // 	background #fff url('../img/asiste-01.jpg')
@@ -5623,6 +5900,9 @@ td
 .margin-top
 	margin-top 90px
 
+.menudespliega
+	display none
+
 .menuManias
 	display block
 	//height 45px
@@ -5635,7 +5915,7 @@ td
 	//border-left 1px solid grisClaro1
 	margin 0 auto
 	padding 0
-	//position relative
+	position relative
 	text-align left
 	width 50%
 .menuTop > li
@@ -5645,6 +5925,7 @@ td
 	font-size 0
 	margin 0
 	padding 0
+	position relative
 	text-align center
 	transition .3s
 	vertical-align top
@@ -5660,47 +5941,73 @@ td
 	background #f8f8f8
 .menuTop > li > ul
 	background white
+	border-radius 5px
+	box-shadow 1px 1px 10px oscuro
 	display none
-	height 200px
+	//height 200px
 	left 0
 	margin 0
 	//opacity 0
-	padding 20px 200px 20px 10px
+	padding 20px
 	position absolute
 	text-align left
 	top 85px
 	transition .3s
 	//visibility hidden
-	width 100%
+	min-width 200px
 	z-index 2
-	li
-		display inline-block
+	&:before
+		//box-shadow 1px 1px 10px oscuro
+		content ''
+		position absolute
+		border-bottom 10px solid white
+		border-left 10px solid transparent
+		border-right 10px solid transparent
+		border-top 10px solid transparent
+		top -20px
+	& > li
+		//display inline-block
+		margin-bottom 10px
+		padding 0 10px
 		position relative
-		vertical-align top
-		a
-			font-family 'quicksandregular'
-			font-size 16px
-			padding 0 20px
+		//vertical-align top
+		& > a
+			font-family 'open sans'
+			font-size 13px
+			padding 0
+			position relative
 			text-align left
+			text-decoration none
+			text-transform capitalize
+			&:hover
+				background-color clarito
+				&:after
+					content '\ea65'
+					font-family 'iconos'
+					position absolute
+					top 3px
+				
 		ul
 			margin 10px 0 0 0
 			padding 0
 		ul > li
 			display block
 			margin 0
-			padding 0
-			a
+			padding 0 10px
+			& > a
+				color oscuro
 				font-size 13px
 				font-style italic
 				text-decoration none
+				text-transform capitalize
 		
 .menuTop > li > a
 	//color naranjito
 	color #5b5b5b
 	display block
-	font-family 'quicksandbold'
+	font-family 'quicksandregular'
 	font-size 16px
-	font-weight 400
+	//font-weight 400
 	letter-spacing -1px
 	line-height 85px
 	padding 0 20px
@@ -5708,7 +6015,7 @@ td
 	text-decoration none
 	text-transform capitalize
 	transition .4s
-			
+
 
 .my-placeholder
 	color #ccc
@@ -6045,14 +6352,15 @@ td
 	text-align left !important
 .page-heading
 .product-listing
-	
+	//border-top 4px solid #c41925
 	font-size 15px
 	font-weight 100
 	display block
 	margin 0 auto
 	overflow hidden
+	padding-top 1em
 	text-align left
-	max-width 950px
+	max-width 1050px
 	span
 		display inline-block
 	.cat-name
@@ -6083,13 +6391,15 @@ td
 		span
 			display inline-block
 		span
-			font-family 'quicksandbold'
+			//font-family 'quicksandbold'
+			font-family 'open sans'
 			font-size 15px
 	.totalFinal
 		span
-			color rojoAsiste
+			color #f38a00
 			
 			font-size 20px
+			font-weight 600
 			text-transform uppercase
 
 .products_block
@@ -6227,6 +6537,136 @@ td
 			font-size 16px !important
 			position absolute
 			width 100%
+			
+.search_query:focus ~ .buscador
+	width 300px !important
+
+.selectCategory
+	//background red
+	display block
+	margin 2em auto 0
+	max-width 1050px
+	ul
+		display inline-block
+		font-size 0
+		list-style-type none
+		margin 0
+		padding 0
+		width 49%
+		li
+			background linear-gradient(to bottom , clarito 50%, #ddd 50%)
+			border-radius 68px
+			font-size 0
+			margin-bottom 13px
+			overflow hidden
+			position relative
+			transition .4s
+			vertical-align top
+			&:hover
+				.plan
+					box-shadow 3px 3px 3px rgba(black, .2)
+					h2
+					span
+						text-shadow 3px 3px 3px rgba(black, .2)
+				a
+					figure
+						width 185px
+						img
+							width 100%
+			a
+				display block
+				height 100%
+				padding 10px
+				text-decoration none
+				width 100%
+				figure
+					border-radius 0 0 68px 0
+					bottom 0
+					margin 0
+					overflow hidden
+					padding 0
+					position absolute
+					right 0
+					transition .4s
+					width 190px
+					img
+						width 100%
+			.plan
+				border-radius 50%
+				display inline-block
+				height 115px
+				position relative
+				transition .4s
+				width 115px
+				vertical-align middle
+				span
+					bottom 0
+					color white
+					display block
+					font-size 26px
+					font-weight 600
+					left 23px
+					position absolute
+					text-align center
+					text-transform uppercase
+					transition .4s
+					top 7px
+					transform rotate(-90deg)
+					right 0
+				h2
+					color white
+					font-family 'open sans'
+					font-size 91px
+					line-height 115px
+					margin 0 0 0 20%
+					text-align center
+					transition .4s
+					width 80%
+			.ifoPlan
+				display inline-block
+				margin-left 16px
+				position relative
+				vertical-align middle
+				width 200px
+				z-index 1
+				h2
+					color #5d5d5d
+					font-family 'quicksandregular'
+					font-size 20px
+					margin 10px 0
+				p
+					color #5d5d5d
+					font-family 'quicksandregular'
+					font-size 16px
+					letter-spacing -0.1px
+	.doggy
+		margin-left 1%
+		li
+			&:hover
+				box-shadow 3px 3px 10px rgba(oscuro, .4)
+			&:nth-child(1)
+				.plan
+					background #FF9300
+			&:nth-child(2)
+				.plan
+					background #F38A00
+			&:nth-child(3)
+				.plan
+					background #D97000
+	.caty
+		li
+			&:hover
+				box-shadow 3px 3px 10px rgba(oscuro, .4)
+			&:nth-child(1)
+				.plan
+					background #3CCA00
+			&:nth-child(2)
+				.plan
+					background #4BAA2B
+			&:nth-child(3)
+				.plan
+					background #3B8810
+
 
 .sf-sub-indicator
 	display none
@@ -6314,6 +6754,7 @@ td
 	width 70%
 
 .subcategories
+	display none
 	ul
 		li
 			h5
@@ -6326,14 +6767,15 @@ td
 	padding 15px 0 0px 0 
 	p.subcategory-heading
 		color #333333
-		
-		font-weight bold
+		font-family 'quicksandbold'
 		margin 0 0 15px 0 
+		text-align center
 	ul
 		margin 0
 		padding 0
+		text-align center
 		li
-			float left
+			display inline-block
 			height 202px 
 			list-style none
 			margin 0 10px 13px 0
@@ -6345,12 +6787,13 @@ td
 			.subcategory-image
 				padding 0
 				a
-					border 5px solid verdeClaroPet 
+					border 15px solid clarito 
 					border-radius 50%
 					display block
 					height 145px
 					overflow hidden
 					//padding 9px
+					transition .3s
 					width 145px
 					img
 						vertical-align top 
@@ -6364,7 +6807,7 @@ td
 			.cat_desc
 				display none 
 			&:hover .subcategory-image a
-				border 5px solid #333333
+				border 15px solid verdeClaroPet
 				//padding 5px 
 
 .subcategory-name
@@ -7110,10 +7553,11 @@ td
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #d3d3d3/*{borderColorDefault}*/;
+	border: 2px solid #4baa2b/*{borderColorDefault}*/;
 	background: #e6e6e6;
 	font-weight: normal/*{fwDefault}*/;
 	color: #555555/*{fcDefault}*/;
+	transition: .3s;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -7142,8 +7586,8 @@ td
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #aaaaaa/*{borderColorActive}*/;
-	background: #ffffff;
+	/*border: 1px solid #aaaaaa{borderColorActive}*/;
+	background: #4baa2b;
 	font-weight: normal/*{fwDefault}*/;
 	color: #212121/*{fcActive}*/;
 }
