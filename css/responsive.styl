@@ -31,6 +31,12 @@
 	.selectCategory
 		ul
 			li
+				&:hover
+					a
+						figure
+							width 150px
+							img
+								width 175px
 				a
 					figure
 						width 150px
@@ -64,8 +70,68 @@
 @media screen and (min-width: 970px)
 	#cd-lateral-nav
 		width 950px !important
+		
+@media screen and (max-width: 940px)
+	body
+		.carruselInfografia
+			.infografia
+				.cirGrilla
+					.grilla
+						width 50%
+						.verMas
+							width 100%
+							.ciritem
+								border-radius 0
+								img
+									left 20%
+									top -10px
+									width 60%
+								.cirinfo 
+									border-radius 0
+	.contenedorDivisor
+	.contenedorDivisor2
+		bottom -40px
+		.bottomDivisor
+		.topDivisor
+			border-color transparent
+			border-width 0
+		.contenedorTexto 
+			height 40px
+			h2
+				line-height 40px
+	.menuManias
+		opacity 0
+		position fixed
+		top 0
+		visibility hidden
+		z-index 100
+		.menuTop
+			background-color rgba(clarito, .9)
+			border 0
+			height 100vh
+			left 0
+			line-height 85px
+			//padding-top 0
+			//position fixed
+			//visibility hidden
+			width 100%
+			z-index 10
+		.menuTop > li
+			//background #434142
+			border 0
+			display block
+			width 100%
+			ul
+				display none
+		.menuTop > li > a
+			color #879193
+			&:hover
+				color #790b19
+				
 
-@media screen and (min-width:801px)
+				
+
+/*@media screen and (min-width:801px)
 	#cd-lateral-nav
 		background-color #008F2F
 		height 40px
@@ -74,7 +140,7 @@
 		position relative
 		transform translateX(0)
 		visibility visible
-		width 100%
+		width 100%*/
 		
 @media screen and (max-width: 850px)
 	.tabsInfo
@@ -156,24 +222,10 @@
 				.headerCOnt
 					background none
 					width 100%
-					/*figure
-						display block
-						padding-top 1em
-						position initial
-						width 200px
-						a
-							img
-								margin 0 auto
-								width 200px*/
 					.buscador
-						//margin-left -40%
-						//top 50px
-						width 35%
-						/*.buscadorForm
-							//border 2px solid #434142
-							form
-								button
-									background-color #0040a6*/
+						margin 0 auto
+						position relative
+						right 0
 					.contenedorMenu
 						border-top 1px solid #ddd
 						box-shadow 3px 3px 10px #ddd
@@ -438,30 +490,9 @@
 								line-height 40px
 								height 40px
 								width 40px
-	.menuManias
-		.menuTop
-			background-color white
-			border 0
-			//height 100%
-			left 0
-			line-height 85px
-			//padding-top 0
-			//position fixed
-			//visibility hidden
-			width 100%
-			z-index 10
-		.menuTop > li
-			//background #434142
-			border 0
-			display block
-			width 100%
-			ul
-				display none
-		.menuTop > li > a
-			color #879193
-			&:hover
-				color #790b19
-	.sub-menuDesktop
+								
+
+	/*.sub-menuDesktop
 		border none !important
 		margin 0
 		padding 0
@@ -484,7 +515,7 @@
 					padding 0
 					a
 						font-family 'Open Sans', sans-serif
-						font-size 13px
+						font-size 13px*/
 				
 	.tabsInfo
 		width 100%

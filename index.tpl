@@ -24,12 +24,96 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-					<div id="slider_row" class="contCarrusel">
-						<div id="top_column" class="contCarruselInt">
-							{hook h="displayTopColumn"}
-						</div>
+					<div class="carruselInfografia">
+						
+						<div id="slider_row" class="contCarrusel">
+							<div id="top_column" class="contCarruselInt">
+								{hook h="displayTopColumn"}
+							</div>
 
+						</div>
+						<div class="infografia">
+							<ul class="cirGrilla">
+								<li class="grilla">
+									<div class="verMas">
+										<div class="ciritem">
+											<img src="{$img_dir}slides/1.png" alt="">
+											<h2>Elige tu plan</h2>
+											<div class="cirinfo">
+												<h3>1</h3>
+												<div class="txt">
+													<h2>Elige tu plan</h2>
+													<p>PERRO O GATO y meses de suscripción </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grilla">
+									<div class="verMas">
+										<div class="ciritem">
+											<img src="{$img_dir}slides/2.png" alt="">
+											<h2>personaliza</h2>
+											<div class="cirinfo">
+												<h3>2</h3>
+												<div class="txt">
+													<h2>personaliza tu plan</h2>
+													<p>SEGUN EDAD, PESO DE TU MASCOTA</p>
+													<p>MARCA DEL ALIMENTO</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grilla">
+									<div class="verMas">
+										<div class="ciritem">
+											<img src="{$img_dir}slides/3.png" alt="">
+											<h2>paga</h2>
+											<div class="cirinfo">
+												<h3>3</h3>
+												<div class="txt">
+													<h2>paga</h2>
+													<p>por medio del sitio</p>
+													<p>Enviamos  a domicilio </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grilla">
+									<div class="verMas">
+										<div class="ciritem">
+											<img src="{$img_dir}slides/4.png" alt="">
+											<h2>Disfruta</h2>
+											<div class="cirinfo">
+												<h3>4</h3>
+												<div class="txt">
+													<h2>Disfruta</h2>
+													<p>DISFRUTA CON TU</p>
+													<p>MASCOTA</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="contenedorDivisor2">
+							<div class="topDivisor"></div>
+							<div class="contenedorTexto">
+								<h2>Elige tu plan!</h2>
+								
+							</div>
+							<div class="bottomDivisor"></div>
+						</div>
 					</div>
+
+					<div class="conoce">
+						<h2>Conoce como funciona y comprueba los <span>beneficios de suscribirte</span>.</h2>
+						<p>texto de copyright y <a href="#">link</a> de informacion</p>
+					</div>
+
 
 					<div class="selectCategory">
 						<ul class="caty">
@@ -46,7 +130,7 @@
 										Materiales de calidad</p>
 									</div>
 									<figure>
-										<img src="{$img_dir}/categorias/cat11.png" alt="">
+										<img src="{$img_dir}/categorias/cat111.png" alt="">
 									</figure>
 								</a>
 							</li>
@@ -63,7 +147,7 @@
 										Materiales de calidad</p>
 									</div>
 									<figure>
-										<img src="{$img_dir}/categorias/cat22.png" alt="">
+										<img src="{$img_dir}/categorias/cat222.png" alt="">
 									</figure>
 								</a>
 							</li>
@@ -80,7 +164,7 @@
 										Materiales de calidad</p>
 									</div>
 									<figure>
-										<img src="{$img_dir}/categorias/cat33.png" alt="">
+										<img src="{$img_dir}/categorias/cat333.png" alt="">
 									</figure>
 								</a>
 							</li>
@@ -99,7 +183,7 @@
 										Materiales de calidad</p>
 									</div>
 									<figure>
-										<img src="{$img_dir}/categorias/doggy11.png" alt="">
+										<img src="{$img_dir}/categorias/doggy111.png" alt="">
 									</figure>
 								</a>
 							</li>
@@ -116,7 +200,7 @@
 										Materiales de calidad</p>
 									</div>
 									<figure>
-										<img src="{$img_dir}/categorias/doggy22.png" alt="">
+										<img src="{$img_dir}/categorias/doggy222.png" alt="">
 									</figure>
 								</a>
 							</li>
@@ -133,7 +217,7 @@
 										Materiales de calidad</p>
 									</div>
 									<figure>
-										<img src="{$img_dir}/categorias/doggy33.png" alt="">
+										<img src="{$img_dir}/categorias/doggy333.png" alt="">
 									</figure>
 								</a>
 							</li>
@@ -159,33 +243,5 @@
 								</div>
 							</div>
 							<div class="explicacion">
-								<div class="row">
-									<h2>CONTEXTO DE INFORMACIÓN </h2>
-									<ul>
-										<li>
-											<div class="img">
-												<img src="{$img_dir}icon/ssl.png" alt="">
-											</div>
-											<span>
-												Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's
-											</span>
-										</li>
-										<li>
-											<div class="img">
-												<img src="{$img_dir}icon/ssl.png" alt="">
-											</div>
-											<span>
-												Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's
-											</span>
-										</li>
-										<li>
-											<div class="img">
-												<img src="{$img_dir}icon/deliver.png" alt="">
-											</div>
-											<span>
-												Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's
-											</span>
-										</li>
-									</ul>
-								</div>
+								{include file="$tpl_dir./explicacion.tpl"}
 							</div>

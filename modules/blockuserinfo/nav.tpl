@@ -40,7 +40,7 @@
 							{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
 							<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
 								<span>
-									<i class="icon-lock left"></i>
+									
 									Entra
 								</span>
 							</button>

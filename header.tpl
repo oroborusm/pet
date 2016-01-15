@@ -107,7 +107,31 @@
 		<div id="page">
 
 			<div class="columns-container">
-				<div id="columns" class="container">
+				<div id="columns" class="container {if $page_name =='index'} marginHeader{/if}">
+					{if $page_name =='index' }
+						<div class="presentacion">
+							<section class="contenedorPresentacion">
+								<div class="contFoto">
+									<figure class="fotoPresentacion" id="topOpacidad">
+										<img src="{$img_dir}cabecera/pets.png" alt="">
+									</figure>									
+									<div class="contTxt">
+										<h2>conoce la <span>nueva</span></h2>
+										<h2>modalidad de compra por </h2>
+										<h2 class="destacadoTxt">suscripción</h2>
+									</div>
+								</div>
+							</section>
+							<div class="contenedorDivisor">
+								<div class="topDivisor"></div>
+								<div class="contenedorTexto">
+									<h2>En simples pasos</h2>
+									
+								</div>
+								<div class="bottomDivisor"></div>
+							</div>
+						</div>
+					{/if}
 					{if $page_name !='index' && $page_name !='pagenotfound'}
 						{include file="$tpl_dir./breadcrumb.tpl"}
 					{/if}
