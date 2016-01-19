@@ -75,7 +75,7 @@
 						{else}
 							<div class="layered_filter">
 						{/if}
-                        <div class="layered_subtitle_heading">
+                        <div class="layered_subtitle_heading tituloFiltro">
                             <span class="layered_subtitle">{$filter.name|escape:'html':'UTF-8'}</span>
                             <!--<span class="layered_close">
                             	<a href="#" rel="ul_layered_{$filter.type}_{$filter.id_key}"></a>
@@ -86,20 +86,23 @@
 								{if $filter.filter_type == 0}
 									{foreach from=$filter.values key=id_value item=value name=fe}
 										{if $value.nbr || !$hide_0_values}
-										<li class="nomargin {if $smarty.foreach.fe.index >= $filter.filter_show_limit}hiddable{/if} col-lg-6">
-											{if isset($filter.is_color_group) && $filter.is_color_group}
-												<input class="color-option {if isset($value.checked) && $value.checked}on{/if} {if !$value.nbr}disable{/if}" type="button" name="layered_{$filter.type_lite}_{$id_value}" rel="{$id_value}_{$filter.id_key}" id="layered_id_attribute_group_{$id_value}" {if !$value.nbr}disabled="disabled"{/if} style="background: {if isset($value.color)}{if file_exists($smarty.const._PS_ROOT_DIR_|cat:"/img/co/$id_value.jpg")}url(img/co/{$id_value}.jpg){else}{$value.color}{/if}{else}#CCC{/if};" />
-												{if isset($value.checked) && $value.checked}<input type="hidden" name="layered_{$filter.type_lite}_{$id_value}" value="{$id_value}" />{/if}
-											{else}
-												<input type="checkbox" class="checkbox" name="layered_{$filter.type_lite}_{$id_value}" id="layered_{$filter.type_lite}{if $id_value || $filter.type == 'quantity'}_{$id_value}{/if}" value="{$id_value}{if $filter.id_key}_{$filter.id_key}{/if}"{if isset($value.checked)} checked="checked"{/if}{if !$value.nbr} disabled="disabled"{/if} /> 
-											{/if}
-											<label for="layered_{$filter.type_lite}_{$id_value}"{if !$value.nbr} class="disabled"{else}{if isset($filter.is_color_group) && $filter.is_color_group} name="layered_{$filter.type_lite}_{$id_value}" class="layered_color" rel="{$id_value}_{$filter.id_key}"{/if}{/if}>
-												{if !$value.nbr}
-												{$value.name|escape:'html':'UTF-8'}{if $layered_show_qties}<span> ({$value.nbr})</span>{/if}
+										<li class="nomargin {if $smarty.foreach.fe.index >= $filter.filter_show_limit}hiddable{/if} col-lg-6 colorEdad">
+											<div class="contEdad">
+												{if isset($filter.is_color_group) && $filter.is_color_group}
+													<input class="color-option {if isset($value.checked) && $value.checked}on{/if} {if !$value.nbr}disable{/if}" type="button" name="layered_{$filter.type_lite}_{$id_value}" rel="{$id_value}_{$filter.id_key}" id="layered_id_attribute_group_{$id_value}" {if !$value.nbr}disabled="disabled"{/if} style="background: {if isset($value.color)}{if file_exists($smarty.const._PS_ROOT_DIR_|cat:"/img/co/$id_value.jpg")}url(img/co/{$id_value}.jpg){else}{$value.color}{/if}{else}#CCC{/if};" />
+													{if isset($value.checked) && $value.checked}<input type="hidden" name="layered_{$filter.type_lite}_{$id_value}" value="{$id_value}" />{/if}
 												{else}
-												<span>{$value.name|escape:'html':'UTF-8'}{if $layered_show_qties}<span> ({$value.nbr})</span>{/if}</span>
+													<input type="checkbox" class="checkbox" name="layered_{$filter.type_lite}_{$id_value}" id="layered_{$filter.type_lite}{if $id_value || $filter.type == 'quantity'}_{$id_value}{/if}" value="{$id_value}{if $filter.id_key}_{$filter.id_key}{/if}"{if isset($value.checked)} checked="checked"{/if}{if !$value.nbr} disabled="disabled"{/if} />
 												{/if}
-											</label>
+												<label for="layered_{$filter.type_lite}_{$id_value}"{if !$value.nbr} class="disabled"{else}{if isset($filter.is_color_group) && $filter.is_color_group} name="layered_{$filter.type_lite}_{$id_value}" class="layered_color" rel="{$id_value}_{$filter.id_key}"{/if}{/if}>
+													{if !$value.nbr}
+													{$value.name|escape:'html':'UTF-8'}{if $layered_show_qties}<span> ({$value.nbr})</span>{/if}
+													{else}
+													<!-- <span>{$value.name|escape:'html':'UTF-8'}{if $layered_show_qties}<span> ({$value.nbr})</span>{/if}</span> -->
+													<span class"txtEdad">{$value.name|escape:'html':'UTF-8'}</span>
+													{/if}
+												</label>
+											</div>
 										</li>
 										{/if}
 									{/foreach}
@@ -125,7 +128,7 @@
 										{/if}
 									{/foreach}
 									{else}
-										<select class="select form-control" {if $filter.filter_show_limit > 1}multiple="multiple" size="{$filter.filter_show_limit}"{/if}>
+										<!-- <select class="select form-control" {if $filter.filter_show_limit > 1}multiple="multiple" size="{$filter.filter_show_limit}"{/if}>
 											<option value="">{l s='No filters' mod='blocklayered'}</option>
 											{foreach from=$filter.values key=id_value item=value}
 											{if $value.nbr || !$hide_0_values}
@@ -134,7 +137,24 @@
 												</option>
 											{/if}
 											{/foreach}
-										</select>
+										</select> -->
+										{foreach from=$filter.values key=id_value item=value}
+											{if $value.nbr || !$hide_0_values}
+											<li class="nomargin {if $smarty.foreach.fe.index >= $filter.filter_show_limit}hiddable{/if} cuadroNodriza">
+												<div class="contenedorCuadroNodriza">	
+													<input type="checkbox" class="checkbox" name="layered_{$filter.type_lite}_{$id_value}" id="layered_{$filter.type_lite}{if $id_value || $filter.type == 'quantity'}_{$id_value}{/if}" value="{$id_value}{if $filter.id_key}_{$filter.id_key}{/if}"{if isset($value.checked)} checked="checked"{/if}{if !$value.nbr} disabled="disabled"{/if} /> 
+													<label for="layered_{$filter.type_lite}_{$id_value}"{if !$value.nbr} class="disabled"{else} name="layered_{$filter.type_lite}_{$id_value}" class="selectTxt" rel="{$id_value}_{$filter.id_key}"{/if}>
+														{if !$value.nbr}
+														{$value.name|escape:'html':'UTF-8'}{if $layered_show_qties}<span> ({$value.nbr})</span>{/if}
+														{else}
+														<span class="nombreFiltro">{$value.name|escape:'html':'UTF-8'}</span>
+														<!-- {if $layered_show_qties}<span class="numFiltros"> ({$value.nbr})</span>{/if} -->
+														{/if}
+													</label>
+												</div>
+											</li>
+											{/if}
+										{/foreach}
 									{/if}
 								{/if}
 							{else}

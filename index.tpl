@@ -245,3 +245,4 @@
 							<div class="explicacion">
 								{include file="$tpl_dir./explicacion.tpl"}
 							</div>
+							<!-- <div class="corte"></div> -->

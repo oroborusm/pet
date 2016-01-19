@@ -168,10 +168,11 @@ body
 						//padding 10px 25px
 						//width 600px
 						h4
-							font-family 'quicksandbold'
+							//font-family 'quicksandbold'
 							//font-weight 100
-							font-size 15px
-							letter-spacing -1px
+							font-size 13px
+							font-weight 600
+							//letter-spacing -1px
 							margin 0
 							padding 0
 							text-align left
@@ -232,11 +233,11 @@ body
 					color oscuro
 					text-decoration none
 				h4
-					font-family 'quicksandbold'
-					font-size 15px
-					font-weight 100
+					//font-family 'quicksandbold'
+					font-size 13px
+					font-weight 600
 					display block
-					letter-spacing -1px
+					//letter-spacing -1px
 					margin 0 0 10px 0
 					text-transform uppercase
 				ul
@@ -3308,30 +3309,33 @@ td
 			list-style none
 			
 .añadeCarrituHome
-	background #B53646
 	//background linear-gradient(to bottom right, white 50%, naranjoPet 50%)
-	border-radius 50%
-	box-shadow 0 0 10px oscuro
+	//border-radius 50%
+	//box-shadow 0 0 10px oscuro
 	//bottom 0
-	bottom -40px
-	cursor pointer
+	//bottom -40px
+	//cursor pointer
+	display block
 	//font-size 13px
 	//float right
-	right -40px
-	height 80px
+	//right -40px
+	//height 80px
 	//margin-left -27px
-	opacity 0
-	position absolute
+	margin-top 10px
+	//opacity 0
+	//position absolute
 	transition .4s
 	//transform rotate(45deg)
-	width 80px
+	//width 80px
 	z-index 1
 	a
-		display block
-		height 50px
+		//display block
+		//height 50px
+		position relative
 		text-decoration none
-		width 50px
+		//width 50px
 		span
+			//display block
 			/*&:before
 				bottom 35px
 				color white
@@ -3345,7 +3349,7 @@ td
 				text-align center
 				transform rotate(-45deg)
 				width 25px*/
-			&:before
+			/*&:before
 				bottom 0
 				color white
 				content '\ea3e'
@@ -3353,10 +3357,23 @@ td
 				font-size 30px
 				left 10px
 				position absolute
-				top 12px
-				
+				top 12px*/
+	a
 	.carritoVacio
-		&:before
+		background #ccc
+		display initial
+		font-size 13px
+		//opacity 0
+		padding 5px 10px
+		transition .3s
+		//visibility hidden
+		span
+			color white
+			font-size 13px
+			font-weight 600
+			text-transform uppercase		
+	.carritoVacio
+		/*&:before
 			color white
 			content '\e688'
 			display block
@@ -3364,7 +3381,7 @@ td
 			font-size 20px
 			line-height 45px
 			text-align center
-			width 45px
+			width 45px*/
 	.carritoBoton
 		color red
 		font-family 'icos'
@@ -5132,7 +5149,10 @@ svg
 					//width 100% !important
 	.top-pagination-content
 		display none		
-
+.corte
+	background linear-gradient(to bottom, #ecedef 10%, #ddd 50%)
+	height 50px
+	width 100%
 .cruz
 	&:before
 		color naranjito
@@ -5209,6 +5229,98 @@ svg
 				background colorao
 				span
 					color white
+
+.filtro
+	.block
+		.block_content
+			ul
+				.layered_filter
+					width 200px
+				.cuadroNodriza
+					display inline-block
+					margin-bottom 3px
+					text-align center 
+					vertical-align top
+					width 130px
+					&:hover
+						.checker
+							box-shadow inset 0 0 0 8px rgba(0,0,0,0.2)
+					.contenedorCuadroNodriza
+						.checker
+							background-color #94CF1A
+							height 70px 
+							position relative
+							top 0
+							transition .4s
+							width 100% 
+							span
+								background-color transparent
+								border 0
+								border-radius 0
+								display block
+								height 100%
+								width 100%
+								.checkbox
+									opacity 0
+							span.checked
+								background-color #00C7D1
+								&:before
+									color #f38a00
+									//content "\e93e"
+									content: "\e940"
+									display block
+									font-family 'iconos'
+									font-size 19px
+									position absolute
+									right -3px
+									text-shadow 1px 1px 2px rgba(black, .3) 
+									top -3px
+						.selectTxt
+							left 0
+							margin 0
+							padding 0
+							position absolute
+							top 0
+							width 100%
+							.nombreFiltro
+								//font-family 'quicksanditalic'
+								font-size 16px
+								font-weight 600
+								line-height 70px
+							.nombreFiltro
+							.numFiltros
+								color white
+								display block
+							.numFiltros
+								font-size 13px
+				/*.cuadroNodriza
+					&:nth-child(1)
+						.contenedorCuadroNodriza
+							.checker
+								background-color #94CF1A
+					&:nth-child(2)
+						.contenedorCuadroNodriza
+							.checker
+								background-color #A2C11B
+					&:nth-child(3)
+						.contenedorCuadroNodriza
+							.checker
+								background-color #B1B31C
+					&:nth-child(4)
+						.contenedorCuadroNodriza
+							.checker
+								background-color #BFA51E
+					&:nth-child(5)
+						.contenedorCuadroNodriza
+							.checker
+								background-color #CE971F
+					&:nth-child(6)
+						.contenedorCuadroNodriza
+							.checker
+								background-color #DC8920*/
+					
+								
+							
 
 .detail_step_by_step
 	tbody
@@ -5296,7 +5408,7 @@ svg
 
 .explicacion
 	background clarito
-	border-bottom 5px solid #00c7d1
+	//border-bottom 5px solid #00c7d1
 	border-top 1px solid #ddd
 	margin-top 46px
 	width 100%
@@ -5475,43 +5587,118 @@ svg
 			ul
 				list-style-type none
 				padding 0
+				text-align center
 				li
+					cursor pointer
+					display inline-block
+					margin-bottom 5px
 					position relative
-					a
+					text-align left
+					//width 200px
+					&:hover
+						.contEdad
+							.checker
+								span
+									box-shadow 2px 2px 5px rgba(black, .2)
+					/*a
 						color oscuro
 						//font-family 'quicksandregular'
 						font-size 13px
 						font-weight 100
 						text-decoration none
 						text-transform uppercase
-						transition .3s
+						transition .3s*/
+					.contEdad
+						margin 0
+						position relative
+						label
+							display block
+							left 0
+							position absolute
+							text-align center
+							top 0
+							width 65px
+							span
+								color white
+								display block
+								font-size 12px
+								font-weight 600
+								line-height 65px
+								text-transform uppercase
+								width 100%
+						.checker
+							height 65px
+							left 0
+							//margin-top -9px
+							//position absolute
+							top 50%
+							width 65px
+							//z-index 1
+							span
+								//background-color rgba(75,170,43, .5)
+								background-color #ccc
+								//border 7px solid rgba(0,0,0,0.2)
+								border-radius 50%
+								display block
+								height 100%
+								transition .3s
+								width 100%
+								input[type=checkbox]
+									//display none
+									height 100%
+									opacity 0
+									width 100%
+							span.checked
+								background-color rgb(248, 169, 2) !important
+								&:before
+									background-color #00c7d1
+									border 2px solid white
+									border-radius 50%
+									color white
+									//content: "\e93e"
+									content: "\e940"
+									display block
+									font-family 'iconos'
+									font-size 19px
+									height 25px
+									line-height 25px
+									position absolute
+									text-align center
+									top -3px
+									right -3px
+									width 25px
+							
+						
 					label
 						position relative
-						padding 0 0 0 23px
+						padding 0 
+						span
+							font-size 20px
 					label
 					.checker
 						display inline-block
 						vertical-align middle
 					.checker
-						height 18px
+						height 50px
 						left 0
-						margin-top -9px
-						position absolute
+						//margin-top -9px
+						//position absolute
 						top 50%
-						width 18px
+						width 50px
 						//z-index 1
 						span
 							//background-color rgba(75,170,43, .5)
 							background-color white
-							border 2px solid #4BAA2B
-							border-radius 3px
+							//border 7px solid rgba(0,0,0,0.2)
+							border-radius 50%
 							display block
 							height 100%
 							transition .3s
 							width 100%
 							input[type=checkbox]
-								display none
+								//display none
 								height 100%
+								opacity 0
 								width 100%
 						span.checked
 							background-color white
@@ -5525,15 +5712,91 @@ svg
 								position absolute
 								top -3px
 								right -3px
+				.colorEdad
+					&:nth-child(1)
+						.contEdad
+							.checker
+								span
+									background-color #00C6D0
+					&:nth-child(2)
+						.contEdad
+							.checker
+								span
+									background-color #14C6C0
+					&:nth-child(3)
+						.contEdad
+							.checker
+								span
+									background-color #27C7B0
+					&:nth-child(4)
+						.contEdad
+							.checker
+								span
+									background-color #3BC7A0
+					&:nth-child(5)
+						.contEdad
+							.checker
+								span
+									background-color #4EC890
+					&:nth-child(6)
+						.contEdad
+							.checker
+								span
+									background-color #62C880
+					&:nth-child(7)
+						.contEdad
+							.checker
+								span
+									background-color #76C870
+					&:nth-child(8)
+						.contEdad
+							.checker
+								span
+									background-color #89C960
+					&:nth-child(9)
+						.contEdad
+							.checker
+								span
+									background-color #9DC950
+					&:nth-child(10)
+						.contEdad
+							.checker
+								span
+									background-color #B1C940
+					&:nth-child(11)
+						.contEdad
+							.checker
+								span
+									background-color #C4CA30
+					&:nth-child(12)
+						.contEdad
+							.checker
+								span
+									background-color #D8CA20
+					&:nth-child(13)
+						.contEdad
+							.checker
+								span
+									background-color #EBCB10
+					&:nth-child(14)
+						.contEdad
+							.checker
+								span
+									background-color #FFCB00
+					
 			.dynamized	
+				text-align left
 				li
 					display inline-block
 					margin 0 5px 0 0 
 					vertical-align top
+					width inherit
 					a
-						background-color #ddd
+						background-color #ccc
+						color white
 						border-radius 15px
 						padding 5px 10px
+						text-decoration none
 						&:hover
 							background-color naranjoPet
 							color white
@@ -5550,9 +5813,9 @@ svg
 			margin 0
 
 .footer-container
-	background clarito
+	background #ddd
 	//border-top 1px solid #E2E2E2
-	box-shadow 3px 0 10px #6C6C6D
+	box-shadow 3px 0 10px rgba(black, .2)
 
 .formCarritoFinalCompra
 	.box
@@ -5688,10 +5951,9 @@ svg
 	
 .layered_filter
 .layered_price
-	display inline-block
+	display block
 	padding 0 5px
-	vertical-align top
-	width 24%
+	width 100%
 	ul
 		li
 			display block
@@ -5700,11 +5962,14 @@ svg
 					background-color transparent
 					cursor pointer
 	.layered_subtitle_heading
+	.tituloFiltro
 		text-decoration none
 		.layered_subtitle
 			color #4BAA2B
 			font-weight 600
 			text-transform uppercase
+	.tituloFiltro
+		text-align center
 .layered_filter
 	ul
 		li
@@ -5848,7 +6113,9 @@ svg
 					// 			color white
 				.right-block
 					.añadeCarrituHome
-						opacity 1
+						a
+							background naranjoPet
+ 
 					.wishlist
 						opacity 1
 		.contenedorPopular
@@ -5861,6 +6128,8 @@ svg
 			.functional-buttons
 				//position relative
 				.compare
+					margin 0 auto
+					width 90%
 					a
 						background transparent
 						//border 1px solid #999
@@ -5869,7 +6138,7 @@ svg
 						display block
 						font-size 11px
 						height 25px
-						margin 5px auto 0
+						margin 5px 0 0 0
 						text-align left
 						text-decoration none
 						transition .3s
@@ -5920,24 +6189,26 @@ svg
 				font-size 18px
 				margin 0 auto
 				position relative
-				text-align center
+				text-align left
 				width 90%
 
 				h2
-					display inline-block
-					font-size 15px
+					display block
+					font-size 13px
 					//font-weight 700
+					height 40px
 					margin 0
-					text-align center
+					text-align left
 					transition .4s
 					transition-property width
 					-webkit-transition-property width
 					width 100%
 					a
 						color oscuro
-						font-family 'quicksandbold'
-						font-weight initial
-						letter-spacing -1px
+						display block
+						//font-family 'quicksandbold'
+						font-weight 600
+						//letter-spacing -1px
 						text-decoration none
 						text-transform uppercase
 						transition .4s
@@ -5947,15 +6218,17 @@ svg
 					font-size 11px
 					text-align center
 				.disponibilidad
+					color #babbbb
 					display block
 					
 					font-size 11px
-					text-align center
+					text-align left
 					text-transform uppercase
+
 				.precios
 					font-size 18px
 					//font-weight 700
-					text-align center
+					text-align left
 					span
 						border-radius 7px
 						color azulAsiste
@@ -5978,10 +6251,10 @@ svg
 					.ivaInclude
 						color oscuro
 						//display none
-						font-size 11px
-						font-weight 400
+						font-size 10px
+						font-weight 600
 						margin 0
-						text-transform capitalize
+						text-transform uppercase
 					.precioAnterior
 						font-size 11px
 						text-decoration line-through
@@ -5989,11 +6262,11 @@ svg
 						//background oscuro
 						//border 1px solid oscuro
 						//color white
-						color rojoAsiste
+						color naranjoPet
 						//font-family 'quicksandbold'
 						font-size 18px
-						font-weight 600
-						letter-spacing -1px
+						font-weight 800
+						//letter-spacing -1px
 						margin 0
 						position relative
 						//text-align left
@@ -6038,7 +6311,7 @@ svg
 							top 0
 							width 45px
 							z-index 0
-	.listaProductoLi2
+	/*.listaProductoLi2
 		border 1px solid transparent
 		border-radius 2px
 		display inline-block
@@ -6078,7 +6351,7 @@ svg
 			span
 				color naranjito
 				font-size 18px
-				font-weight 600
+				font-weight 600*/
 
 .loginUsuario
 	//background grisClaro2
@@ -6659,7 +6932,7 @@ svg
 .quick-view
 	//background rgba(rojoAsiste, .5) !important
 	//background rojoAsiste
-	border 2px solid clarito
+	border 2px solid #ccc
 	border-radius 50%
 	color naranjito
 	//display block
@@ -6681,7 +6954,7 @@ svg
 	&:after
 		//background rgba(255,255,255, .7)
 		top 1px
-		color clarito
+		color #ccc
 		content '\e67f'
 		font-family 'icos'
 		font-size 20px
@@ -6834,7 +7107,8 @@ svg
 								opacity 1
 						.tituloComparacion
 							.añadeCarrituHome
-								opacity 1
+								a
+									background naranjoPet
 					.remove
 						text-align right
 						height 50px
