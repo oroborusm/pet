@@ -3121,12 +3121,13 @@ td
 			cursor pointer
 			list-style none
 			font-size 13px
+			font-weight 600
 			//margin 0 0 0 5px
 			margin 0
 			padding 3px
 			&:hover
-				background oscuro
-				color naranjito
+				background #00c7d1
+				color white
 
 .accedeCuentaChica
 	background white
@@ -3221,7 +3222,11 @@ td
 			margin 0
 			text-align left
 			text-transform uppercase
-				
+.activaMenu
+	left 0 !important
+	opacity 1 !important
+	transition .3s !important
+	visibility visible !important 			
 .active
 	display block
 
@@ -4953,8 +4958,8 @@ td
 		border-color transparent oscuro transparent oscuro
 
 
-svg
-	width 100%
+/*svg
+	width 100%*/
 .content_scene_cat
 	border-top 5px solid #f8b302
 	color #d7d7d7
@@ -5639,6 +5644,7 @@ svg
 	max-width 1050px
 	.block
 		.block_content
+			display inline-block !important
 			ul
 				list-style-type none
 				padding 0
@@ -5858,7 +5864,6 @@ svg
 							//text-decoration underline
 		.block_content
 		.title_block
-			display inline-block
 			vertical-align middle
 			width 100%
 		.title_block
@@ -6007,7 +6012,7 @@ svg
 .layered_filter
 .layered_price
 	display block
-	padding 0 5px
+	padding 0
 	width 100%
 	ul
 		li
@@ -6428,6 +6433,7 @@ svg
 		//overflow hidden
 		position relative
 		//width 100%
+		z-index 100
 		/*&:before
 			color white
 			content '\e967'
@@ -6602,6 +6608,8 @@ svg
 
 .menudespliega
 	display none
+	position absolute
+		
 
 .menuManias
 	display block
@@ -6610,6 +6618,10 @@ svg
 	width 100%
 	// .category-thumbnail
 	// 	display none !important
+	.closeMenu
+		opacity 0
+		position absolute
+		visibility hidden
 		
 .menuTop
 	//border-left 1px solid grisClaro1
@@ -7284,6 +7296,7 @@ svg
 	display block
 	margin 2em auto 0
 	max-width 1050px
+	text-align center
 	ul
 		display inline-block
 		font-size 0
@@ -7299,6 +7312,7 @@ svg
 			overflow hidden
 			position relative
 			transition .4s
+			text-align left
 			vertical-align top
 			&:hover
 				.plan
@@ -7306,11 +7320,11 @@ svg
 					h2
 					span
 						text-shadow 3px 3px 3px rgba(black, .2)
-				a
+				/*a
 					figure
 						width 185px
 						img
-							width 100%
+							width 100%*/
 			a
 				display block
 				height 100%
@@ -8635,7 +8649,7 @@ svg
 	display: inline-block;
     width: 34px;
     height: 34px;
-	margin: 2em;
+	/*margin: 2em;*/
 	pointer-events: none;
 	transition: 0.1s;
 }
@@ -8659,7 +8673,7 @@ svg
 }
 
 .menu-icon-wrapper svg path {
-	stroke: #fff;
+	stroke: naranjoPet;
 	stroke-width: 60px;
 	stroke-linecap: round;
     stroke-linejoin: round;

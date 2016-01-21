@@ -3,7 +3,7 @@
 	<!-- Menu -->
 	
 	<nav class="menuManias">
-		<ul class=" menuTop">
+		<ul class="menuTop" id="menuTop">
 			{$MENU}
 		</ul>
 	</nav>

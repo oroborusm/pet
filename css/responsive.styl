@@ -31,40 +31,17 @@
 	.selectCategory
 		ul
 			li
-				&:hover
+				/*&:hover
 					a
 						figure
 							width 150px
 							img
-								width 175px
+								width 175px*/
 				a
 					figure
 						width 150px
 						img
 							width 175px
-
-@media all and (max-width: 680px) {
-  .skew.l {
-    left: 5%;
-    transform: skew(00deg,30deg);
-  }
-
-  .skew.r {
-    right: 5%;
-    transform: skew(00deg,-30deg);
-  }
-}
-
-@media all and (max-width: 460px) {
-  .skew.l {
-    left: 5%;
-    transform: skew(00deg,40deg);
-  }
-  .skew.r {
-    right: 5%;
-    transform: skew(00deg,-40deg);
-  }
-}
 
 
 @media screen and (min-width: 970px)
@@ -88,6 +65,22 @@
 									width 60%
 								.cirinfo 
 									border-radius 0
+		header
+			.header
+				//border-bottom 4px solid #F8B302
+				//height 160px
+				padding 0 10px
+				z-index 4
+				.headerCOnt
+					background none
+					width 100%
+					.buscador
+						right 115px
+					.contenedorMenu
+						//border-top 1px solid #ddd
+						box-shadow 3px 3px 10px #ddd
+						position absolute
+						top 85px
 	.contenedorDivisor
 	.contenedorDivisor2
 		bottom -40px
@@ -100,18 +93,21 @@
 			h2
 				line-height 40px
 	.menuManias
+		left -45vh
 		opacity 0
 		position fixed
 		top 0
 		visibility hidden
+		width 45vh
 		z-index 100
 		.menuTop
-			background-color rgba(clarito, .9)
+			background-color clarito
 			border 0
+			box-shadow 3px 0 5px rgba(black, .2)
 			height 100vh
 			left 0
 			line-height 85px
-			//padding-top 0
+			padding 0 10px
 			//position fixed
 			//visibility hidden
 			width 100%
@@ -120,11 +116,15 @@
 			//background #434142
 			border 0
 			display block
+			text-align left
 			width 100%
 			ul
 				display none
 		.menuTop > li > a
 			color #879193
+			&:after
+				left 0
+				width 100%
 			&:hover
 				color #790b19
 				
@@ -149,6 +149,37 @@
 				ul
 					li
 						width 170px
+
+@media screen and (max-width: 820px)
+	.selectCategory
+		ul
+			li
+				border-radius 0
+				overflow initial
+				.plan
+					height 75px
+					left 0
+					position absolute
+					top -5px
+					width 75px
+					.girado
+						font-size 16px
+						left 10px
+					h2
+						font-size 65px
+						line-height 75px
+				.ifoPlan
+					margin-left 70px
+					width initial
+					h2
+						font-size 18px
+						margin 0
+					p
+						font-size 15px
+						margin 3px 0
+				a
+					figure
+						border-radius 0
 
 @media screen and (max-width: 800px)
 	body
@@ -213,24 +244,6 @@
 					width 100%
 					img
 						width 200px !important
-		header
-			.header
-				//border-bottom 4px solid #F8B302
-				//height 160px
-				padding 0 10px
-				z-index 4
-				.headerCOnt
-					background none
-					width 100%
-					.buscador
-						margin 0 auto
-						position relative
-						right 0
-					.contenedorMenu
-						border-top 1px solid #ddd
-						box-shadow 3px 3px 10px #ddd
-						position absolute
-						top 85px
 		.accedeCuentaChica
 			box-sizing border-box
 			margin 0
@@ -413,7 +426,7 @@
 	.adjuntos
 		margin 0
 		width 100%
-	.añadeCarrituHome
+	/*.añadeCarrituHome
 		bottom -30px
 		height 60px
 		opacity 1
@@ -430,7 +443,7 @@
 					left 10px
 					line-height 40px
 					top 0px
-					width 40px
+					width 40px*/
 	.carrito 
 		.carritoHover
 			.carritoDeCompra
@@ -551,12 +564,60 @@
 		top 40px
 	#sslsSiteSeal
 		width 49%
+		
+@media screen and (max-width: 750px)
+	body
+		.carruselInfografia
+			.infografia
+				.cirGrilla
+					.grilla
+						.verMas
+							.ciritem
+								text-align center
+								figure
+									//background-color red
+									height 180px
+									left calc(50% - 90px)
+									margin 0
+									overflow hidden
+									position absolute
+									width 180px
+									img
+										left -10%
+										margin 0
+										top -10%
+										width 120%
+	.presentacion
+		.contenedorPresentacion
+			height 80vh
+			.contFoto
+				.contTxt
+					background-color rgba(white, .7)
+					bottom 0
+					top initial
+					max-width 100%
+					padding 10px 0
+					width 100%
+				.fotoPresentacion 
+					width 80%
+					left 10%
+					bottom 50px
+					max-width 80%
+
 @media screen and (max-width: 715px)
 	body
 		.container
 			.contCarrusel
 				.carrusel
 					display none
+	.selectCategory
+		ul
+			li
+				.ifoPlan
+					h2
+						line-height 55px
+					p
+						display none
 	#homefeatured
 		.listaProductoLi
 			width 49%
@@ -624,13 +685,108 @@
 		text-align right
 		width 100%
 		&:before
-			color otroGris
 			content '\e6fd'
+			color otroGris
 			font-family 'icos'
 			font-size 15px
-		
+	.explicacion
+		.row
+			ul
+				li
+					.img
+						height 100px
+						width 100px
+	.filtro
+		.block
+			.block_content
+				ul
+					.colorEdad
+						.contEdad
+							label
+								width 55px
+								span
+									line-height 55px
+							.checker
+								height 55px
+								width 55px
+					.cuadroNodriza
+						text-align left
+						width 16%
+						&:hover
+							&:nth-child(1)
+								.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(0,198,208,1)
+							&:nth-child(2)
+								.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(51,199,166,1)
+							&:nth-child(3)
+								.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(102,200,125,1)
+							&:nth-child(4)
+								.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(152,201,83,1)
+							&:nth-child(5)
+								.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(204,202,42,1)
+							&:nth-child(6)
+								.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(255,203,0,1)
+							.checker
+									box-shadow 0 0 0 0 transparent
+									border-bottom 2px solid rgba(0,0,0,0.2)
+						.contenedorCuadroNodriza
+							text-align center
+							.checker
+								border-radius 0
+								border-bottom 2px solid transparent
+								height initial
+								padding 15px 0
+							.selectTxt
+								padding 5px
+								.nombreFiltro
+									font-size 13px
+									line-height initial
+	
+	.infoAdicionalHeader
+		.row
+			padding 0 10px
+			text-align right
+			.shop-phone	
+				line-height initial					
+	.loginUsuario
+		margin auto 0 auto auto
+		position relative
+		width 150px
+		.contenedorLogin 
+			margin-top 5px
+
+@media all and (max-width: 680px) {
+  .skew.l {
+    left: 5%;
+    transform: skew(00deg,30deg);
+  }
+
+  .skew.r {
+    right: 5%;
+    transform: skew(00deg,-30deg);
+  }
+}		
+
 @media screen and (max-width: 650px)
 	body
+		header
+			.header
+				figure
+					a
+						img
+							margin 20px 0 0 0
+							width 80%
 		.formCarrito
 			.detalleProducto
 				overflow-y scroll
@@ -641,6 +797,11 @@
 	.contenedorHistoria
 		overflow-y scroll
 		width 100%
+	.contenedorDivisor
+		.contenedorTexto
+			h2
+				font-size 18px
+				font-style italic
 	.order_carrier_content
 		.checkbox
 			padding 10px
@@ -672,6 +833,8 @@
 	.textoLink .payment_module
 		width 90%
 
+
+
 @media screen and (max-width: 600px)
 	body
 		header
@@ -696,9 +859,6 @@
 		display none
 	.contenedorPartners
 		display none
-	.infoAdicionalHeader
-		.row
-			text-align center
 	.listaProducto
 		.listaProductoLi
 			width 48.5%
@@ -721,6 +881,14 @@
 	.pagar
 		padding 1em
 		width 100% !important
+	.selectCategory
+		ul
+			li
+				a
+					figure
+						width 100px
+						img
+							width 150px
 	#sslsSiteSeal
 		.sslslock
 			img
@@ -729,6 +897,87 @@
 	.textoLink
 		font-size 13px
 
+@media screen and (max-width:550px)
+	body 
+		header 
+			.header 
+				figure
+					width 180px
+					a
+						img
+							width 100%
+	.presentacion
+		.contenedorPresentacion
+			.contFoto
+				.contTxt
+					h2
+					p
+					.destacadoTxt
+						font-size 120%
+						line-height initial
+
+@media screen and (max-width:500px)
+	body
+		.carruselInfografia
+			.infografia
+				.cirGrilla
+					.grilla
+						width 100%
+						.verMas
+							height 175px
+							.ciritem
+								figure
+									height 170px
+								h2
+									bottom 5%
+	.filtro
+		.block
+			.block_content
+				ul
+					.cuadroNodriza
+						width 49%
+						.contenedorCuadroNodriza 
+							.checker
+								padding 10px 0
+	.selectCategory
+		ul
+			width 100%
+			li
+				a
+					figure
+						width 130px
+
+@media screen and (max-width:470px)
+	body 
+		header 
+			.header 
+				figure
+					overflow hidden
+					width 37px
+					a
+						img
+							width 180px
+				.headerCOnt
+					.buscador
+						width 50%
+	.head-fixed 
+		.header 
+			.headerCOnt 
+				figure
+					overflow hidden
+					width 37px
+					a 
+						img
+							width 180px
+
+@media all and (max-width: 460px)
+	.skew.l
+		left 5%
+		transform skew(00deg,40deg)
+	.skew.r
+		right 5%
+		transform skew(00deg,-40deg)
+    
 @media screen and (max-width: 460px)
 	body
 		.autenticacion 
@@ -786,16 +1035,35 @@
 		box-sizing border-box
 		width 100%
 		
-@media screen and (max-width: 800px)
-	.contenedorMenu
-		display none
+@media screen and (max-width:370px)
+	body 
+		header 
+			.header 
+				.headerCOnt
+					.buscador
+						width 40%
+
+@media screen and (max-width: 940px)
+	body
+		-webkit-font-smoothing antialiased
+	//.contenedorMenu
+		//display none
 	.menudespliega
 		color #C41925
-		bottom 0
+		bottom 18px
 		display block
 		position absolute
-		text-align center
-		width 100%
+		right 60px
+		//text-align center
+		//width 100%
+		
+	.menuManias
+		.closeMenu
+			opacity 1
+			visibility visible
+	.head-fixed
+		.menudespliega
+			bottom 3px
 
 @media only screen and (min-width: 800px) 
 	//.contenedorMenu

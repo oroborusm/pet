@@ -37,7 +37,9 @@
 								<li class="grilla">
 									<div class="verMas">
 										<div class="ciritem">
+										<figure>
 											<img src="{$img_dir}slides/1.png" alt="">
+										</figure>
 											<h2>Elige tu plan</h2>
 											<div class="cirinfo">
 												<h3>1</h3>
@@ -52,7 +54,9 @@
 								<li class="grilla">
 									<div class="verMas">
 										<div class="ciritem">
+										<figure>
 											<img src="{$img_dir}slides/2.png" alt="">
+										</figure>
 											<h2>personaliza</h2>
 											<div class="cirinfo">
 												<h3>2</h3>
@@ -68,7 +72,9 @@
 								<li class="grilla">
 									<div class="verMas">
 										<div class="ciritem">
+										<figure>
 											<img src="{$img_dir}slides/3.png" alt="">
+										</figure>
 											<h2>paga</h2>
 											<div class="cirinfo">
 												<h3>3</h3>
@@ -84,7 +90,9 @@
 								<li class="grilla">
 									<div class="verMas">
 										<div class="ciritem">
+										<figure>
 											<img src="{$img_dir}slides/4.png" alt="">
+										</figure>
 											<h2>Disfruta</h2>
 											<div class="cirinfo">
 												<h3>4</h3>
