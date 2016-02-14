@@ -53,7 +53,7 @@ $(function(){
 	});
 
 	$('.menudespliega').on('click', function(){
-		$('.contenedorMenu > .menuManias').toggleClass('activaMenu')
+		$('.contenedorMenu').toggleClass('activaMenu')
 		$('.menudespliega i').toggleClass('icon-cross')
 		$('.menudespliega i').toggleClass('icon-menu')
 	});
